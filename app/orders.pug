@@ -1,0 +1,83 @@
+doctype html
+html(lang='ru')
+	title Оборудование профессиональной кухни
+	meta(charset='utf-8')
+	meta(name='viewport', content='width=device-width, user-scalable=yes')
+	link(href='./css/style.css', rel='stylesheet')
+	body
+		include modules/header.pug
+		.content
+			.breadcrumbs
+				ul
+					li
+						a(href='javascript:void(0);') Главная
+					li
+						a(href='javascript:void(0);') Личный кабинет
+					li Мои заказы
+			.content__row
+				span.title-h1 Мои заказы
+				.catalog
+					.catalog__lc
+						.orders
+							.orders-all
+								.orders-all__row
+									span.orders-all--th Номер заказа
+									span.orders-all--th Сумма
+									span.orders-all--th Статус
+									span.orders-all--th Подробнее
+									span.orders-all--th
+								.orders-all__row
+									span.orders-all--td
+										strong № 383838383
+									span.orders-all--td 1 305 570 руб.
+									span.orders-all--td Оплачен
+									span.orders-all--td
+										a(href='javascript:void(0);') Детали заказа
+									span.orders-all--td
+										a(href='javascript:void(0);') Повторить заказ
+								.orders-all__row
+									span.orders-all--td #[strong № 383838383]
+									span.orders-all--td 1 305 570 руб.
+									span.orders-all--td Оплачен
+									span.orders-all--td
+										a(href='javascript:void(0);') Детали заказа
+									span.orders-all--td
+										a(href='javascript:void(0);') Повторить заказ
+								.orders-all__row
+									span.orders-all--td #[strong № 383838383]
+									span.orders-all--td 1 305 570 руб.
+									span.orders-all--td Оплачен
+									span.orders-all--td
+										a(href='javascript:void(0);') Детали заказа
+									span.orders-all--td
+										a(href='javascript:void(0);') Повторить заказ
+								.orders-all__row
+									span.orders-all--td #[strong № 383838383]
+									span.orders-all--td 1 305 570 руб.
+									span.orders-all--td Оплачен
+									span.orders-all--td
+										a(href='javascript:void(0);') Детали заказа
+									span.orders-all--td
+										a(href='javascript:void(0);') Повторить заказ
+								.orders-all__row
+									span.orders-all--td #[strong № 383838383]
+									span.orders-all--td 1 305 570 руб.
+									span.orders-all--td Оплачен
+									span.orders-all--td
+										a(href='javascript:void(0);') Детали заказа
+									span.orders-all--td
+										a(href='javascript:void(0);') Повторить заказ
+					.catalog__rc
+						.user
+							.user__about
+								.user--name Петренко Иван Сергеевич
+								.user--contact +7 (913) 222-33-44
+								.user--contact ivanov@mail.ru
+							.user__nav
+								a(href='javascript:void(0);') Мой профиль
+								a.is-active(href='javascript:void(0);') Мои заказы
+								a(href='javascript:void(0);') Избранные товары
+								a(href='javascript:void(0);') Выйти
+		include modules/footer.pug
+		script(src='./js/libs.js')
+		script(src='./js/scripts.js')

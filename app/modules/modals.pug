@@ -1,0 +1,23 @@
+.fade-bg
+.modal.modal_buy(data-target='buy-one-click')
+	span.modal--close
+	.modal__content
+		span.modal__content--title Купить в 1 клик
+		.modal__item
+			.modal__item--pic
+				span
+					img.img-cover(src='./pic/catalog-3.png', width='55' height='55', alt='')
+			.modal__item--code Код: 0191
+			.modal__item--title Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+			.modal__item--price #[span 1 410 900 Р] 1 395 689 ₽
+	.modal__form
+		.modal__form--title Введите ваши данные
+		.modal__form--item
+			label(for='modal-name') #[span Имя]
+			input(type='text', id='modal-name')
+		.modal__form--item
+			label(for='modal-phone') #[span Телефон]
+			input(type='text', id='modal-phone')
+		label.modal__form--agreement #[input(type='checkbox', checked) ] Я согласен на обработку персональных данных
+		button.modal__form--button Отправить
+	

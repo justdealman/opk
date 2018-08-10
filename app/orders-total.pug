@@ -1,0 +1,182 @@
+doctype html
+html(lang='ru')
+	title Оборудование профессиональной кухни
+	meta(charset='utf-8')
+	meta(name='viewport', content='width=device-width, user-scalable=yes')
+	link(href='./css/style.css', rel='stylesheet')
+	body
+		include modules/header.pug
+		.content
+			.breadcrumbs
+				ul
+					li
+						a(href='javascript:void(0);') Главная
+					li
+						a(href='javascript:void(0);') Личный кабинет
+					li Ваш заказ
+			.content__row
+				span.title-h1 Ваш заказ
+				.catalog
+					.catalog__lc
+						.order
+							.order__group
+								.order--title Состав заказа
+								.order-content
+									.orders-list
+										.orders-list__row
+											.orders-list__td.orders-list__td_photo
+												.orders-list--photo
+													img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+											.orders-list__td
+												span.orders-list--code Код: 0191
+												a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+											.orders-list__td.orders-list__td_quantity 
+												span.orders-list--quantity 2 шт.
+											.orders-list__td.orders-list__td_price
+												span.orders-list--price 1 395 689 ₽
+										.orders-list__row
+											.orders-list__td.orders-list__td_photo
+												.orders-list--photo
+													img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+											.orders-list__td
+												span.orders-list--code Код: 0191
+												a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+											.orders-list__td.orders-list__td_quantity 
+												span.orders-list--quantity 2 шт.
+											.orders-list__td.orders-list__td_price
+												span.orders-list--price 1 395 689 ₽
+										.orders-list__row
+											.orders-list__td.orders-list__td_photo
+												.orders-list--photo
+													img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+											.orders-list__td
+												span.orders-list--code Код: 0191
+												a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+											.orders-list__td.orders-list__td_quantity 
+												span.orders-list--quantity 2 шт.
+											.orders-list__td.orders-list__td_price
+												span.orders-list--price 1 395 689 ₽
+										.orders-list__row
+											.orders-list__td.orders-list__td_photo
+												.orders-list--photo
+													img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+											.orders-list__td
+												span.orders-list--code Код: 0191
+												a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+											.orders-list__td.orders-list__td_quantity 
+												span.orders-list--quantity 2 шт.
+											.orders-list__td.orders-list__td_price
+												span.orders-list--price 1 395 689 ₽
+										.orders-list__row
+											.orders-list__td.orders-list__td_photo
+												.orders-list--photo
+													img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+											.orders-list__td
+												span.orders-list--code Код: 0191
+												a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+											.orders-list__td.orders-list__td_quantity 
+												span.orders-list--quantity 2 шт.
+											.orders-list__td.orders-list__td_price
+												span.orders-list--price 1 395 689 ₽
+							.order__group
+								.order--title Контактные данные
+								.order-content
+									.order-user
+										.order-user__nav
+											a.is-active(href='1', data-fadetabs-item) #[span Новый пользователь]
+											a(href='2', data-fadetabs-item) #[span Уже зарегистрирован (авторизация)]
+										.order-user__tabs(data-fadetabs-slider)
+											.order-user__content
+												.form
+													.form__item
+														.form__item--label
+															label(for='name') #[span ФИО]
+														.form__item--input
+															input(type='text', id='name')
+													.form__item
+														.form__item--label
+															label(for='email-register') #[span Email]
+														.form__item--input
+															input(type='text', id='email-register', value='ivanov@mail.ru')
+													.form__item
+														.form__item--label
+															label(for='phone') #[span Телефон]
+														.form__item--input
+															input(type='text', id='phone', value='555-555')
+													.form__item
+														.form__item--label
+															label(for='city') #[span Город доставки]
+														.form__item--input
+															input(type='text', id='city', value='г. Барнаул')
+													.form__item
+														.form__item--label
+															label(for='address') #[span Адрес доставки]
+														.form__item--input
+															input(type='text', id='address', value='656000, пр. Ленина, 43')
+											.order-user__content
+												.form
+													.form__item
+														.form__item--label
+															label(for='email-autorize') #[span Email]
+														.form__item--input
+															input(type='text', id='email-autorize', value='ivanov@mail.ru')
+													.form__item
+														.form__item--label
+															label(for='password') #[span Пароль]
+														.form__item--input
+															input(type='password', id='passwpord', value='555-555')
+							.order__group
+								.order--title Выберите способ доставки
+								.order-content(data-radio-group)
+									.order-choice
+										.order-choice__item(data-radio-option)
+											label.order-choice__label
+												input(type='radio', name='delivery', checked)
+												.order-choice--logo
+													img(src='./pic/delivery-ratek.png', width='103', height='35', alt='')
+												span.order-choice--title Транспортная служба Ратэк
+										.order-choice__item(data-radio-option)
+											label.order-choice__label
+												input(type='radio', name='delivery')
+												.order-choice--logo
+													img(src='./pic/delivery-dellinii.png', width='86', height='40', alt='')
+												span.order-choice--title Транспортная компания Деловые Линии
+										.order-choice__item(data-radio-option)
+											label.order-choice__label
+												input(type='radio', name='delivery')
+												.order-choice--logo
+													img(src='./pic/delivery-pek.png', width='80', height='23', alt='')
+												span.order-choice--title Транспортная компания ПЭК
+							.order__group
+								.order--title Выберите способ оплаты
+								.order-content(data-radio-group)
+									.order-choice
+										.order-choice__item(data-radio-option)
+											label.order-choice__label
+												input(type='radio', name='payment', checked)
+												span.order-choice--title Онлайн оплата картой
+										.order-choice__item(data-radio-option)
+											label.order-choice__label
+												input(type='radio', name='payment')
+												span.order-choice--title Наложенным платежом
+										.order-choice__item(data-radio-option)
+											label.order-choice__label
+												input(type='radio', name='payment')
+												span.order-choice--title Оплата наличными
+							.order__group
+								.order--title Комментарии к заказу
+								.order-content
+									.order-comment
+										textarea(rows='8')
+					.catalog__rc.catalog__rc_confirm
+						.order-confirm
+							ul.order-confirm__list
+								li #[span Товаров на сумму]  7 500 000 руб.
+								li #[span Способ доставки] #[br] Транспортная служба Ратэк
+								li #[span Способ оплаты] #[br] Наложенный платеж
+							span.order-confirm--price #[span Итого к оплате:] 1 200 000 руб.
+							label.order-confirm--agreement #[input(type='checkbox', checked)] Я согласен на обработку персональных данных
+							button.order-confirm--complete Подтвердить заказ
+		include modules/footer.pug
+		script(src='./js/libs.js')
+		script(src='./js/scripts.js')

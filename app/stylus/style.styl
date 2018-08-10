@@ -1,0 +1,5283 @@
+// Fonts
+
+@import './mixins/fonts.styl'
+webfont('Roboto', 'roboto-regular', normal)
+webfont('Roboto', 'roboto-light', 300)
+webfont('Roboto', 'roboto-medium', 500)
+webfont('Roboto', 'roboto-bold', bold)
+webfont('Myriad Pro', 'myriad-pro-regular', normal)
+webfont('Source Sans Pro', 'source-sans-pro-regular', normal)
+webfont('Source Sans Pro', 'source-sans-pro-semibold', 600)
+webfont('Source Sans Pro', 'source-sans-pro-bold', bold)
+
+// Variables
+
+colorBlack = #000000
+colorWhite = #ffffff
+colorDark = #303030
+colorGrey = #666666
+colorOrange = #ff7a08
+colorBlue = #75c9ea
+
+// Default
+
+html
+	height 100%
+	*
+		max-height 1000000px
+		vertical-align top
+		box-sizing border-box
+
+	*:before,
+	*:after 
+		vertical-align top
+		box-sizing border-box
+
+body
+	width 100%
+	height 100%
+	color colorBlack
+	font-size 12px
+	line-height 16px
+	font-family 'Roboto', sans-serif
+	padding 0
+	margin 0
+	background #f8f8f8
+	-webkit-tap-highlight-color transparent
+	
+p
+	text-indent 0
+	padding 0
+	margin 0 0 16px
+
+table
+	margin 0 0 16px
+	border-collapse collapse
+	td
+		padding 0
+
+:focus
+	outline none
+
+img
+	padding 0
+	margin 0
+	border 0
+
+a
+	color colorBlack
+	text-decoration none
+	&:hover
+		text-decoration none
+
+form
+	margin 0
+
+ul 
+	margin 0 0 10px 16px
+	padding 0
+	li
+		padding 0 
+		list-style none
+
+ol
+	margin 0 0 10px 18px
+	padding 0
+	li
+		padding 0 0 0 16px	
+
+input,
+select,
+textarea
+	color colorBlack
+	font-size 12px
+	font-family 'Roboto', sans-serif
+	padding 0
+	margin 0
+	background none
+	border 0
+	box-sizing border-box
+
+textarea
+	overflow auto
+
+button
+	font-family 'Roboto', sans-serif
+	margin 0
+	border 0
+	box-sizing border-box
+	&::-moz-focus-inner
+		padding 0
+		border 0
+
+::-webkit-input-placeholder
+	color #a1a1a1
+
+:-moz-placeholder
+	color #a1a1a1
+
+::-moz-placeholder
+	color #a1a1a1
+
+:-ms-input-placeholder
+	color #a1a1a1
+
+.img-cover,
+.img-contain
+	display none !important
+
+// Libs
+
+@import '../css/libs.css'
+	
+// Core
+
+.panel
+	background #f8f8f8
+	box-shadow inset 0 -2px 4px rgba(0, 0, 0, 0.09)
+	
+	&__row
+		clear both
+		overflow hidden
+		max-width:1300px
+		padding 15px 30px 13px
+		margin 0 auto
+		
+	&--city
+		position relative
+		float left
+		display block
+		min-width 300px
+		font-size 14px
+		line-height 20px
+		padding 5px 30px 5px 24px
+		
+		&:before
+			content ''
+			position absolute
+			left 0
+			top 6px
+			width 14px
+			height 16px
+			background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAACGUlEQVQ4T31TPWgUURD+Jj+37wQtxEYrhVwhorUIhhCbSAR/8CeNhQjpEgvhyG1OWTDJHREigkWw0EJQMCAaOBF/MIWopBGEgHhaWGlhZbN7u8mO33uXW9cYXHi84Zv5Zr6ZNyvIfRqggNiMEBrm2b3u+sb7GcLogdxA2AmXjqG+OUL7Dg8xfcjrI5S26H7aZ4n38JyXmeiV5Tii+t5Rmk9o1lGIpiRAvImSq8QmGH1cZloN0WDbdsTxZ4K3mC1wiQJmT4oHkarAi94x0Wq7gLH+cWhvSdQvXiY0hp9RSW4jcaTYLDGAEt23QhUDVoWOohc7TBMq86KTpoFUvkgtvOSyVs0AUrxG0r0TWyRFsvqd6BDlvXD+SvEm+7YVzTIzPCKx7hwTXh9EKF3KkHSN9xw03Su1+NO63Arvk1bqIjP8kOlotDMQYiMM5iDs+GSWvd//4zPzBHeJVsxFznaWfexhH7/y09xoaxlb0WO+Mr7KqcJwGCuU+5Ryx/5L9L05VjvBZdjXfseqGeRAnkP1lNRai5uRteIdo+zHjBuSevQyvzlXSCgjXeuXevIhT1a/cADoekPsOvu95lrPmrb2pLnLNRvmYA5nU6x6JT7XW3obmI4u2H38i+gkn0E3+sw9BvVT9iBDUnTJEj3v0WydkwXwedpfVjGr7P6Q4gKDDxGz77iMQnh64/7+Q8wql7ghNnEzHM9X6hT4DTOR07m0WVC2AAAAAElFTkSuQmCC') no-repeat 0 0
+		
+		&_link
+			position relative
+			color colorOrange
+			padding-left 7px
+			
+			&:after
+				content ''
+				position absolute
+				left 7px
+				bottom 0
+				width calc(100% - 7px)
+				border-bottom 1px dashed colorOrange
+				transition opacity .2s ease
+				opacity 0
+			
+			&:hover
+				&:after
+					opacity 0.5
+					
+	&__nav
+		float left
+		display inline-block
+		min-width 573px
+		font-size 0
+		padding 5px 9px 5px 0
+		
+		a
+			position relative
+			color colorDark
+			font-size 14px
+			line-height 20px
+			margin-right 21px
+			
+			&:after
+				content ''
+				position absolute
+				left 50%
+				bottom 0
+				width 0
+				border-bottom 1px solid colorDark
+				transition width .2s ease, left .2s ease
+				opacity .5
+				
+			&:hover
+				&:after
+					left 0
+					width 100%
+					
+	&__user
+		position relative
+		float left
+		font-size 0
+		padding 5px 0 5px 23px
+		margin 0
+		
+		&:before
+			content ''
+			position absolute
+			left 0
+			top 6px
+			width 13px
+			height 16px
+			background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAYAAADNo/U5AAABTUlEQVQ4T42SPUvDUBSG3xOxvV382BzFwVHUwb0/oYuDih/oJCgFBW3iUMTGCrooOCl+oA7if9BfUEE3B3HTrepiqpjjS7AlDaFN4HDvOXmfk5v3XEHkUdtMQGFDMMD1masrrncVlkk4CQDgksIzAnfcZxnTjMkwGIUeKahQMFNvpgVzDuiQbNeG67UIlH4HZJXQUQOyzQKhXXFrPa2gPKHTBuRkxgjlpOQVmiBdQzfE9MLCA1Q2oXoTNSjI1avKDj5EnXSewj2WrFhhc9GH6Iqona6yfgz4F+0ha4qaeUJGuZkL/0dwkiK6pIjPyEhmmZ/EQmzk8OUWY4PNSiEnW0GZfX5rifYfiPu1nAxa7xyB1VGB/zsq5Z/7hJDpp5dP8DEoZe8lEfRvRIpGfMcb4ZhXdryl5dcJLB/nCbIcbirHuR7yVve1hQRvbL74B60jm6sDrY27AAAAAElFTkSuQmCC') no-repeat 0 0
+			
+		li
+			display inline-block
+			color colorDark
+			font-size 14px
+			line-height 20px
+			white-space nowrap
+			
+			&:after
+				content '|'
+				padding 0 4px
+				
+			&:last-child
+				&:after
+					display none
+			
+		a
+			position relative
+			color colorDark
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 0
+				width 100%
+				border-bottom 1px dashed colorDark
+				transition opacity .2s ease
+				opacity 0
+				
+			&:hover
+				&:after
+					opacity .5
+					
+	&__rc
+		float right
+		padding-right 12px
+		
+	&--icon
+		position relative
+		display block
+		float left
+		min-width 30px
+		height 30px
+		font-size 0
+		padding 2px 8px 6px 16px
+		
+		span 
+			position relative
+			z-index 1
+			display inline-block
+			color colorDark
+			font-size 14px
+			line-height 18px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight 600
+			padding 0 4px 2px
+			background colorBlue
+			border-radius 3px
+			transition background-color .2s ease
+
+		&:hover
+			span
+				background-color #5ec3eb
+			
+		&:before
+			content ''
+			position absolute
+			left 4px
+			top 12px
+			height 16px
+		
+		&_compare
+			&:before
+				width 14px
+				background url('../img/panel-compare-icon.png') no-repeat 0 0
+		
+		&_favorite
+			&:before
+				width 16px
+				background url('../img/panel-favorite-icon.png') no-repeat 0 0
+
+.header
+	position relative
+	background #ffffff
+	border-bottom 1px solid #e8e8e8
+	
+	&__row
+		display table
+		width 100%
+		max-width 1340px
+		height 135px
+		padding 0 15px
+		margin 0 auto
+		
+	&__lc
+		display table-cell
+		width 320px
+		vertical-align middle
+		
+	&__cc
+		display table-cell
+		vertical-align middle
+		padding 0 5px 2px
+		
+	&__rc
+		display table-cell
+		min-width 229px
+		vertical-align middle
+		padding 0 15px
+	
+	&--logo
+		display block
+		height 135px
+		width 320px
+		height 99px
+		margin-top 6px
+		background url('../img/logo.png') no-repeat 15px 15px
+		background-size 291px 69px
+		
+	&-contacts
+		display flex
+		justify-content space-between
+		font-family 'Source Sans Pro', sans-serif
+		margin 0 0 22px
+		
+		&__item
+			display inline-block
+			padding 0 10px
+
+		&--email
+			position relative
+			display block
+			color colorDark
+			font-size 15px
+			line-height 22px
+			font-weight 600
+			
+			&:before
+				content ''
+				display inline-block
+				width 16px
+				height 14px
+				margin 6px 10px 2px 0
+				background url('../img/header-email-icon.png') no-repeat 0 0
+				
+			&:after
+				content ''
+				position absolute
+				right 0
+				bottom 2px
+				width calc(100% - 26px)
+				border-bottom 1px solid colorOrange
+				transition opacity .2s ease
+				
+			&:hover
+				&:after
+					opacity 0
+		
+		&--consultation
+			position relative
+			display block
+			color colorOrange
+			font-size 14px
+			line-height 20px
+			font-weight 600
+			margin 1px 0 -1px
+			
+			&:before
+				content ''
+				display inline-block
+				width 18px
+				height 19px
+				margin 1px 6px 1px 0
+				background url('../img/header-consultation-icon.png') no-repeat 0 0
+				
+			&:after
+				content ''
+				position absolute
+				right 0
+				bottom 1px
+				width calc(100% - 25px)
+				border-bottom 1px dotted colorOrange
+				transition opacity .2s ease
+				
+			&:hover
+				&:after
+					opacity 0
+					
+		&--phone_big
+			display inline-block
+			color #242424
+			font-size 21px
+			line-height 26px
+			margin -4px 0 -2px
+			
+			&:before
+				content ''
+				display inline-block
+				width 11px
+				height 17px
+				margin 4px 8px 5px 0
+				background url('../img/header-phone-icon.png') no-repeat 0 0
+			
+			strong
+				font-weight 600
+			
+		&--phone_small
+			display inline-block
+			color #939393
+			font-size 16px
+			line-height 20px
+			margin 0 0 0 12px
+	
+	&__search
+		overflow hidden
+		position relative
+		margin 0 10px
+	
+		input[type='text']
+			width 100%
+			font-size 16px
+			padding 7px 105px 8px 15px
+			border 1px solid #dddddd
+			border-radius 4px
+			
+			&:focus
+				border-color #c4c4c4
+				
+		::-webkit-input-placeholder
+			font-weight bold
+
+		:-moz-placeholder
+			font-weight bold
+
+		::-moz-placeholder
+			font-weight bold
+
+		:-ms-input-placeholder
+			font-weight bold
+
+		&--submit
+			position absolute
+			right 3px
+			top 3px
+			z-index 1
+			color colorWhite
+			font-size 14px
+			line-height 20px
+			font-weight bold
+			cursor pointer
+			padding 6px 14px 4px 35px
+			background colorOrange url('../img/header-search-icon.png') no-repeat 14px 8px
+			border-radius 4px
+			transition background-color .2s ease
+			
+			&:before
+				content ''
+				position absolute
+				left -3px
+				top -3px
+				width calc(100% + 6px)
+				height calc(100% + 6px)
+				
+			&:hover
+				background-color #e57700
+			
+			span
+				position relative
+				z-index 1
+				
+	&__basket
+		position relative
+		display inline-block
+		height 75px
+		font-size 0
+		white-space nowrap
+		vertical-align top
+		padding 12px 15px 0 40px
+		margin 0 0 0 4px
+		border 2px solid #f8f8f8
+		transition border-color .2s ease
+		
+		&:hover
+			border-color #ebebeb
+		
+		&:before
+			content ''
+			position absolute
+			left 17px
+			top 21px
+			width 30px
+			height 30px
+			background url('../img/header-basket-icon.png') no-repeat 0 0
+		
+		&--quantity
+			position relative
+			z-index 1
+			display inline-block
+			font-size 14px
+			line-height 18px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight 600
+			padding 0 4px 2px
+			margin-right 4px
+			background #75c9ea
+			border-radius 3px
+			transition background-color .2s ease
+
+		&:hover
+			.header__basket--quantity
+				background-color #5ec3eb
+				
+		&--price
+			display inline-block
+			color colorOrange
+			font-size 15px
+			line-height 22px
+			margin 17px 0 0
+			
+.nav
+	display flex
+	justify-content space-between
+	max-width 1300px
+	padding 0 20px 11px
+	margin 0 auto
+
+	&__link
+		display inline-block
+		color #1e1e1e
+		font-size 14px
+		line-height 19px
+		font-family 'Source Sans Pro', sans-serif
+		font-weight 600
+		padding 10px 10px 15px
+		transition color .2s ease
+		
+		&:hover
+		&.is-active
+			color colorOrange
+			
+			& ^[0]--icon
+				&:before
+					opacity 0
+
+			& ^[0]--icon
+				&:after
+					opacity 1
+					
+	&--icon
+		position relative
+		display block
+		height 40px
+		margin 0 0 10px
+		
+		&:before,
+		&:after
+			content ''
+			position absolute
+			left 0
+			top 0
+			height 40px
+			background-repeat no-repeat
+			background-size 200% auto
+			transition opacity .2s ease
+			
+		&:before
+			background-position 0 0
+
+		&:after
+			background-position 100% 0
+			opacity 0
+		
+		&_1
+			&:before,
+			&:after
+				width 38px
+				background-image url('../img/nav-icon-1.png')
+
+		&_2
+			&:before,
+			&:after
+				width 32px
+				background-image url('../img/nav-icon-2.png')
+
+		&_3
+			&:before,
+			&:after
+				width 32px
+				background-image url('../img/nav-icon-3.png')
+
+	&--text
+		position relative
+		display block
+		max-width 110px
+		padding-top 13px
+		
+		&:before
+			content ''
+			position absolute
+			left 0
+			top 0
+			width 40px
+			height 2px
+			background colorOrange
+			
+.content
+	overflow hidden
+	position relative
+	background #f8f8f8
+
+	&:before
+		content ''
+		position absolute
+		left 0
+		top 0
+		width 100%
+		height 700px
+		background url('../img/content-before.png') repeat-x 0
+
+	&:after
+		content ''
+		position absolute
+		left 0
+		bottom 0
+		width 100%
+		height 398px
+		background url('../img/content-after.png') repeat-x 100%
+		
+	&__row
+		position relative
+		z-index 1
+		max-width 1340px
+		padding 29px 30px 54px
+		margin 0 auto
+	
+.breadcrumbs
+	position relative
+	z-index 1
+	border-bottom 1px solid #e8e8e8
+	
+	ul
+		max-width 1300px
+		font-size 0
+		padding 22px 30px 11px
+		margin 0 auto
+	
+	li
+		display inline-block
+		color #767676
+		font-size 13px
+		line-height 17px
+		font-family: 'Source Sans Pro', sans-serif
+		white-space:nowrap
+		margin 0 0 7px
+		
+		&:after
+			content '/'
+			padding 0 8px
+			
+		&:last-child
+			&:after
+				display none
+	
+	a
+		color #767676
+		
+		&:hover
+			color colorOrange
+			
+.title-h1
+	display block
+	max-width 1200px
+	color #151313
+	font-size 42px
+	line-height 44px
+	font-family: 'Source Sans Pro', sans-serif
+	margin 0 auto 37px
+	
+	span
+		display block
+		max-width 960px
+	
+.title-h2
+	display block
+	color #151313
+	font-size 35px
+	line-height 44px
+	font-family 'Source Sans Pro', sans-serif
+	font-weight 600
+	padding 0 50px
+	margin 0 0 15px
+	
+.catalog-menu
+	display flex
+	justify-content space-between
+	font-size 0
+	padding 26px 25px 21px
+	margin 0 0 15px
+	background #ffffff
+	border-bottom 5px solid #75c9ea
+	
+	&__item
+		display inline-block
+	
+	&__group
+		display inline-block
+		padding 0 15px
+		
+	&--title
+		display inline-block
+		color #6e6e6e
+		font-size 15px
+		line-height 22px
+		padding 7px 0
+		margin 0 20px 0 0
+		
+	.selectric-catalog-menu--select
+		display inline-block
+		min-width 135px
+		margin 0 10px 0 0
+		
+		&:last-child
+			margin-right 0
+			
+		&_short
+			min-width 85px
+			
+	&__view
+		display inline-block
+		margin 5px 0 5px -15px
+		
+		&--item
+			position relative
+			display inline-block
+			width 26px
+			height 26px
+			cursor pointer
+			margin-left 5px
+			border-radius 2px
+			
+			&:before
+				content ''
+				position absolute
+				left 50%
+				top 50%
+				width 18px
+				height 18px
+				margin -9px 0 0 -9px
+				background-repeat no-repeat
+				background-position 0 0
+				background-size 100% 200%
+			
+			&_tile
+				&:before
+					background-image url('../img/view-tile-icon.png')
+			
+			&_list
+				&:before
+					background-image url('../img/view-list-icon.png')
+			
+			&_table
+				&:before
+					background-image url('../img/view-table-icon.png')
+				
+			&.is-active
+				background-color colorOrange
+				&:before
+					background-position 0 100%
+
+.elem--availability
+	display block
+	font-size 14px
+	line-height 18px
+	padding 3px 10px 1px
+	border-radius 4px
+	
+	&:before
+		content ''
+		display inline-block
+	
+	&_true
+		color #2eaa34
+		border 1px solid #aadfa4
+		
+		&:before
+			width 11px
+			height 10px
+			margin 3px 9px 5px -2px
+			background url('../img/availability-true-icon.png') no-repeat 0 0
+	
+.tip-icon
+	z-index 1
+	display block
+	width 62px
+	height 62px
+	color #ffffff
+	font-size 15px
+	line-height 22px
+	font-family 'Source Sans Pro', sans-serif
+	text-align center
+	text-transform uppercase
+	letter-spacing 1px
+	padding 19px 0 21px
+	border-radius 50%
+	
+	&_special 
+		background #75c9ea
+	
+	&_hit
+		background #ff510b
+	
+	&_new
+		color colorDark
+		background #fbf57c
+				
+.item-catalog
+	position relative
+	z-index 1
+	display block
+	background #ffffff
+	
+	&__content
+		position relative
+		z-index 1
+		padding 30px 30px 80px
+			
+	&--pic
+		position relative
+		height 200px
+		margin 0 0 20px
+		
+	&__info
+		position relative
+		z-index 1
+		
+	&--code
+		position absolute
+		left 0
+		top -25px
+		display block
+		color #868686
+		font-size 14px
+		line-height 20px
+		
+	&--title
+		display block
+		font-size 16px
+		line-height 22px
+		margin 0 0 14px
+		
+		&:hover
+			text-decoration underline
+	
+	&__price
+		display block
+		margin 0 0 14px
+		
+		&--current
+			display inline-block
+			font-size 20px
+			line-height 26px
+			font-weight bold
+		
+		&--old
+			display inline-block
+			color #ff592a
+			font-size 17px
+			line-height 24px
+			font-weight normal
+			text-decoration line-through
+			margin 2px 9px 0 0
+		
+	&--button
+		font-size 15px
+		line-height 22px
+		font-weight bold
+		font-family 'Source Sans Pro', sans-serif
+		text-transform uppercase
+		letter-spacing 1px
+		cursor pointer
+		padding 6px 12px
+		margin 0 13px 13px 0
+		border 1px solid #ff8400
+		border-radius 4px
+		transition background-color .2s ease, border-color .2s ease
+			
+		&:hover
+			border-color #e57700
+		
+		&_buy
+			color #ffffff
+			background-color #ff8400
+			
+			&:before
+				content ''
+				display inline-block
+				width 16px
+				height 14px
+				margin 4px 8px 4px 1px
+				background url('../img/item-basket-icon.png') no-repeat 0 0
+
+			&:hover
+				background-color #e57700
+		
+		&_one-click
+			color #494949
+			background-color #ffffff
+			
+			&:before
+				content ''
+				display inline-block
+				width 12px
+				height 17px
+				margin 3px 7px 2px -1px
+				background url('../img/item-lightning-icon.png') no-repeat 0 0
+				
+	&__more
+		&--button
+			position relative
+			display inline-block
+			width 24px
+			height 24px
+			cursor pointer
+			margin 0 3px 0 0
+			transition opacity .2s ease
+			
+			&:hover
+				opacity 0.85
+				
+			&:before
+				content ''
+				position absolute
+				left 50%
+				top 50%
+				height 16px
+				background-size 100% 200%
+	
+			&_compare
+				&:before
+					width 14px
+					margin -8px 0 0 -7px
+					background url('../img/panel-compare-icon.png') no-repeat 0 0
+			
+			&_favorite
+				&:before
+					width 16px
+					margin -8px 0 0 -8px
+					background url('../img/panel-favorite-icon.png') no-repeat 0 0
+			
+			&_remove
+				&:before
+					width 13px
+					height 17px
+					margin -7px 0 0 -6px
+					background url('../img/panel-remove-icon.png') no-repeat 0 0
+					
+.catalog-grid
+	margin 0 0 40px
+			
+.catalog-tile
+.same__slider
+	.item-catalog
+		&:before
+			content ''
+			position absolute
+			left 0
+			top 0
+			width 100%
+			height 100%
+			background #ffffff
+			transition all .2s ease
+			
+		&:hover
+			&:before
+				left -5px
+				top -5px
+				width calc(100% + 10px)
+				height calc(100% + 10px)
+				box-shadow 0 0 8px rgba(0, 0, 0, 0.18)
+
+		.tip-icon
+			position absolute
+			right 10px
+			top 30px
+		
+		.elem--availability
+			position absolute
+			left 0
+			top -230px
+			z-index 1
+			transition opacity .2s ease
+			opacity 0
+			visibility hidden
+		
+		&:hover .elem--availability
+			opacity 1
+			visibility visible
+		
+		&__controls
+			position absolute
+			left 30px
+			bottom 25px
+			font-size 0
+			width calc(100% - 47px)
+			
+		&__more
+			display none
+				
+.catalog-table
+	padding 12px 0 0
+	background #ffffff
+	
+	.catalog__item
+		&:first-child
+
+			.item-catalog
+				&:before
+					content ''
+					position absolute
+					left 0
+					top -12px
+					width 100%
+					height 13px
+					background #ffffff
+					transition background-color .2s ease
+				
+				&:hover
+					&:before
+						background-color #f9f9f9
+
+	.item-catalog
+		position relative
+		background #ffffff
+		border-bottom 1px solid #e9e9e9
+		transition background-color .2s ease
+		
+		&:hover
+			background-color #f9f9f9
+
+		.tip-icon
+			position absolute
+			left 10px
+			top 12px
+			width 45px
+			height 45px
+			font-size 12px
+			line-height 16px
+			font-weight 600
+			letter-spacing 0
+			padding 14px 0 15px
+			
+		&__content
+			position relative
+			display table
+			width 100%
+			padding 12px 0 12px 200px
+			
+		&--pic
+			display none
+			
+		&__info
+			position relative
+			display table-cell
+			height 45px
+			padding 3px 30px 2px 0
+			
+		&--code
+			position absolute
+			left -126px
+			top 3px
+			
+		.elem--availability
+			position absolute
+			left -126px
+			top 23px
+			padding 0
+			border-width 0
+			
+			&:before
+				margin-left 0
+			
+		&--title
+			max-width 340px
+			font-size 14px
+			line-height 20px
+			margin 0
+			
+		&__price
+			position relative
+			display table-cell
+			width 23.7%
+			height 45px
+			vertical-align middle
+			padding 0 30px
+			margin 0
+			border-left 1px solid #e9e9e9
+			
+			&--current
+				display block
+				font-size 15px
+				line-height 22px
+				font-weight 500
+				margin 0 0 -2px
+				
+			&--old
+				display block
+				color #ff592a
+				font-size 15px
+				line-height 21px
+				margin 2px 0 2px
+			
+		&__more
+			position absolute
+			left 100%
+			top 50%
+			margin -24px 0 0 110px
+			
+			&--button
+				display block
+				margin 0
+
+		&__controls
+			display table-cell
+			width 160px
+			height 45px
+			font-size 0
+			vertical-align middle
+			
+		&--button
+			overflow hidden
+			position relative
+			display inline-block
+			width 40px
+			height 32px
+			font-size 0
+			text-indent 40px
+			white-space nowrap
+			cursor pointer
+			padding 0
+			margin 2px 9px 0 0
+			
+			&:before
+				content ''
+				position absolute
+			
+			&_buy
+				&:before
+					left 12px
+					top 9px
+					width 14px
+					height 12px
+					margin 0
+					background-size 100% 100%
+			
+			&_one-click
+				&:before
+					left 14px
+					top 8px
+					width 11px
+					height 15px
+					margin 0
+					background-size 100% 100%
+					
+	&_favorite
+		.item-catalog
+			.tip-icon
+				display none
+				
+			&--pic
+				position absolute
+				left 18px
+				top 50%
+				display block
+				width 35px
+				height 46px
+				margin-top -24px
+
+.catalog-list
+	padding-top 12px
+	background #ffffff
+	
+	.catalog__item
+		&:first-child
+			.item-catalog
+				&:before
+					content ''
+					position absolute
+					left 0
+					top -12px
+					width 100%
+					height 13px
+					background #ffffff
+					transition background-color .2s ease
+				
+				&:hover
+					&:before
+						background-color #f9f9f9
+
+	.item-catalog
+		position relative
+		background #ffffff
+		border-bottom 1px solid #e9e9e9
+		transition background-color .2s ease
+		
+		&:hover
+			background-color #f9f9f9
+
+		&__content
+			position relative
+			display table
+			width 100%
+			padding 12px 0 12px 17%
+			
+		&--pic
+			position absolute
+			top 50%
+			left 2.2%
+			width 80px
+			height 80px
+			margin -39px 0 0
+			
+		.tip-icon
+			position absolute
+			left 9.4%
+			top 50%
+			width 45px
+			height 45px
+			color #ffffff
+			font-size 12px
+			line-height 16px
+			font-weight 600
+			letter-spacing 0
+			padding 14px 0 15px
+			margin-top -49px
+				
+		&__info
+			display table-cell
+			height 94px
+			vertical-align top
+			padding 4px 30px 4px 0
+			
+		&--code
+			position static
+			display inline-block
+			margin 0 15px 10px 0
+			
+		.elem--availability
+			display inline-block
+			margin -3px 0 9px
+
+		&--title
+			font-size 14px
+			line-height 20px
+
+		&__price
+			position relative
+			display table-cell
+			width 26.4%
+			height 94px
+			vertical-align top
+			padding 1px 30px 39px
+			border-left 1px solid #e9e9e9
+			
+			&--current
+				display block
+			
+			&--old
+				display block
+				font-size 15px
+				line-height 22px
+				margin 1px 0 5px
+				
+		&__more
+			position absolute
+			left 39px
+			bottom 4px
+			font-size 0
+			margin-left -8px
+			
+		&__controls
+			display table-cell
+			width 140px
+			height 94px
+			vertical-align middle
+			padding 0 30px 8px 0
+		
+		&--button
+			display inline-block
+			width 100%
+			font-size 13px
+			line-height 18px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight 600
+			cursor pointer
+			text-transform uppercase
+			letter-spacing 1px
+			padding 6px 10px
+			margin 4px 0
+			
+			&_buy
+				&:before
+					content ''
+					display inline-block
+					width 14px
+					height 12px
+					margin 2px 6px 4px 0
+					background-size 100% 100%
+			
+			&_one-click
+				&:before
+					content ''
+					display inline-block
+					width 11px
+					height 15px
+					margin 2px 5px 1px 0
+					background url('../img/item-lightning-icon.png') no-repeat 0 0
+				
+.catalog
+	font-size 0
+	margin 0 0 30px
+	
+	&__lc
+		display inline-block
+		width calc(100% - 304px)
+		font-size 12px
+		padding 0 15px 0 0
+		
+	&__rc
+		display inline-block
+		font-size 12px
+		width 304px
+		
+		&_confirm
+			margin-top 38px
+	
+	&-tile
+		position relative
+		display flex
+		flex-wrap wrap
+		
+		.catalog__item
+			position relative
+			z-index 1
+			display inline-block
+			width 33.33%
+			background #ffffff
+			border-right 1px solid #e9e9e9
+			border-bottom 1px solid #e9e9e9
+			
+			&:nth-child(3n)
+				border-right-width 0
+				
+			&:hover
+				z-index 2
+				
+.pagination
+	font-size 0
+	margin 62px 0 30px -3px
+	
+	&--item
+		position relative
+		display inline-block
+		min-width 37px
+		height 37px
+		color colorDark
+		font-size 17px
+		line-height 23px
+		font-family 'Source Sans Pro', sans-serif
+		font-weight 600
+		text-align center
+		padding 6px
+		margin 0 3px
+		border 1px solid transparent
+		border-radius 4px
+		
+		&:hover
+			color #ff8400
+		
+		&.is-active
+			color #ffffff
+			cursor default
+			background-color #ff8400
+			border-color #ff8400
+			
+		&_next
+			margin-left 15px
+			border-color #e8e8e8
+			transition border-color .1s ease
+			
+			&:hover
+				border-color #cfcfcf
+				
+			&:before
+				content ''
+				position absolute
+				left 50%
+				top 50%
+				width 7px
+				height 10px
+				margin -5px 0 0 -2px
+				background url('../img/pagination-next-icon.png') no-repeat 0 0
+				
+.filter
+	padding 26px 25px 58px 35px
+	margin 0 0 30px
+	background-color #ffffff
+	border-bottom 2px solid #d8d8d8
+	
+	&__group
+		margin 0 0 15px
+	
+	&--title
+		position relative
+		display block
+		color colorGrey
+		font-size 18px
+		line-height 23px
+		font-family 'Source Sans Pro', sans-serif
+		cursor pointer
+		padding 5px 5px 5px 0
+		
+		&:before
+			content ''
+			position absolute
+			left 0
+			bottom 14px
+			width 100%
+			border-bottom 1px solid #75c9ea
+		
+		span
+			position relative
+			z-index 1
+			display inline-block
+			padding 0 12px 0 5px
+			background #ffffff
+			
+		i
+			position absolute
+			right 0
+			bottom 5px
+			z-index 1
+			width 21px
+			height 23px
+			display block
+			background #ffffff
+			
+			&:after
+				content ''
+				position absolute
+				left 6px
+				top 9px
+				width 10px
+				height 7px
+				background url('../img/select-arrow.png') no-repeat 0 0
+				
+		&.is-opened
+			& + ^[0]__content
+				display block
+				
+			i
+				&:after
+					transform rotate(180deg)
+				
+				
+	&__content
+		display none
+		padding 0 5px
+		margin 19px 0 45px
+		
+	&__list
+		margin 0
+		
+		&--item
+			margin 0 0 9px
+		
+		label
+			position relative
+			display inlineblock
+			font-size 15px
+			line-height 23px
+			cursor pointer
+			padding-left 34px
+			
+			
+			.checker
+				position absolute
+				left 0
+				top -2px
+			
+			span
+				color #666666
+
+	&-price
+		padding 4px 0 0
+		margin 0 0 -13px
+		
+		&--slider
+			position relative
+			height 8px
+			margin 0 0 15px
+			background #dddddd
+			
+			.ui-slider-range
+				position absolute
+				height 100%
+				background #ff8400
+				
+			.ui-slider-handle
+				position absolute
+				top -4px
+				z-index 1
+				display block
+				width 12px
+				height 16px
+				cursor pointer
+				background #ffffff
+				border 1px solid #666666
+				border-radius 3px
+				box-shadow 0 0 3px rgba(0, 0, 0, 0.24)
+				
+		&__range
+			display flex
+			justify-content space-between
+
+			&--item
+				overflow hidden
+				position relative
+				max-width 107px
+				
+				&:last-child
+					text-align right
+				
+				em
+					position absolute
+					right 0
+					top 3px
+					display block
+					color #666666
+					font-size 17px
+					line-height 20px
+					font-style normal
+			
+			input
+				position relative
+				z-index 1
+				max-width 100%
+				color #666666
+				font-size 17px
+				padding 3px 17px 3px 0
+				border-bottom 1px solid #ff7a08
+				
+			.hidden-area
+				position absolute
+				left -10000px
+				top 0
+				font-size 17px
+				line-height 23px
+				padding-right 17px
+				visibility hidden
+				opacity 0
+				
+.footer
+	background #312f2f
+	
+	&-nav
+		border-bottom 1px solid #494545
+		
+		&__list
+			max-width 1300px
+			font-size 0
+			text-align center
+			padding 19px 5px 16px
+			margin 0 auto
+			
+			a
+				display inline-block
+				color #fffefe
+				font-size 18px
+				line-height 26px
+				font-family 'Source Sans Pro', sans-serif
+				font-weight 600
+				padding 10px
+				margin 0 15px
+				
+				&:hover
+					text-decoration underline
+					
+	&-copy
+		color #a29696
+		font-size 15px
+		line-height 23px
+		font-family 'Source Sans Pro', sans-serif
+		border-top 1px solid #494545
+
+		&__row
+			clear both
+			overflow hidden
+			max-width 1300px
+			padding 36px 30px 40px
+			margin 0 auto
+			
+		&--text
+			float left
+			display block
+			
+		&--author
+			float right
+			display block
+			
+			img
+				display inline-block
+				margin -3px 0 3px 2px
+				
+	&__row
+		max-width 1300px
+		font-size 0
+		padding 23px 30px 26px
+		margin 0 auto
+		
+	&__lc
+		display inline-block
+		width 28.3%
+		min-height 145px
+		padding-right 30px
+		border-right 1px solid #494545
+		
+		img
+			width 100%
+			max-width 300px
+			height auto
+			margin-top 25px
+		
+	&__cc
+		display inline-block
+		width 624px
+		width calc(100% - 28.3% - 265px)
+		
+	&-contacts
+		display flex
+		max-width 575px
+		justify-content space-around
+		text-align center
+		padding 0 20px 0 10px
+		margin 24px auto 0
+		
+		&__item
+			max-width 240px
+			text-align left
+			padding 0 15px
+			
+			p
+				color #c0c0c0
+				font-size 15px
+				line-height 22px
+		
+		&--email
+			position relative
+			display inline-block
+			color #ffffff
+			font-size 15px
+			line-height 22px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight 600
+			padding-left 26px
+			margin -5px 0 13px
+			
+			&:before
+				content ''
+				position absolute
+				left 0
+				top 6px
+				width 16px
+				height 14px
+				background url('../img/header-email-icon.png')
+			
+			&:after
+				content ''
+				position absolute
+				left 26px
+				bottom 2px
+				width calc(100% - 26px)
+				border-bottom 1px solid colorOrange
+				transition opacity .2s ease
+				
+			&:hover
+				&:after
+					opacity 0
+		
+		&--phone_big
+			position relative
+			display block
+			color #ffffff
+			font-size 21px
+			line-height 24px
+			padding-left 26px
+			margin 0 0 11px
+			
+			&:before
+				content ''
+				position absolute
+				left 1px
+				top 2px
+				width 11px
+				height 17px
+				background url('../img/header-phone-icon.png')
+				
+		&--phone_small
+			display inline-block
+			color #c0c0c0
+			font-size 16px
+			line-height 22px
+			margin 0 0 0 26px
+
+	&__rc
+		display inline-block
+		width 265px
+		min-height 145px
+		padding-left 60px
+		border-left 1px solid #494545
+		
+	&__social
+		width calc(100% + 21px)
+		margin 25px 0 15px
+		
+		&--item
+			display inline-block
+			width 36px
+			height 36px
+			margin 0 20px 20px 0
+			border 1px solid #474747
+			background-repeat no-repeat
+			background-position 0 0
+			border-radius 50%
+			transition border-color .2s ease
+			
+			&:hover
+				border-color #616161
+				
+	&-payment
+		display table
+		width 100%
+		
+		&__row
+			display table-cell
+			vertical-align middle
+			
+		&--title
+			display inline-block
+			max-width 86px
+			color #a29595
+			font-size 14px
+			line-height 18px
+			margin-top -3px
+			
+		img
+			display inline-block
+			margin-left 15px
+			
+.vk-icon
+	background-image url('../img/vk-icon.png')
+	
+.fb-icon
+	background-image url('../img/fb-icon.png')
+	
+.ig-icon
+	background-image url('../img/ig-icon.png')
+	
+.ok-icon
+	background-image url('../img/ok-icon.png')
+			
+.category
+	margin 42px 0 46px
+	
+	&_index
+		margin 0 0 47px
+	
+	&__nav
+		position relative
+		font-size 0
+		margin 0
+		
+		&:after
+			content ''
+			position absolute
+			left 0
+			bottom 0
+			width 100%
+			border-bottom 3px solid #e3e3e3
+			
+		&--item
+			position relative
+			z-index 1
+			display inline-block
+			min-width 181px
+			color #828282
+			font-size 20px
+			line-height 26px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight bold
+			text-align center
+			padding 10px 20px 11px
+			margin 0 -1px 3px 0
+			border-top 5px solid #f1f1f1
+			background #f1f1f1
+			border-left 1px solid #e9e9e9
+			border-right 1px solid #e9e9e9
+			
+			&:first-child
+				min-width 180px
+				border-left-width 0
+			
+			&:last-child
+				min-width 180px
+				border-right-width 0
+				
+			&:hover
+				color #333333
+				
+			&.is-active
+				color #333333
+				padding-bottom 14px
+				margin-bottom 0
+				background-color #ffffff
+				border-top-color #ff8400
+				
+	&__content
+		background #ffffff
+		
+	&-tab
+		font-size 0
+		padding 40px 0 42px
+		
+		&__item
+			display inline-block
+			width 25%
+			padding 0 20px 0 40px
+			margin 0 0 64px
+			
+			&:nth-child(4n)
+				padding-right 20px
+				
+		&--pic
+			display block
+			max-width 200px
+			height 200px
+			margin 0 0 13px
+			
+		&--title
+			position relative
+			display inline-block
+			min-width 80px
+			font-size 22px
+			line-height 28px
+			font-family 'Source Sans Pro', sans-serif
+			padding 0 0 16px
+			margin 0 0 21px
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 0
+				width 80px
+				height 2px
+				background-color #ff8400
+				
+			&:hover
+				color colorOrange
+				
+		&__list
+			width calc(100% + 10px)
+			margin 0 0 13px
+			
+			li
+				font-size 14px
+				line-height 20px
+				margin 0 0 7px
+				
+			span
+				display inline-block
+				padding-right 8px
+				
+			sup
+				display inline-block
+				color #ff8400
+				font-size 13px
+				line-height 18px
+				vertical-align top
+				padding-right 8px
+				margin -2px 0 4px
+				
+			a:hover
+				span
+					text-decoration underline
+					
+		&--more
+			position relative
+			display inline-block
+			color #666666
+			font-size 13px
+			line-height 18px
+			margin 0 0 13px
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 1px
+				width 100%
+				border-bottom 1px dotted #ff8400
+				
+			&:hover
+				color #ff8400
+				
+		&_brands
+			padding 33px 0 20px
+			
+			& ^[-1]__item
+				width 16.66%
+				padding 0 0 0 40px
+				margin 0 0 31px
+				
+				&:nth-child(6n)
+					padding-right 40px
+					
+			.category-tab__list
+				width auto
+				
+	&-abc
+		position relative
+		padding 0 0 5px
+		margin 0 30px 23px 40px
+		
+		&:after
+			content ''
+			position absolute
+			left 0
+			bottom 0
+			width calc(100% - 10px)
+			border-bottom 1px solid #e8e8e8
+		
+		&__lang
+			font-size 0
+			margin 0 0 9px
+		
+			a
+				display inline-block
+				min-width 25px
+				color #333333
+				font-size 18px
+				line-height 24px
+				font-family 'Source Sans Pro', sans-serif
+				font-weight 600
+				text-align center
+				text-transform uppercase
+				padding 0 4px 1px
+				margin 0 10px 5px 0
+				
+				&:hover
+					color #ff8400
+				
+				&.is-active
+					color #ffffff
+					background #ff8400
+					
+					&:hover
+						color #ffffff
+
+.elem-country
+	overflow hidden
+	z-index 1
+	display block
+	width 66px
+	height 66px
+	border-radius 50%
+	border 8px solid #f0f0f0
+
+.elem-quantity
+	position relative
+	width 120px
+	height 48px
+	text-align center
+	padding 0 40px
+	border 2px solid #e8e8e8
+	
+	&--minus,
+	&--plus
+		position absolute
+		top 0
+		display block
+		width 40px
+		height 44px
+		cursor pointer
+		
+		&:before
+			content ''
+			position absolute
+			top 22px
+			width 12px
+			height 2px
+			background #000000
+			transition background-color .1s ease
+			
+		&:hover
+			&:before,
+			&:after
+				background-color colorOrange
+	
+	&--minus
+		left 0
+		&:before
+			left 17px
+			
+	
+	&--plus
+		right 0
+		&:before
+			right 17px
+			
+		&:after
+			content ''
+			position absolute
+			right 22px
+			top 17px
+			width 2px
+			height 12px
+			background #000000
+			
+	&--input
+		width 100%
+		font-size 20px
+		font-family 'Source Sans Pro', sans-serif
+		letter-spacing 1px
+		padding 9px 0 10px
+		text-align center
+		
+	&_sm
+		width 112px
+		height 42px
+		border-width 1px
+		
+		& ^[0]--minus
+		& ^[0]--plus
+			width 36px
+			height 40px
+			
+			&:before
+				margin-top -3px
+				
+		& ^[0]--minus
+			&:before
+				margin-left -3px
+				
+		& ^[0]--plus
+			&:before
+				margin-right -3px
+				
+			&:after
+				margin -3px -3px 0 0
+		
+		& ^[0]--input
+			font-size 16px
+			padding 9px 0 11px
+	
+.product
+	position relative
+	font-size 0
+	padding 37px 40px 41px
+	margin -29px 0 24px
+	background #ffffff
+	
+	&--print
+		position absolute
+		right 0
+		top -38px
+		color colorDark
+		font-size 15px
+		line-height 20px
+		transition color .1s ease
+		
+		&:after
+			content ''
+			display inline-block
+			width 20px
+			height 20px
+			margin 0 0 0 8px
+			background url('../img/print-icon.png') no-repeat 0 0
+		
+		&:hover
+			color #ff8400
+			
+	&__lc
+		display inline-block
+		width 40%
+		padding-right 60px
+		
+	&-gallery
+		position relative
+		max-width 370px
+		margin 0 0 50px
+		
+		.tip-icon
+			position absolute
+			right -45px
+			top 18px
+			
+		.elem-country
+			position absolute
+			left 0
+			bottom 0
+		
+		&__slider
+			&--item
+				height 370px
+				
+	&-preview
+		max-width 370px
+		padding 0 0 0 5px
+		margin 0 0 20px
+		
+		&__slider
+			position relative
+			width 255px
+			margin 0 auto
+			
+			&:before,
+			&:after
+				content ''
+				position absolute
+				top 0
+				z-index 5
+				height 100%
+				
+			&:before
+				left 0
+				width 10px
+				background linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%)
+				
+			&:after
+				right 0
+				width 5px
+				background linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+			
+			&--item
+				padding 0 5px 0 10px
+				
+				&.slick-current
+					.product-preview__slider--pic
+						border-color #ff8400
+				
+			&--pic
+				height 70px
+				cursor pointer
+				border 1px solid #e8e8e8
+		
+	&__rc
+		display inline-block
+		width 60%
+		
+		.title-h1
+			font-size 38px
+			line-height 45px
+			margin 9px 0 29px
+			
+	&__data
+		margin 0 0 27px
+		
+	&--code
+		display inline-block
+		font-size 15px
+		line-height 20px
+		margin 0 22px 0 0
+		
+	.elem--availability
+		display inline-block
+		margin -2px 0 -2px
+		
+	&-controls
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		padding 41px 20px 14px 20px
+		margin 0 0 34px
+		border 3px solid #f4f2f2
+		
+	&__price
+		display inline-block
+		min-width 193px
+		padding 0 9px 0 6px
+		margin -18px 0 0
+		
+		&--title
+			display inline-block
+			color #a5a5a5
+			font-size 15px
+			line-height 20px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight 600
+			letter-spacing 1px
+			text-transform uppercase
+			margin 0 14px 15px 0
+			
+		&--old
+			position relative
+			display inline-block
+			color #ff9267
+			font-size 17px
+			line-height 22px
+			white-space nowrap
+			padding 2px 5px 1px 8px
+			margin -4px 0 12px
+			border 1px solid #ff9267
+			border-right-width 0
+			
+			&:after
+				content ''
+				position absolute
+				right -6px
+				top 0
+				width 6px
+				height 27px
+				margin -1px 0 0
+				background url('../img/price-old-after.png') no-repeat 0 0
+				background-size 100% 100%
+			
+		&--current
+			display block
+			color #373737
+			font-size 32px
+			line-height 36px
+			font-weight 500
+			white-space nowrap
+			
+	&__counter
+		display inline-block
+		padding 0 5px 0 6px
+		
+	&-buy
+		display inline-block
+		width 223px
+		text-align center
+		padding 0 10px 0 6px
+		
+		&__buttons
+			position relative
+			height 48px
+			margin 0 0 12px
+			
+		&--item
+			position absolute
+			top 0
+			display inline-block
+			color #474747
+			font-size 15px
+			line-height 20px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight 600
+			text-transform uppercase
+			white-space nowrap
+			cursor pointer
+			padding 14px 10px 12px
+			border 1px solid #ff8400
+			border-radius 4px
+			transition width .2s ease
+			
+			&:before
+				content ''
+				width 0
+				display inline-block
+				transition width .2s ease, margin-right .2s ease, opacity .2s ease
+				opacity 0
+			
+			&_add
+				left 0
+				width 108px
+				color #fefefe
+				background #ff8400
+				
+				&:before
+					content ''
+					display inline-block
+					height 18px
+					background url('../img/basket-add-icon.png') no-repeat 50% 0
+					
+				&:hover
+					&:before
+						width 20px
+						margin-right 12px
+						opacity 1
+				
+				&.is-active
+					width 100%
+					z-index 1
+					background-color #66a841
+					border-color #66a841
+					
+					&:before
+						width 0
+						opacity 0
+						margin-right 0
+
+			&_one-click
+				right 0
+				width 94px
+				color #474747
+				background #ffffff
+				
+			&:hover
+				z-index 1
+				width 100%
+			
+		&--pay
+			display inline-block
+			color colorDark
+			font-size 15px
+			line-height 20px
+			font-family 'Source Sans Pro', sans-serif
+			padding 1px 13px 3px
+			background #ffedbe
+			border-radius 12px
+			transition background-color .2s ease
+			
+			&:hover
+				background-color #f2e1b6
+			
+	&__additional
+		display inline-block
+		min-width 127px
+		padding 0 5px 0 6px
+		
+		&--item
+			position relative
+			display block
+			color #555555
+			font-size 14px
+			line-height 18px
+			white-space nowrap
+			padding 3px 0 1px 31px
+			margin 0 0 4px
+			
+			&:before
+				content ''
+				position absolute
+				left 0
+				top 0
+				width 22px
+				height 22px
+				border 1px solid #ff8400
+				border-radius 3px
+				transition background-color .1s ease
+				
+			&:after
+				content ''
+				position absolute
+				height 16px
+				background-repeat no-repeat
+				background-position 0 0
+				background-size 100% 200%
+				
+			&_compare
+				&:after
+					left 4px
+					top 3px
+					width 14px
+					background-image url('../img/panel-compare-icon.png')
+			
+			&_favorite
+				&:after
+					left 3px
+					top 3px
+					width 16px
+					background-image url('../img/panel-favorite-icon.png')
+			
+			&:hover
+				color colorDark
+				
+			&.is-active
+				&:before
+					background-color #ff8400
+					
+				&:after
+					background-position 0 100%
+					
+	&-info
+		position relative
+		font-size 0
+		margin 0 40px 30px 30px
+		
+		&:before
+			content ''
+			position absolute
+			left 50%
+			top 0
+			width 1px
+			height 100%
+			background #f4f2f2
+		
+		&__item
+			display inline-block
+			width 50%
+			font-size 12px
+			padding 0 0 0 45px
+			
+			&:first-child
+				padding 0 40px 0 0
+				
+		&--title
+			display inline-block
+			color #a5a5a5
+			font-size 15px
+			line-height 20px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight 600
+			text-transform uppercase
+			letter-spacing 1px
+			padding 2px 0 5px
+			margin 0
+			border-bottom 1px solid transparent
+			
+			&_compatibility
+				&:before
+					content ''
+					display inline-block
+					width 27px;
+					height 17px
+					margin 1px 12px 0 0
+					background url('../img/info-compatibility-icon.png') no-repeat 0 0
+			
+			&_delivery
+				&:before
+					content ''
+					display inline-block
+					width 25px;
+					height 18px
+					margin 1px 10px 0 0
+					background url('../img/info-delivery-icon.png') no-repeat 0 0
+			
+			&_droppable
+				cursor pointer
+				border-bottom-color #f4f2f2
+				
+				&:after
+					content ''
+					display inline-block
+					width 11px
+					height 6px
+					margin 7px 0 0 12px
+					background url('../img/droppable-icon.png') no-repeat 0 0
+					transform rotate(180deg)
+					
+				&.is-active
+					&:after
+						transform rotate(0)
+				
+				& + ^[1]__content
+					display none
+				
+				&.is-active + ^[1]__content
+					display block
+				
+		&__content
+			padding 18px 0 2px
+				
+		&--list
+			margin 0 0 -10px
+			li
+				font-size 14px
+				line-height 20px
+				margin 0 0 10px
+		
+		&--more
+			position relative
+			display inline-block
+			color #666666
+			font-size 13px
+			line-height 18px
+			margin 14px 0 0
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 1px
+				width 100%
+				border-bottom 1px dotted #ff8400
+				transition opacity .1s ease
+				
+			&:hover
+				&:after
+					opacity 0
+		
+	&-delivery
+		margin -4px 0 -7px
+		
+		&__item
+			position relative
+			display table
+			width 100%
+			margin 0 0 7px
+			
+			&.is-active ^[1]--text
+				transform translateX(0)
+				visibility visible
+				opacity 1
+			
+		&__lc
+			display table-cell
+			width 120px
+			
+		&--logo
+			display block
+			width 120px
+			height 44px
+			cursor pointer
+			border 1px solid #dddddd
+			border-radius 4px
+			
+		&__rc
+			display table-cell
+			padding-left 15px
+			
+		&--text
+			display block
+			color #646363
+			font-size 14px
+			line-height 20px
+			transform translateX(10px)
+			opacity 0
+			visibility hidden
+			transition opacity .4s ease, transform .4s ease
+			
+	&-tabs
+		margin -24px 0 24px
+		background #ffffff
+		
+		&__nav
+			position relative
+			font-size 0
+			padding-right 1px
+			
+			&:before
+				content ''
+				position absolute
+				left 0
+				top 0
+				width 100%
+				height 5px
+				background #75c9ea
+				
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 0
+				width 100%
+				height 1px
+				background #e9e9e9
+				
+			&--item
+				position relative
+				z-index 1
+				display inline-block
+				color #828282
+				font-size 20px
+				line-height 24px
+				font-family 'Source Sans Pro', sans-serif
+				font-weight 600
+				white-space nowrap
+				padding 5px 0 0
+				margin 0 -1px 0 0
+				
+				&:hover,
+				&.is-active
+					color #333333
+					
+				&.is-active
+					&:before
+						content ''
+						position absolute
+						left 0
+						top 0
+						width 100%
+						height 5px
+						background #ff8400
+					
+				span
+					position relative
+					display block
+					padding 15px 30px 19px
+				
+				&.is-active
+					background #ffffff
+					
+					span
+						&:before
+						&:after
+							content ''
+							position absolute
+							top 0
+							width 1px
+							height 100%
+							background #e9e9e9
+							
+						&:before
+							left 0
+							
+						&:after
+							right 0
+							
+					&:first-child
+						span
+							&:before
+								display none
+
+		.reviews
+			margin -38px 0 36px
+
+		&__content
+			padding 36px 48px 11px
+			
+			> *
+				transition transform .3s ease, opacity .3s ease
+				transform translateY(15px)
+				opacity 0
+				
+								
+		&__slider
+			.slick-slide.slick-current
+				> *
+					transform translateY(0)
+					opacity 1
+
+	&-description
+		&__group
+			margin 0 0 50px
+			
+		&--title
+			display block
+			color #332f2f
+			font-size 25px
+			line-height 30px
+			font-family 'Source Sans Pro', sans-serif
+			margin 0 0 24px
+			
+		p
+			max-width 770px
+			color #363636
+			font-size 14px
+			line-height 20px
+			margin 0 0 20px
+			
+	&-table
+		display table
+		margin 38px 0 -24px
+		
+		&__row
+			display table-row
+			font-size 14px
+			line-height 20px
+			
+		&--title
+			position relative
+			display table-cell
+			width 312px
+			max-width 312px
+			color #303030
+			font-weight 500
+			vertical-align bottom
+			padding 0 30px 24px 0
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 30px
+				width 100%
+				border-bottom 1px dotted #cdcdcd
+			
+			span
+				position relative
+				z-index 1
+				display inline-block
+				padding-right 4px
+				background #ffffff
+				
+		&--text
+			display table-cell
+			color #363636
+			vertical-align bottom
+			padding 0 0 24px 4px
+			
+	&-brand
+		display table
+		margin 43px 0 0
+		
+		&--logo
+			display table-cell
+			padding 3px 34px 20px 0
+			
+			img 
+				width 100%
+				max-width 175px
+				height auto
+				
+		&__content
+			display table-cell
+			max-width 600px
+			
+			p
+				color #363636
+				font-size 14px
+				line-height 20px
+				margin 0 0 20px
+
+	&-characteristics
+		max-width 630px
+		margin 4px 0 70px
+		
+		&--title
+			display block
+			color #332f2f
+			font-size 20px
+			line-height 26px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight 600
+			margin 0 0 21px
+			
+		ul
+			margin 0 0 39px 21px
+			
+			li
+				position relative
+				font-size 14px
+				line-height 20px
+				padding-left 24px
+				margin 0 0 20px
+				
+				&:before
+					content ''
+					position absolute
+					left 0
+					top 6px
+					width 8px
+					height 8px
+					background #ff7a08
+		
+		p
+			font-size 14px
+			line-height 20px
+			margin 0 0 20px
+			
+	&-articles
+		margin 4px 0 32px
+		
+		&__grid
+			width calc(100% + 38px)
+			font-size 0
+			margin 0 0 0 -19px
+			
+		&__item
+			display inline-block
+			width 33.33%
+			padding 0 19px
+			margin 0 0 28px
+		
+	&-docs
+		margin 11px 0 70px
+		
+		&__list
+			margin 0 0 20px
+		
+			&--item
+				display table
+				margin 0 0 14px
+				
+				&:hover
+					text-decoration underline
+				
+			&--icon
+				display table-cell
+				width 52px
+				vertical-align middle
+				padding 0 20px 0 0
+				
+			&--text
+				display table-cell
+				font-size 14px
+				line-height 20px
+				vertical-align middle
+				padding 6px 0 0
+				
+	&-form
+		margin 8px 0 70px
+		
+	&-set
+		padding 16px 40px 8px
+		margin -24px 0 24px
+		background #ffffff
+		border-top 5px solid #75c9ea
+		
+		&--title
+			display block
+			font-size 25px
+			line-height 30px
+			font-family 'Source Sans Pro', sans-serif
+			margin 0 10px 20px
+			
+		&__grid
+			display flex
+			width calc(100% + 48px)
+			font-size 0
+			margin 0 0 0 -24px
+			
+		&__item
+			position relative
+			display inline-block
+			width 254px
+			padding 17px 24px 6px 23px
+			margin 0 0 20px
+			border-left 1px solid #e9e9e9
+			
+			&:before
+				content ''
+				position absolute
+				left -1px
+				top 110px
+				width 1px
+				height 27px
+				background #ffffff
+				
+			&:after
+				content ''
+				position absolute
+				left -9px
+				top 114px
+				width 17px
+				height 17px
+				background url('../img/set-plus-icon.svg') no-repeat 0 0
+			
+			&:first-child
+				border-left-color transparent
+				
+				&:before,
+				&:after
+					display none
+					
+			&--pic
+				display block
+				width 132px
+				height 132px
+				margin 0 auto 15px
+			
+		&__content
+			position relative
+			padding-left 41px
+			
+			.checker
+				position absolute
+				left 0
+				top 3px
+				
+			.checker,
+			.checker span,
+			input
+				width 26px
+				height 26px
+				
+			.checker span
+				border 3px solid #75c9ea
+				
+			.checker span.checked:before
+				left 3px
+				top 4px
+				width 14px
+				height 12px
+				background-image url('../img/checker-icon-big.png')
+				
+			&--title
+				display block
+				font-size 14px
+				line-height 20px
+				
+				&:hover
+					text-decoration underline
+					
+			&--price
+				display block
+				font-size 17px
+				line-height 21px
+				font-weight bold
+				margin 16px 0 0
+				
+		&__total
+			position relative
+			display inline-block
+			padding 106px 24px 0 50px
+			margin 0 0 20px 24px
+			
+			&:before,
+			&:after
+				content ''
+				position absolute
+				left 0
+				top 119px
+				width 17px
+				height 3px
+				margin-left -8px
+				background #d1d1d1
+				
+			&:after
+				margin-top 6px
+				
+			&--discount
+				margin -41px 0 14px
+			
+				span
+					position relative
+					display inline-block
+					color #ff9267
+					font-size 15px
+					line-height 20px
+					font-family 'Source Sans Pro', sans-serif
+					padding 2px 9px 3px 9px
+					border 1px solid #ff9267
+					border-right-width 0
+					
+					&:after
+						content ''
+						position absolute
+						right -6px
+						top -1px
+						width 6px
+						height 27px
+						background url("../img/price-old-after.png") no-repeat 0 0
+						background-size 100% 100%
+				
+			&--price
+				display block
+				color #373737
+				font-size 32px
+				line-height 36px
+				font-weight 500
+				margin 0 0 17px
+				
+			&--button
+				min-width 220px
+				color #ffffff
+				font-size 15px
+				line-height 20px
+				font-family 'Source Sans Pro', sans-serif
+				font-weight bold
+				letter-spacing 1px
+				text-transform uppercase
+				cursor pointer
+				padding 11px 20px
+				background #ff8400
+				border-radius 4px
+				transition background-color .2s ease
+				
+				&:before
+					content ''
+					display inline-block
+					width 16px
+					height 14px
+					margin 3px 8px 0 0
+					background url('../img/item-basket-icon.png') no-repeat 0 0
+				
+				&:hover
+					background-color #e57700
+		
+		&_basket
+			padding-right 30px
+			margin 0 0 20px
+			border-top 4px solid #ffffff
+			
+			& ^[1]
+			
+				&__grid
+					width calc(100% + 31px)
+					margin-left -16px
+	
+				&--title
+					margin-bottom 15px
+
+				&__item
+					width 220px
+					padding 22px 15px 26px
+					margin 0
+					
+					&:before
+						margin-top 18px
+					
+					&:after
+						margin-top 18px
+					
+					&--pic
+						width 120px
+						height 120px
+						margin 0 auto 13px
+						
+				&__content
+					padding-left 40px
+					
+					.checker
+						top 5px
+					
+					&--title
+						font-size 15px
+						line-height 21px
+						font-family 'Source Sans Pro', sans-serif
+						
+					&--price
+						margin-top 15px
+		
+				&__total
+					padding 124px 15px 0 32px
+					margin 0 0 0 12px
+					
+					&:before
+						margin-top 16px
+						
+					&:after
+						margin-top 22px
+				
+					&--price
+						font-size 24px
+						line-height 30px
+						margin 0 0 14px
+						
+					&--button
+						min-width 200px
+						font-size 15px
+						line-height 20px
+						font-weight 600
+						padding 7px 15px 9px
+						
+						&:before
+							display none
+
+.item-article
+	display block
+	
+	&--date
+		position absolute
+		right 14px
+		top 15px
+		display block
+		font-size 15px
+		line-height 20px
+		font-family 'Source Sans Pro', sans-serif
+		padding 2px 10px
+		background #75c9ea
+		border-radius 3px
+	
+	&--pic
+		position relative
+		height 240px
+		margin 0 0 18px
+		
+	&--title
+		display block
+		font-size 17px
+		line-height 23px
+		font-family 'Source Sans Pro', sans-serif
+		margin 0 0 10px
+		
+	&:hover
+		& ^[0]--title
+			color #ff8400
+				
+.icons
+	display block
+	background-repeat no-repeat
+	background-position 0 0
+	
+	&_download
+		width 29px
+		height 35px
+		background-image url('../img/download-icon.png')
+		
+.form
+	margin 0 0 30px
+	
+	&__item
+		font-size 0
+		margin 0 0 30px
+		
+		&--label
+			display inline-block
+			width 84px
+			
+			label
+				display table
+				width 100%
+				
+				span
+					display table-cell
+					height 38px
+					color #939393
+					font-size 13px
+					line-height 16px
+					vertical-align middle
+					padding 2px 0 0
+					
+		&--input
+			display inline-block
+			width calc(100% - 84px)
+			
+			input,
+			textarea
+				width 100%
+				max-width 260px
+				color #303030
+				font-size 13px
+				padding 11px 18px 10px
+				background #ffffff
+				border 1px solid #c6c5c4
+				border-radius 4px
+				
+				&:focus
+					border-color #75c9ea
+				
+			textarea
+				max-width 642px
+				
+	&--agreement
+		margin 0 0 28px 84px
+		
+		label
+			position relative
+			display inline-block
+			font-size 14px
+			line-height 20px
+			padding 2px 0 0 34px
+			
+			.checker
+				position absolute
+				left 0
+				top 0
+	
+	&__controls
+		margin 0 0 30px 84px
+		
+	&--button
+		min-width 180px
+		color #ffffff
+		font-size 15px
+		line-height 20px
+		font-family 'Source Sans Pro'
+		text-transform uppercase
+		letter-spacing 1px
+		cursor pointer
+		padding 11px 20px
+		background #ff8400
+		border-radius 4px
+		transition background-color .2s ease
+		
+		&:hover
+			background-color #e57700
+
+.same
+	overflow hidden
+	width 1310px
+	width calc(100% + 30px);
+	padding 30px 15px 0
+	margin 0 0 4px -15px
+	
+	&_index
+		margin-bottom 33px
+	
+	&--title
+		position relative
+		display block
+		color colorDark
+		font-size 35px
+		line-height 44px
+		font-family 'Source Sans Pro', san-serif
+		font-weight 600
+		padding 0 50px 15px
+		margin 0 0 25px
+		border-bottom 5px solid #75c9ea
+		
+		&_no-border
+			padding-bottom 0
+			border-bottom-width 0
+		 
+		span
+			display inline-block
+			font-size 20px
+			line-height 24px
+			font-weight 300
+			margin 15px 0 -5px 35px
+			
+			&:before
+				content '/'
+				color #75c9ea
+				padding-right 20px
+				
+	&__slider
+		position relative
+		z-index 1
+		display flex
+		width 1281px
+		width calc(100% + 1px)
+		font-size 0
+		margin 0 0 20px
+		
+		.slick-prev,
+		.slick-next
+			position absolute
+			top -79px
+			width 37px
+			height 29px
+			cursor pointer
+			background transparent
+			
+			&:before
+				content ''
+				position absolute
+				top 5px
+				width 26px
+				height 19px
+				background-image url('../img/same-arrows.png')
+				background-repeat no-repeat
+				background-size 200% 200%
+				transition background-position .3s ease
+			
+		.slick-prev
+			right 72px
+			&:before
+				left 5px
+				background-position 0 0
+				
+			&:hover
+				&:before
+					background-position 100% 0
+				
+		.slick-next
+			right 36px
+			&:before
+				right 5px
+				background-position 100% 100%
+				
+			&:hover
+				&:before
+					background-position 0 100%
+		
+		&.remove-hidden
+			&:after 
+				display none
+
+			.slick-list
+				overflow visible
+				
+				.slick-slide:not(.slick-active)
+					visibility hidden
+					opacity 0
+			
+		&:after
+			content ''
+			position absolute
+			right 0
+			top 0
+			width 1px
+			height 100%
+			background #f8f8f8
+		
+	&__item
+		position relative
+		display inline-block
+		width 25%
+		background #ffffff
+		border-right 1px solid #e9e9e9
+		
+		&:hover
+			z-index 5
+			
+	&--more
+		text-align center
+		margin 30px 0 0
+		
+		a
+			position relative
+			display inline-block
+			color colorDark
+			font-size 17px
+			line-height 23px
+			font-family 'Source Sans Pro' , sans-serif
+			font-weight 600
+			padding 0 0 3px
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 0
+				width 100%
+				border-bottom 1px solid #ff8400
+				transition border-bottom-color .1s ease
+				
+			&:hover
+				&:after
+					border-bottom-color transparent
+			
+.button-back
+	text-align center
+	margin 38px 0 46px
+	
+	a
+		display inline-block
+		color colorDark
+		font-size 17px
+		line-height 23px
+		font-family 'Source Sans Pro', sans-serif
+		font-weight 600
+		padding 0 0 2px
+		border-bottom 1px solid #ff8400
+		transition border-bottom .1s ease
+			
+		&:hover
+			border-bottom-color transparent
+		
+		&:before
+			content ''
+			display inline-block
+			width 24px
+			height 17px
+			margin 0 11px 0 0
+			background url('../img/back-icon.png') no-repeat 0 0
+			
+.certificate
+	margin 0 0 51px
+	
+	&__row
+		display flex
+		justify-content space-around
+		align-items center
+		font-size 0
+		text-align center
+		padding 45px 25px 35px
+		margin 25px 0 30px
+		background #ffffff
+		
+	&__item
+		display inline-block
+		width 20%
+		padding 0 15px
+		margin 0 0 30px
+		
+		a
+			position relative
+			display inline-block
+			
+			&:before
+				content ''
+				position absolute
+				left 1px
+				top 1px
+				width calc(100% - 2px)
+				height calc(100% - 2px)
+				border 0 solid #ff8400
+				opacity 0
+				transition all .2s ease
+				
+			&:hover
+				&:before
+					left -3px
+					top -3px
+					width calc(100% + 6px)
+					height calc(100% + 6px)
+					border-width 4px
+					opacity 1
+			
+		img
+			max-width 100%
+			height auto
+			box-shadow 0 4px 8px rgba(0, 0, 0, 0.17)
+			
+.clients
+	margin 0 0 60px
+	
+	&__row
+		display flex
+		justify-content space-around
+		align-items center
+		font-size 0
+		text-align center
+		padding 45px 25px 22px
+		margin 48px 0 30px
+		background #ffffff
+		
+	&__item
+		display inline-block
+		width 16.66%
+		padding 0 15px
+		margin 0 0 30px
+		
+		img
+			max-width 100%
+			height auto
+			filter url('../img/filters.svg#grayscale')
+			filter grayscale(1)
+			opacity 0.8
+			transition all .3s ease
+		
+			&:hover
+				filter none
+				filter grayscale(0)
+				opacity 1
+				
+.audience
+	position relative
+	font-size 12px
+	padding 31px 47px 28px
+	margin 0 0 26px
+	background #ffffff
+	
+	&:before,
+	&:after
+		content ''
+		position absolute
+		top 0
+		z-index 5
+		width 15px
+		height 100%
+		
+	&:before
+		left 47px
+		background linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
+		
+	&:after
+		right 47px
+		background linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+		
+	.slick-prev,
+	.slick-next
+		position absolute
+		top 50%
+		z-index 10
+		width 32px
+		height 32px
+		cursor pointer
+		margin-top -16px
+		background #e7e7e7
+		border-radius 50%
+		transition background-color .2s ease
+		
+		&:hover
+			background-color colorOrange
+		
+		&:before
+			content ''
+			position absolute
+			left 50%
+			top 50%
+			width 20px
+			height 15px
+			margin -7px 0 0 -10px
+			background-image url('../img/audience-arrows.png')
+			background-repeat no-repeat
+			background-size 200% 100%
+		
+	.slick-prev
+		left 20px
+
+		&:before
+			background-position 0 0
+		
+	.slick-next
+		right 20px
+
+		&:before
+			background-position 100% 0
+	
+	.slick-track
+		display flex
+		align-items center
+	
+	&__item
+		font-size 0
+		text-align center
+		padding 0 15px
+		
+	&--title
+		display inline-block
+		font-size 20px
+		line-height 24px
+		font-family 'Source Sans Pro', sans-serif
+		font-weight 600
+		padding 0 0 2px
+		
+	&-content
+		display flex
+		justify-content center
+		align-items center
+			
+	&--icon
+		display inline-block
+		margin-right 20px
+		background-repeat no-repeat
+		background-position 0 0
+		
+		&_burger
+			width 60px
+			height 49px
+			background-image url('../img/a-burger-icon.png')
+		
+		&_pizza
+			width 61px
+			height 61px
+			background-image url('../img/a-pizza-icon.png')
+		
+		&_plate
+			width 62px
+			height 51px
+			background-image url('../img/a-plate-icon.png')
+		
+		&_dinner
+			width 62px
+			height 48px
+			background-image url('../img/a-dinner-icon.png')
+		
+		&_bakery
+			width 54px
+			height 52px
+			background-image url('../img/a-bakery-icon.png')
+
+.intro
+	margin 30px 0 0
+	
+	&__row
+		position relative
+		height 520px
+		
+	&__item
+		position absolute
+		
+		&_big
+			left 0
+			top 0
+			width 65.625%
+			height 500px
+			height calc(100% - 20px)
+		
+		&_small
+			right 0
+			width 32.8125%
+			width calc(34.375% - 20px)
+			height 240px
+			height calc(50% - 20px)
+			
+			&-1
+				top 0
+			
+			&-2
+				top 50%
+				
+		&_slider
+			.slick-prev,
+			.slick-next
+				position absolute
+				bottom 19px
+				z-index 5
+				width 38px
+				height 31px
+				cursor pointer
+				background none
+				
+				&:before,
+				&:after
+					content ''
+					position absolute
+					left 6px
+					top 6px
+					width 26px
+					height 19px
+					background-image url('../img/intro-arrows.png')
+					background-repeat no-repeat
+					background-size 200% 200%
+					transition opacity .2s ease
+					
+				&:after
+					opacity 0
+					
+				&:hover
+					&:before
+						opacity 0
+						
+					&:after
+						opacity 1
+					
+			.slick-prev
+				right 60px
+				
+				&:before
+					background-position 0 0
+					
+				&:after
+					background-position 100% 0
+					
+			.slick-next
+				right 22px
+				
+				&:before
+					background-position 100% 100%
+					
+				&:after
+					background-position 0 100%
+			
+			& ^[-2]-elem
+				position relative
+			
+	&-elem
+		overflow hidden
+		position absolute
+		left 0
+		top 0
+		display block
+		width 100%
+		height 100%
+		color #ffffff
+		font-family 'Source Sans Pro', sans-serif
+		background #ffffff
+		
+		&:after
+			content ''
+			position absolute
+			left -4px
+			top -4px
+			width calc(100% + 8px)
+			height calc(100% + 8px)
+			border 4px solid #ff7a08
+			transition all .2s linear
+			opacity 0
+			
+		&:hover
+			&:after
+				left 0
+				top 0
+				width 100%
+				height 100%
+				opacity 1
+
+		&--bg
+			position absolute
+			left 0
+			top 0
+			width 100%
+			height 100%
+			transition opacity .2s linear
+			
+		&:hover
+			& ^[1]--bg
+				opacity 0.95
+
+			&_green
+				&:before
+					content ''
+					position absolute
+					left 0
+					top 0
+					width 100%
+					height 100%
+					background #00901d
+					opacity 0.6
+					
+		&--event
+			position absolute
+			left 0
+			bottom 0
+			z-index 1
+			display block
+			font-size 20px
+			line-height 27px
+			font-size 20px
+			line-height 27px
+			font-weight 600
+			padding 0 25px 38px
+			
+		&--logo-s
+			position absolute
+			left 24px
+			top 20px
+			z-index 2
+			max-width calc(100% - 48px)
+			
+			img
+				max-width 100%
+				height auto
+				
+		&__content-s
+			position absolute
+			left 0
+			bottom 0
+			z-index 1
+			padding 0 25px 24px
+			
+			&--special
+				display block
+				font-size 16px
+				line-height 22px
+				font-weight 600
+				margin 0 0 4px
+				
+			&--discount
+				display block
+				font-size 32px
+				line-height 38px
+				font-weight bold
+				margin 0 0 6px
+			
+			&--title
+				display block
+				font-size 16px
+				line-height 22px
+				margin 0 0 4px
+			
+		&--logo-b
+			position absolute
+			right 31px
+			top 33px
+			z-index 2
+			max-width calc(100% - 62px)
+			
+			img
+				max-width 100%
+				height auto
+				
+		&__content-b
+			position absolute
+			left 0
+			top 0
+			z-index 1
+			padding 35px 50px 0
+			
+			&--model
+				display block
+				font-size 42px
+				line-height 46px
+				font-weight bold
+				letter-spacing 1px
+				text-transform uppercase
+				margin 0 0 13px
+				
+			&--title
+				display block
+				font-size 22px
+				line-height 28px
+				margin 0 0 10px
+
+		&--icon
+			display inline-block
+			font-size 18px
+			line-height 24px
+			padding 4px 13px 4px 14px
+			margin 0 0 16px
+			
+			&_orange
+				background-color #ff510b
+
+.fade-bg
+	position fixed
+	left 0
+	top 0
+	z-index 1010
+	width 100%
+	height 100%
+	background rgba(0,0,0,0.6)
+	transition opacity .3s ease, visibility .3s ease
+	opacity 0
+	visibility hidden
+	
+	&.is-opened
+		opacity 1
+		visibility visible
+	
+.modal
+	position absolute
+	top 0
+	left 50%
+	z-index 1010
+	background #ffffff
+	box-shadow 0 0 10px rgba(36, 36, 36, 0.18)
+	transition opacity .3s ease, transform .3s ease, visibility .3s ease
+	transform translateY(15px)
+	opacity 0
+	visibility hidden
+
+	&.is-opened
+		transform translateY(0)
+		opacity 1
+		visibility visible
+	
+	&--close 
+		position absolute
+		right 17px
+		top 17px
+		display block
+		width 30px
+		height 30px
+		cursor pointer
+		background url('../img/modal-close.png') no-repeat 0 0
+		border-radius 50%
+	
+	&_buy
+		width 490px
+		padding 42px 30px 30px
+		margin-left -245px
+		
+	&__content
+		padding 0 20px 12px
+		
+		&--title
+			display block
+			font-size 28px
+			line-height 32px
+			font-family 'Source Sans Pro', sans-serif
+			margin 0 0 32px
+			
+	&__item
+		position relative
+		min-height 65px
+		padding-left 82px
+		margin 0 0 10px
+		
+		&--pic
+			position absolute
+			left 0
+			top -1px
+			width 65px
+			height 65px
+			padding 5px
+			border 1px solid #e8e8e8
+			
+			span 
+				display block
+				height 53px
+			
+		&--code
+			display block
+			color #868686
+			font-size 13px
+			line-height 16px
+			margin 0 0 5px
+			
+		&--title
+			display block
+			font-size 14px
+			line-height 20px
+			margin 0 0 11px
+			
+		&--price
+			font-size 16px
+			line-height 21px
+			font-weight 500
+			margin 0 0 10px
+			
+			span
+				display inline-block
+				color #ff592a
+				font-size 15px
+				font-weight normal
+				text-decoration line-through
+				margin 1px 4px -1px 0
+				
+	&__form
+		font-size 0
+		border-top 2px solid #75c9ea
+		padding 21px 20px 10px
+		
+		&--title
+			display block
+			font-size 18px
+			line-height 24px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight bold
+			margin 0 0 25px
+			
+		&--item
+			position relative
+			padding-left 85px
+			margin 0 0 30px
+			
+			label
+				position absolute
+				left 0
+				top 0
+				display table
+				width 65px
+				
+				span 
+					display table-cell
+					height 38px
+					color #939393
+					font-size 13px
+					line-height 16px
+					vertical-align middle
+					padding 2px 0 0
+					
+			input,
+			textarea
+				width 100%
+				color #303030
+				font-size 13px
+				padding 11px 18px 10px
+				background #ffffff
+				border 1px solid #c6c5c4
+				border-radius 4px
+				
+				&:focus
+					border-color #75c9ea
+			
+		&--agreement 
+			position relative
+			display inline-block
+			font-size 14px
+			line-height 20px
+			width calc(100% - 150px)
+			padding 2px 25px 2px 34px
+			margin 5px 0 25px
+			
+			.checker 
+				position absolute
+				left 0 
+				top 0
+				
+		&--button
+			display inline-block
+			width 150px
+			color #ffffff
+			font-size 15px
+			line-height 20px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight bold
+			letter-spacing 1px
+			text-transform uppercase
+			cursor pointer
+			padding 12px 20px
+			margin 5px 0 25px
+			background #ff8400
+			border-radius 4px
+			transition background-color .2s ease
+			
+			&:hover
+				background-color #e57700
+				
+.basket
+	display table
+	width 100%
+	padding 14px 0 11px
+	margin 0 0 20px
+	background #ffffff
+	
+	a
+		&:hover
+			text-decoration underline
+	
+	&__row
+		display table-row
+		
+		&:last-child
+			& ^[0]__cell
+				border-bottom-color #ffffff
+		
+	&__cell
+		display table-cell
+		vertical-align middle
+		padding 13px 30px 13px 0
+		border-bottom 1px solid #e9e9e9
+		
+		&:first-child
+			padding-left 30px
+			
+		&_photo
+			width 8.5%
+			min-width 106px
+			
+		&_code
+			width 10.7%
+			color #868686
+			font-size 14px
+			line-height 20px
+			white-space nowrap
+			padding-top 15px
+			
+		&_title
+			font-size 15px
+			line-height 20px
+		
+		&_quantity
+			width 142px
+			
+		&_price
+			position relative
+			width 1%
+			font-size 16px
+			line-height 21px
+			font-weight bold
+			text-align right
+			white-space nowrap
+			padding-left 31px
+			
+			&:before
+				content ''
+				position absolute
+				top 50%
+				left 0
+				width 1px
+				height 42px
+				margin-top -21px
+				background #e9e9e9
+			
+		&_remove
+			width 11.4%
+			text-align center
+			padding-top 15px
+			
+	&--photo
+		width 46px
+		height 46px
+		margin -2px auto -2px
+		
+	&--remove
+		color #939393
+		font-size 13px
+		line-height 20px
+		
+.basket-complect
+	display flex
+	font-size 0
+	margin 0 0 6px
+	
+	.product-set
+		display inline-block
+		width 956px
+		width calc(100% - 324px)
+		
+	&__total
+		display inline-block
+		width 304px
+		padding 25px 29px 13px
+		margin 0 0 20px 20px
+		background #ffffff
+		border 1px solid #dddddd
+		
+		&--title
+			display block
+			color #373737
+			font-size 30px
+			line-height 36px
+			font-weight 500
+			margin 0 10px 25px
+			
+			span
+				display block
+				color #949494
+				font-size 18px
+				line-height 24px
+				font-family 'Source Sans Pro', sans-serif
+				margin 0 0 2px
+				
+		&--order
+		&--save
+			display block
+			width 100%
+			font-size 15px
+			font-family 'Source Sans Pro', sans-serif
+			cursor pointer
+			margin 0 0 12px
+			border-radius 4px
+
+		&--order
+			color #ffffff
+			line-height 22px
+			font-weight 600
+			text-transform uppercase
+			letter-spacing 1px
+			padding 19px
+			background #ff8400
+			transition background-color 0.2s ease
+			
+			&:hover
+				background-color #e57700
+				
+		&--save
+			color #333333
+			line-height 15px
+			font-weight 600
+			padding 10px 19px 12px
+			background transparent
+			border 2px solid #ff7a08
+			transition border-color 0.2s ease
+			
+			&:hover
+				border-color #e57700
+				
+.user
+	font-family 'Source Sans Pro', sans-serif
+	padding 29px 29px 0
+	background #ffffff
+	border 1px solid #dddddd
+
+	.user__about
+		padding 0 0 21px
+		margin 0 0 6px
+		border-bottom 2px solid #75c9ea
+		
+	&--name
+		display block
+		color colorDark
+		font-size 22px
+		line-height 25px
+		font-weight bold
+		padding 0
+		margin 0 0 9px
+	
+	&--contact
+		display block
+		font-size 15px
+		line-height 20px
+		margin 0 0 3px
+		
+	&__nav
+		a
+			display block
+			font-size 17px
+			line-height 24px
+			padding 18px 0 21px
+			border-bottom 1px solid #dadada
+			
+			&:last-child
+				border-bottom-width 0
+			
+			&.is-active
+			&:hover
+				color #ff8400
+				
+.blog
+	margin 0 0 40px
+	
+	.title-h2
+		margin-bottom 46px
+
+	&__row
+		font-family 'Source Sans Pro', sans-serif
+		padding 38px 50px 21px
+		background #ffffff
+		
+	&-nav
+		display flex
+		justify-content space-between
+		font-size 0
+		width 1202px
+		width calc(100% + 22px)
+		margin -12px 0 40px -11px
+		
+		&--button
+			display inline-block
+			min-width 210px
+			color #ffffff
+			font-size 16px
+			line-height 22px
+			font-family 'Source Sans Pro', sans-serif
+			font-weight 600
+			letter-spacing 1px
+			text-transform uppercase
+			cursor pointer
+			padding 9px 19px 11px
+			margin 3px -9px -2px 11px
+			background #ff8400
+			border-radius 4px
+			transition background-color 0.2s ease, opacity .3s ease, visibility .3s ease
+			opacity 0
+			visibility hidden
+			
+			&.is-visible
+				opacity 1
+				visibility visible
+			
+			&:hover
+				background-color #e57700
+		
+		&__links
+			display inline-block
+		
+		a
+			position relative
+			display inline-block
+			color #828282
+			font-size 20px
+			line-height 23px
+			font-weight bold
+			padding 10px 0
+			margin 0 11px
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 0
+				width 100%
+				height 4px
+				background #ff8400
+				opacity 0
+			
+			&:hover
+				color #ff8400
+				
+			&.is-active
+				color #332e2e
+				
+				&:after
+					opacity 1
+
+				&:hover
+					color #332e2e
+					
+	&-slider
+		width 1280px
+		width calc(100% + 100px)
+		margin-left -50px
+		
+		&__item
+			padding 0 50px
+					
+	&__grid
+		font-size 0
+		width 1218px
+		width calc(100% + 38px)
+		margin 0 0 0 -19px
+		
+	&__item
+		display inline-block
+		width 33.33%
+		padding 0 20px
+		margin 0 0 40px
+		
+.item-blog
+	display block
+	padding 0 0 10px
+	
+	&--pic
+		position relative
+		height 240px
+		margin 0 0 18px
+		
+	&--date
+		position absolute
+		right 14px
+		top 15px
+		display block
+		font-size 15px
+		line-height 20px
+		padding 2px 9px 2px 14px
+		background #75c9ea
+		border-radius 3px
+		
+	&--title
+		display block
+		font-size 17px
+		line-height 23px
+		margin 0
+		
+	&:hover
+		& ^[0]--title
+			color #ff8400
+			
+.article
+	font-family 'Source Sans Pro', sans-serif
+	padding 69px 50px 55px
+	margin 0 0 50px
+	background #ffffff
+	
+	&__grid
+		width calc(100% + 40px)
+		font-size 0
+		margin 0 0 0 -20px
+		
+	&--date
+		display block
+		margin -44px 0 17px
+		
+		span
+			display inline-block
+			font-size 17px
+			line-height 23px
+			padding 2px 11px 2px 12px
+			background #75c9ea
+			border-radius 3px
+		
+	&__content
+		display inline-block
+		width 73.6%
+		padding 0 20px
+		
+		p
+			font-size 15px
+			line-height 23px
+			margin 0 0 23px
+			
+		ul
+			margin 0
+			
+		li
+			position relative
+			font-size 15px
+			line-height 23px
+			padding-left 44px
+			margin 0 0 23px
+			
+			&:before
+				content ''
+				position absolute
+				left 20px
+				top 9px
+				width 8px
+				height 8px
+				background colorOrange
+		
+	&-slider
+		margin 0 0 29px
+		
+		&__item
+			height 423px
+		
+	&__rc
+		display inline-block
+		width 26.4%
+		padding 0 20px
+		
+	&-preview
+		width calc(100% + 30px)
+		font-size 0
+		margin 0 0 10px -15px
+		
+		&__item
+			display inline-block
+			width 50%
+			padding 0 15px
+			margin 0 0 30px
+			
+		&--pic
+			display block
+			cursor pointer
+			height 121px
+			
+.reviews
+	margin -37px 0 -11px
+
+	&__item
+		position relative
+		padding 36px 0 13px 125px
+		border-bottom 1px solid #e8e8e8
+		
+		&:last-child
+			border-bottom-color #ffffff
+		
+		p
+			color #363636
+			font-size 14px
+			line-height 20px
+			font-family 'Roboto', sans-serif
+			margin 0 0 20px
+		
+	&--photo
+		position absolute
+		left 0
+		top 42px
+		width 90px
+		height 90px
+		background #f47920
+		border-radius 50%
+		
+	&--name
+		display block
+		color #010101
+		font-size 20px
+		line-height 24px
+		font-weight 600
+		padding 0
+		margin 0 0 12px
+		
+	&--position
+		display block
+		color #9d9d9d
+		font-size 14px
+		line-height 20px
+		font-family 'Roboto', sans-serif
+		margin 0 0 12px
+		
+.not-found
+	text-align center
+	padding 71px 0 100px
+	
+	&--pic
+		max-width 470px
+		text-align center
+		padding 0 0 49px
+		margin 0 auto 49px
+		border-bottom 1px solid #d9d3c3
+		
+		img
+			max-width 100%
+			height auto
+			
+	&--message
+		display block
+		font-size 16px
+		line-height 22px
+		margin 0 0 66px
+		
+	&--home
+		display inline-block
+		min-width 160px
+		color #ffffff
+		font-size 16px
+		line-height 22px
+		font-family 'Source Sans Pro', sans-serif
+		font-weight 600
+		text-align center
+		padding 9px 19px 11px
+		background #ff8400
+		border-radius 4px
+		transition background-color 0.2s ease
+		
+		&:hover
+			background-color #e57700
+			
+.contacts
+	font-family 'Source Sans Pro', sans-serif
+	padding 40px 40px 79px
+	margin 0 0 40px
+	background #ffffff
+	
+	&--map
+		height 405px
+		background #fef6e4
+		
+	&-grid
+		display flex
+		font-size 0
+		padding-top 4px
+			
+	&--title
+		display block
+		color colorDark
+		font-size 20px
+		line-height 26px
+		margin 0 0 12px
+		
+	&-location
+		display inline-block
+		width 47.5%
+		padding-right 80px
+		align-self flex-end
+		
+		&__group
+			margin 37px 0 0
+			
+		&--address
+			position relative
+			display block
+			font-size 15px
+			line-height 23px
+			padding-left 29px
+			
+			&:before
+				content ''
+				position absolute
+				left 0
+				top 5px
+				width 16px
+				height 20px
+				background url('../img/location-pin-icon.png') no-repeat 0 0
+			
+		&--map
+			width calc(100% + 80px)
+			height 300px
+			margin 23px 0 0
+			background #fef6e4
+			
+	&-content
+		align-self flex-end
+		position relative
+		z-index 5
+		display inline-block
+		width 52.5%
+		padding 50px 0 31px 80px
+		margin-top -243px
+		background #ffffff
+		
+		& ^[0]--title
+			margin 0 0 15px
+			
+		&__item
+			max-width 410px
+			padding 9px 0 8px
+			border-bottom 1px solid #f8f8f8
+			
+		&--subtitle
+			display block
+			color #939393
+			font-size 15px
+			line-height 23px
+			margin 0 0 0 28px
+			
+		&--link
+			position relative
+			display block
+			font-size 22px
+			line-height 28px
+			font-weight 600
+			padding-left 28px
+			
+			span
+				display inline-block
+				font-size 18px
+				text-decoration underline
+				margin 2px 0 -2px
+			
+			&:hover
+				span
+					text-decoration none
+			
+		&--icon
+			position absolute
+			display block
+			left 0
+			background-repeat no-repeat
+			background-position 0 0
+			
+			&_phone
+				top 5px
+				width 14px
+				height 20px
+				background-image url('../img/phone-icon.png')
+			
+			&_email
+				top 8px
+				width 16px
+				height 14px
+				background-image url('../img/email-icon.png')
+				
+	&-ask
+		display flex
+		align-items center
+		font-size 0
+		margin 50px 0 0
+		
+		&--photo
+			display inline-block
+			width 70px
+			height 70px
+			margin 0 26px 0 0
+			background #e8e8e8
+			border-radius 50%
+			
+		&--button
+			color #ffffff
+			font-size 15px
+			line-height 20px
+			font-weight bold
+			font-family 'Source Sans Pro', sans-serif
+			letter-spacing 1px
+			text-transform uppercase
+			cursor pointer
+			padding 7px 19px 9px
+			margin-top -4px
+			background #ff8400
+			border-radius 4px
+			transition background-color 0.2s ease
+			
+			&:hover
+				background-color #e57700
+				
+	&-social
+		width calc(100% + 20px)
+		font-size 0
+		margin 39px 0 0 0
+		
+		&--item
+			display inline-block
+			width 36px
+			height 36px
+			margin 0 20px 20px 0
+			border 1px solid #e57700
+			background-repeat no-repeat
+			background-position 0 -34px
+			border-radius 50%
+			transition border-color .2s ease
+			
+			&:hover
+				border-color #ff8400
+				
+.branches
+	display flex
+	font-size 0
+	margin 0 0 40px
+	background #ffffff
+	
+	&-list
+		overflow-y scroll
+		display inline-block
+		width 360px
+		height 650px
+		
+	&-content
+		padding 11px 0
+		
+		&__item
+			padding 19px 39px 17px
+			border-bottom 1px solid #e8e8e8
+			
+			&:last-child
+				border-bottom-color #ffffff
+			
+	&--title
+		display block
+		color colorDark
+		font-size 20px
+		line-height 26px
+		font-family 'Source Sans Pro', sans-serif
+		margin 0 0 10px
+		
+	&--address
+		position relative
+		display block
+		color #363636
+		font-size 14px
+		line-height 20px
+		padding 0 0 0 24px
+		margin 0 0 10px
+		
+		&:before
+			content ''
+			position absolute
+			left 0
+			top 1px
+			width 12px
+			height 16px
+			background url('../img/address-pin-icon-grey.png') no-repeat 0 0
+			
+	&__controls
+		width calc(100% + 25px)
+		font-size 0
+		
+		a
+			position relative
+			display inline-block
+			color colorOrange
+			font-size 13px
+			line-height 20px
+			white-space nowrap
+			margin 0 0 10px 24px
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 2px
+				width 100%
+				border-bottom 1px dotted #f47920
+				
+			&:hover
+				&:after
+					border-bottom-color transparent
+	
+	&--map
+		display inline-block
+		width 920px
+		width calc(100% - 360px)
+		height 650px
+		background #fdf5e4
+			
+.jspContainer
+	overflow hidden
+	position relative
+
+.jspPane
+	position absolute
+
+.jspVerticalBar
+	position absolute
+	top 0
+	right 0
+	width 14px
+	height 100%
+
+.jspCap
+	display none
+
+.jspTrack
+	position relative
+
+.jspDrag
+	position relative
+	top 0
+	left 0
+	cursor pointer
+	
+	&:before
+		content ''
+		position absolute
+		left 4px
+		top 4px
+		width 6px
+		height calc(100% - 8px)
+		background #92c8e8
+		border-radius 3px
+
+.jspCorner
+	background #eeeef4
+	float left
+	height 100%
+	
+.orders
+	margin 0 0 40px
+	background #ffffff
+	
+	&-all
+		display table
+		width 100%
+		padding 14px 0 11px
+		
+		a
+			color #ff8400
+			
+			&:hover
+				text-decoration underline
+		
+		&__row
+			display table-row
+			
+			&:last-child
+				& ^[1]--td
+					border-bottom-width 0
+			
+		&--th
+			display table-cell
+			color #868686
+			font-size 14px
+			line-height 20px
+			padding 16px 50px 18px 0
+			border-bottom 1px solid #e9e9e9
+
+		&--td
+			display table-cell
+			font-size 14px
+			line-height 20px
+			padding 17px 50px 19px 0
+			border-bottom 1px solid #e9e9e9
+			
+			strong
+				font-weight 500
+
+		&--th
+		&--td
+			&:first-child
+				padding-left 50px
+				
+	&-total
+		padding 34px 40px 17px
+		
+		&--title
+			display block
+			font-size 20px
+			line-height 26px
+			padding 0
+			margin 0 0 21px
+			
+		&__table
+			display table
+			padding 17px 59px 22px 22px
+			margin 0
+			background #f6f6f6
+			
+		&__row
+			display table-row
+			
+		&--td
+			display table-cell
+			font-size 14px
+			line-height 20px
+			padding 5px 8px
+			
+			span
+				color #939393
+				
+	&-list
+		display table
+		width 100%
+		padding 14px 0 11px
+		
+		a
+			&:hover
+				text-decoration underline
+		
+		&__row
+			position relative
+			display table-row
+			
+			&:last-child
+				& ^[1]__td
+					border-bottom-color #ffffff
+			
+		&__td
+			position relative
+			display table-cell
+			height 70px
+			font-size 14px
+			line-height 20px
+			vertical-align middle
+			padding 13px 30px 11px 0
+			border-bottom 1px solid #e9e9e9
+			
+			&:first-child
+				padding-left 40px
+				
+			&_photo
+				width 98px
+				
+			&_quantity
+				position relative
+				width 1%
+				white-space nowrap
+				padding-left 31px
+				padding-right 38px
+
+				&:before
+					content ''
+					position absolute
+					left 0
+					top 13px
+					width 1px
+					height calc(100% - 24px)
+					background #e9e9e9
+					
+			&_price
+				width 1%
+				white-space nowrap
+				text-align right
+				
+		&--photo
+			display block
+			width 46px
+			height 46px
+			margin -1px -3px 0 -15px
+			
+		&--code
+			display block
+			color #868686
+			font-size 13px
+			line-height 18px
+			margin 4px 0 0
+			
+		&--title
+			display block
+			margin 2px 0 0
+			
+		&--quantity
+			display block
+			margin 2px 0 0
+			
+		&--price
+			display block
+			font-size 16px
+			line-height 21px
+			font-weight 500
+			margin -2px 0 0
+			
+.profile
+	padding 4px 50px 35px
+	margin 0 0 40px
+	background #ffffff
+	
+	&__group
+		width calc(100% + 20px)
+		padding 32px 10px 34px
+		margin 0 0 0 -10px
+		border-top 1px solid #dddddd
+		
+		&:first-child
+			border-top-color transparent
+		
+	&--title
+		display block
+		color colorDark
+		font-size 26px
+		line-height 32px
+		font-weight bold
+		font-family 'Source Sans Pro', sans-serif
+		padding 0
+		margin 0 0 27px
+		
+	&--label
+		display inline-block
+		width 237px
+		color #939393
+		font-size 14px
+		line-height 18px
+		padding 0 30px 0 0
+		
+	&__item
+		font-size 0
+		padding 11px 0
+		
+		&_editable
+			padding 22px 50px 22px 0
+			
+		&_processing
+			& ^[-2]
+				&--value
+				&--edit
+					display none
+					
+				&--data
+				&--confirm
+					display inline-block
+			
+	&__content
+		display inline-block
+		width 574px
+		width calc(100% - 237px)
+		
+	&--data
+		display none
+		width 202px
+		font-size 14px
+		margin -7px 0
+		padding 6px 14px 7px
+		background #ffffff
+		border 1px solid #dddddd
+		border-radius 4px
+		
+	&--value
+		display inline-block
+		font-size 14px
+		line-height 18px
+		
+	&--edit
+		position relative
+		display inline-block
+		width 32px
+		height 32px
+		cursor pointer
+		margin -7px -50px -7px 18px
+		border 1px solid #dddddd
+		border-radius 4px
+		
+		&:before
+			content ''
+			position absolute
+			left 50%
+			top 50%
+			width 18px
+			height 18px
+			margin -9px 0 0 -9px
+			background url('../img/edit-icon.png') no-repeat 0 0
+		
+		&:hover
+			border-color #ff8400
+			
+	&--confirm
+		display none
+		width 42px
+		padding 4px 5px 6px
+		margin -7px -50px -7px 8px
+		
+	&--save
+		min-width 230px
+		padding 8px 15px 10px
+		margin 10px 0 30px
+		
+	&__choice
+		width calc(100% + 37px)
+		font-size 0
+		margin 0 0 -15px
+		
+		&--item
+			position relative
+			display inline-block
+			font-size 14px
+			line-height 18px
+			padding-left 31px
+			margin 0 37px 15px 0
+			
+			.radio
+				position absolute
+				left 0
+				top -2px
+
+	&--confirm
+	&--save
+		color #ffffff
+		font-size 16px
+		line-height 22px
+		font-weight 600
+		font-family 'Source Sans Pro', sans-serif
+		letter-spacing 1px
+		text-align center
+		text-transform uppercase
+		cursor pointer
+		background #ff8400
+		border-radius 4px
+		transition background-color 0.2s ease
+		
+		&:hover
+			background-color #e57700
+			
+.order
+	margin 0 0 40px
+	
+	&__group
+		margin 0 0 26px
+	
+	&--title
+		font-size 18px
+		line-height 24px
+		font-family 'Source Sans Pro', sans-serif
+		font-weight bold
+		margin 0 50px 14px
+		
+	&-content
+		position relative
+		padding-top 2px
+		background #ffffff
+		
+		&:before
+			content ''
+			position absolute
+			left 0
+			top 0
+			width 100%
+			border-top 2px solid #e3e3e3
+		
+		.orders-list
+			padding 0
+			
+	&-user
+		&__nav
+			position relative
+			font-size 0
+			padding-right 1px
+			margin -2px 0 0
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 0
+				width 100%
+				border-bottom 1px solid #e9e9e9
+				
+			a
+				position relative
+				z-index 1
+				display inline-block
+				color #828282
+				font-size 14px
+				line-height 20px
+				font-weight 600
+				font-family 'Source Sans Pro', sans-serif
+				text-transform uppercase
+				margin 0 -1px 0 0
+				
+				&:before
+				&:after
+					content ''
+					position absolute
+					top 0
+					width 1px
+					height 100%
+					background #e9e9e9
+					opacity 0
+					
+				&:before
+					left 0
+					
+				&:first-child
+					&:before
+						display none
+				
+				&:after
+					right 0
+				
+				span
+					position relative
+					z-index 1
+					display block
+					padding 14px 30px 13px
+					
+					&:before
+						content ''
+						position absolute
+						left 0
+						top 0
+						width 100%
+						border-top 2px solid #ff8400
+						opacity 0
+				
+				&:hover
+					color #363636
+					
+				&.is-active
+					color #363636
+					background #ffffff
+					
+					&:before
+					&:after
+						opacity 1
+					
+					span
+						&:before
+							opacity 1
+		
+		&__content
+			padding 39px 50px 26px
+			background #ffffff
+			
+			> *
+				transition transform .3s ease, opacity .3s ease
+				transform translateY(15px)
+				opacity 0
+	
+			.form__item	
+				&--label
+					width 120px
+
+				&--input
+					width calc(100% - 120px)
+			
+		&__tabs
+			.slick-slide.slick-current
+				> *
+					transform translateY(0)
+					opacity 1
+					
+	&-choice
+		font-size 0
+		padding 46px 0 24px 50px
+		
+		&__item
+			display inline-block
+			width 250px
+			padding 0 50px 0 0
+			margin 0 0 30px
+			
+			&.is-selected
+				& ^[-2]--title
+					color #ff7a08
+			
+		&__label
+			position relative
+			display inline-block
+			padding-left 34px
+			
+			.radio
+				position absolute
+				left 0
+				top -1px
+				
+		&--logo
+			display flex
+			align-items center
+			height 40px
+			margin -10px 0 0
+			
+			img
+				width auto
+				max-height 40px
+				
+		&--title
+			display block
+			font-size 14px
+			line-height 20px
+			
+	&-comment
+		padding 40px 50px 9px
+		
+		textarea
+			width 100%
+			max-width 808px
+			color #303030
+			font-size 13px
+			padding 11px 18px 10px
+			margin 0 0 30px
+			background #ffffff
+			border 1px solid #c6c5c4
+			border-radius 4px
+			resize vertical
+			
+	&-confirm
+		padding 31px 29px 34px
+		background #ffffff
+		border 1px solid #dddddd
+		
+		&__list
+			padding 0 10px 17px
+			margin 0 0 20px
+			border-bottom 2px solid #75c9ea
+
+			li
+				font-size 14px
+				line-height 20px
+				margin 0 0 10px
+				
+				span
+					color #939393
+					
+		&--price
+			display block
+			color #373737
+			font-size 28px
+			line-height 32px
+			font-weight 500
+			margin 0 10px 28px
+			
+			span
+				display block
+				color #939393
+				font-size 18px
+				line-height 24px
+				font-family 'Source Sans Pro', sans-serif
+				margin 0 0 2px
+		
+		&--agreement
+			position relative
+			display block
+			font-size 14px
+			line-height 20px
+			padding-left 35px
+			margin 0 10px 24px
+			
+			.checker
+				position absolute
+				left 0
+				top -2px
+				
+		&--complete
+			width 100%
+			color #ffffff
+			font-size 16px
+			line-height 22px
+			font-weight 600
+			font-family 'Source Sans Pro', sans-serif
+			text-transform uppercase
+			letter-spacing 1px
+			cursor pointer
+			padding 18px 20px 20px
+			margin 0 0 20px
+			background #ff8400
+			border-radius 4px
+			transition background-color 0.2s ease
+			
+			&:hover
+				background-color #e57700
