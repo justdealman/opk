@@ -1049,6 +1049,48 @@ button::-moz-focus-inner {
 .nav-drop--item a:hover span {
 	text-decoration: underline;
 }
+.input-message {
+	position: absolute;
+	display: inline-block;
+	color: #ff4200;
+	font-size: 14px;
+	line-height: 16px;
+	margin: 7px 0 0 11px;
+	background: #fff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 5px rgba(255,66,0,0.45);
+	box-shadow: 0 0 5px rgba(255,66,0,0.45);
+}
+.input-message span {
+	position: relative;
+	z-index: 1;
+	display: block;
+	padding: 4px 11px;
+	background: #fff;
+	border-radius: 4px;
+}
+.input-message:before {
+	content: '';
+	position: absolute;
+	left: -4px;
+	top: 7px;
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	-webkit-box-shadow: 0 0 5px rgba(255,66,0,0.45);
+	box-shadow: 0 0 5px rgba(255,66,0,0.45);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.input-message.is-absoluted {
+	position: absolute;
+	margin: 5px 0 0;
+}
+.input-message.is-absoluted:before {
+	left: 9px;
+	top: -4px;
+}
 .content {
 	overflow: hidden;
 	position: relative;
@@ -4783,8 +4825,16 @@ textarea.standart {
 	border: 1px solid #ddd;
 	border-radius: 4px;
 }
+input.standart:focus,
+textarea.standart:focus {
+	border-color: #75c9ea;
+}
 textarea.standart {
 	resize: vertical;
+}
+input.has-error,
+textarea.has-error {
+	border-color: #ff4200;
 }
 .btn {
 	display: block;

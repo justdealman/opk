@@ -257,7 +257,8 @@ html(lang='ru')
 											.form__item--label
 												label(for='email') #[span Email]
 											.form__item--input
-												input(type='text', id='email')
+												input.has-error(type='text', id='email')
+												span.input-message #[span Введите верный e-mail]
 										.form__item
 											.form__item--label
 												label(for='question') #[span Вопрос]

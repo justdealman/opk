@@ -93,7 +93,8 @@ html(lang='ru')
 															.form__item--label
 																label(for='name') #[span ФИО]
 															.form__item--input
-																input(type='text', id='name')
+																input.has-error(type='text', id='name')
+																span.input-message #[span Введите верный e-mail]
 														.form__item
 															.form__item--label
 																label(for='email-register') #[span Email]

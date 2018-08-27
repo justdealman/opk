@@ -576,7 +576,11 @@
 					<label for="modal-phone">
 						<span>Телефон</span>
 					</label>
-					<input type="text" id="modal-phone"> </div>
+					<input class="has-error" type="text" id="modal-phone">
+					<span class="input-message is-absoluted">
+						<span>Введите верный телефон</span>
+					</span>
+				</div>
 				<label class="modal__form--agreement">
 					<input type="checkbox" checked> Я согласен на обработку персональных данных </label>
 				<button class="modal__form--button">Отправить</button>
@@ -596,7 +600,11 @@
 							<input class="standart" type="text"> </div>
 						<div class="modal_user__item">
 							<label class="modal_user__item--label">Email *</label>
-							<input class="standart" type="text"> </div>
+							<input class="standart has-error" type="text">
+							<span class="input-message is-absoluted">
+								<span>Введите верный e-mail</span>
+							</span>
+						</div>
 						<div class="modal_user__item">
 							<label class="modal_user__item--label">Телефон *</label>
 							<input class="standart" type="text"> </div>
@@ -671,7 +679,11 @@
 					<input class="standart" type="text" value="Иван"> </div>
 				<div class="modal_review__item">
 					<label class="modal_review__item--label">Организация</label>
-					<input class="standart" type="text" value="Бочка"> </div>
+					<input class="standart has-error" type="text" value="Бочка">
+					<span class="input-message is-absoluted">
+						<span>Введите название организации</span>
+					</span>
+				</div>
 				<div class="modal_review__item">
 					<label class="modal_review__item--label">Должность</label>
 					<input class="standart" type="text" value="Шеф-повар"> </div>

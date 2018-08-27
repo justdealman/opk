@@ -17,7 +17,8 @@
 			input(type='text', id='modal-name')
 		.modal__form--item
 			label(for='modal-phone') #[span Телефон]
-			input(type='text', id='modal-phone')
+			input.has-error(type='text', id='modal-phone')
+			span.input-message.is-absoluted #[span Введите верный телефон]
 		label.modal__form--agreement #[input(type='checkbox', checked) ] Я согласен на обработку персональных данных
 		button.modal__form--button Отправить
 .modal.modal_user(data-target='user', data-tabs-container)
@@ -33,7 +34,8 @@
 					input.standart(type='text')
 				.modal_user__item
 					label.modal_user__item--label Email *
-					input.standart(type='text')
+					input.standart.has-error(type='text')
+					span.input-message.is-absoluted #[span Введите верный e-mail]
 				.modal_user__item
 					label.modal_user__item--label Телефон *
 					input.standart(type='text')
@@ -88,7 +90,8 @@
 			input.standart(type='text', value='Иван')
 		.modal_review__item
 			label.modal_review__item--label Организация
-			input.standart(type='text', value='Бочка')
+			input.standart.has-error(type='text', value='Бочка')
+			span.input-message.is-absoluted #[span Введите название организации]
 		.modal_review__item
 			label.modal_review__item--label Должность
 			input.standart(type='text', value='Шеф-повар')

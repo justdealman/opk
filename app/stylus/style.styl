@@ -573,7 +573,7 @@ button
 		&:hover
 			&:after
 				border-bottom-color transparent
-	
+
 .header
 	position relative
 	background #ffffff
@@ -973,7 +973,45 @@ button
 			&:hover
 				span
 					text-decoration underline
-			
+					
+.input-message
+	position absolute
+	display inline-block
+	color #ff4200
+	font-size 14px
+	line-height 16px
+	margin 7px 0 0 11px
+	background #ffffff
+	border-radius 4px
+	box-shadow 0 0 5px rgba(255, 66, 0, 0.45)
+	
+	span
+		position relative
+		z-index 1
+		display block
+		padding 4px 11px
+		background #ffffff
+		border-radius 4px
+	
+	&:before
+		content ''
+		position absolute
+		left -4px
+		top 7px
+		width 8px
+		height 8px
+		background #ffffff
+		box-shadow 0 0 5px rgba(255, 66, 0, 0.45)
+		transform rotate(45deg)
+		
+	&.is-absoluted
+		position absolute
+		margin 5px 0 0
+		
+		&:before
+			left 9px
+			top -4px
+
 .content
 	overflow hidden
 	position relative
@@ -4598,8 +4636,16 @@ textarea.standart
 	border 1px solid #dddddd
 	border-radius 4px
 	
+	&:focus
+		border-color #75c9ea
+	
 textarea.standart
 	resize vertical
+	
+input
+textarea
+	&.has-error
+		border-color #ff4200
 	
 .btn
 	display block
