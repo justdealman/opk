@@ -5,102 +5,104 @@ html(lang='ru')
 	meta(name='viewport', content='width=device-width, user-scalable=yes')
 	link(href='./css/style.css', rel='stylesheet')
 	body
-		include modules/header.pug
-		.content
-			.breadcrumbs
-				ul
-					li
-						a(href='javascript:void(0);') Главная
-					li
-						a(href='javascript:void(0);') Личный кабинет
-					li Мои заказы
-			.content__row
-				span.title-h1 Мои заказы
-				.catalog
-					.catalog__lc
-						.orders
-							.orders-total
-								span.orders-total--title Заказ №383838383
-								.orders-total__table
-									.orders-total__row
-										.orders-total--td #[span 29 товаров на сумму]
-										.orders-total--td 7 500 000 руб.
-									.orders-total__row
-										.orders-total--td #[span Способ доставки]
-										.orders-total--td Транспортная служба Ратэк
-									.orders-total__row
-										.orders-total--td #[span Способ оплаты]
-										.orders-total--td Наложенный платеж
-									.orders-total__row
-										.orders-total--td #[span Статус заказа]
-										.orders-total--td Оплачен
-							.orders-list
-								.orders-list__row
-									.orders-list__td.orders-list__td_photo
-										.orders-list--photo
-											img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-									.orders-list__td
-										span.orders-list--code Код: 0191
-										a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-									.orders-list__td.orders-list__td_quantity 
-										span.orders-list--quantity 2 шт.
-									.orders-list__td.orders-list__td_price
-										span.orders-list--price 1 395 689 ₽
-								.orders-list__row
-									.orders-list__td.orders-list__td_photo
-										.orders-list--photo
-											img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-									.orders-list__td
-										span.orders-list--code Код: 0191
-										a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-									.orders-list__td.orders-list__td_quantity 
-										span.orders-list--quantity 2 шт.
-									.orders-list__td.orders-list__td_price
-										span.orders-list--price 1 395 689 ₽
-								.orders-list__row
-									.orders-list__td.orders-list__td_photo
-										.orders-list--photo
-											img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-									.orders-list__td
-										span.orders-list--code Код: 0191
-										a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-									.orders-list__td.orders-list__td_quantity 
-										span.orders-list--quantity 2 шт.
-									.orders-list__td.orders-list__td_price
-										span.orders-list--price 1 395 689 ₽
-								.orders-list__row
-									.orders-list__td.orders-list__td_photo
-										.orders-list--photo
-											img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-									.orders-list__td
-										span.orders-list--code Код: 0191
-										a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-									.orders-list__td.orders-list__td_quantity 
-										span.orders-list--quantity 2 шт.
-									.orders-list__td.orders-list__td_price
-										span.orders-list--price 1 395 689 ₽
-								.orders-list__row
-									.orders-list__td.orders-list__td_photo
-										.orders-list--photo
-											img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-									.orders-list__td
-										span.orders-list--code Код: 0191
-										a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-									.orders-list__td.orders-list__td_quantity 
-										span.orders-list--quantity 2 шт.
-									.orders-list__td.orders-list__td_price
-										span.orders-list--price 1 395 689 ₽	
-					.catalog__rc
-						.user
-							.user__about
-								.user--name Петренко Иван Сергеевич
-								.user--contact +7 (913) 222-33-44
-								.user--contact ivanov@mail.ru
-							.user__nav
-								a.is-active(href='javascript:void(0);') Мой профиль
-								a(href='javascript:void(0);') Мои заказы
-								a(href='javascript:void(0);') Избранные товары
-								a(href='javascript:void(0);') Выйти
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li
+							a(href='javascript:void(0);') Личный кабинет
+						li Мои заказы
+				.content__row
+					span.title-h1 Мои заказы
+					.catalog
+						.catalog__lc
+							.orders
+								.orders-total
+									span.orders-total--title Заказ №383838383
+									.orders-total__table
+										.orders-total__row
+											.orders-total--td #[span 29 товаров на сумму]
+											.orders-total--td 7 500 000 руб.
+										.orders-total__row
+											.orders-total--td #[span Способ доставки]
+											.orders-total--td Транспортная служба Ратэк
+										.orders-total__row
+											.orders-total--td #[span Способ оплаты]
+											.orders-total--td Наложенный платеж
+										.orders-total__row
+											.orders-total--td #[span Статус заказа]
+											.orders-total--td Оплачен
+								.orders-list
+									.orders-list__row
+										.orders-list__td.orders-list__td_photo
+											.orders-list--photo
+												img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+										.orders-list__td
+											span.orders-list--code Код: 0191
+											a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+										.orders-list__td.orders-list__td_quantity 
+											span.orders-list--quantity 2 шт.
+										.orders-list__td.orders-list__td_price
+											span.orders-list--price 1 395 689 ₽
+									.orders-list__row
+										.orders-list__td.orders-list__td_photo
+											.orders-list--photo
+												img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+										.orders-list__td
+											span.orders-list--code Код: 0191
+											a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+										.orders-list__td.orders-list__td_quantity 
+											span.orders-list--quantity 2 шт.
+										.orders-list__td.orders-list__td_price
+											span.orders-list--price 1 395 689 ₽
+									.orders-list__row
+										.orders-list__td.orders-list__td_photo
+											.orders-list--photo
+												img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+										.orders-list__td
+											span.orders-list--code Код: 0191
+											a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+										.orders-list__td.orders-list__td_quantity 
+											span.orders-list--quantity 2 шт.
+										.orders-list__td.orders-list__td_price
+											span.orders-list--price 1 395 689 ₽
+									.orders-list__row
+										.orders-list__td.orders-list__td_photo
+											.orders-list--photo
+												img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+										.orders-list__td
+											span.orders-list--code Код: 0191
+											a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+										.orders-list__td.orders-list__td_quantity 
+											span.orders-list--quantity 2 шт.
+										.orders-list__td.orders-list__td_price
+											span.orders-list--price 1 395 689 ₽
+									.orders-list__row
+										.orders-list__td.orders-list__td_photo
+											.orders-list--photo
+												img.img.contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+										.orders-list__td
+											span.orders-list--code Код: 0191
+											a.orders-list--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+										.orders-list__td.orders-list__td_quantity 
+											span.orders-list--quantity 2 шт.
+										.orders-list__td.orders-list__td_price
+											span.orders-list--price 1 395 689 ₽	
+						.catalog__rc
+							.user
+								.user__about
+									.user--name Петренко Иван Сергеевич
+									.user--contact +7 (913) 222-33-44
+									.user--contact ivanov@mail.ru
+								.user__nav
+									a.is-active(href='javascript:void(0);') Мой профиль
+									a(href='javascript:void(0);') Мои заказы
+									a(href='javascript:void(0);') Избранные товары
+									a(href='javascript:void(0);') Выйти
 		include modules/footer.pug
+		include modules/modals.pug
 		script(src='./js/libs.js')
 		script(src='./js/scripts.js')

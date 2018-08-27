@@ -5,516 +5,517 @@ html(lang='ru')
 	meta(name='viewport', content='width=device-width, user-scalable=yes')
 	link(href='./css/style.css', rel='stylesheet')
 	body
-		include modules/header.pug
-		.content
-			.breadcrumbs
-				ul
-					li
-						a(href='javascript:void(0);') Главная
-					li 
-						a(href='javascript:void(0);') Каталог
-					li Шкаф для выпечки
-			.content__row
-				.product
-					a.product--print(href='javascript:void(0);') Версия для печати
-					.product__lc
-						.product-gallery
-							span.tip-icon.tip-icon_special Акция
-							.elem-country 
-								img.img-cover(src='./img/flag-se.png', width='50', height='50', alt='')
-							.product-gallery__slider(data-ratio='1')
-								.product-gallery__slider--item.scale
-									img.img-cover(src='./pic/card-1.jpg', width='370', height='370', alt='')
-								.product-gallery__slider--item.scale
-									img.img-cover(src='./pic/card-2.jpg', width='370', height='370', alt='')
-								.product-gallery__slider--item.scale
-									img.img-cover(src='./pic/card-1.jpg', width='370', height='370', alt='')
-								.product-gallery__slider--item.scale
-									img.img-cover(src='./pic/card-2.jpg', width='370', height='370', alt='')
-								.product-gallery__slider--item.scale
-									img.img-cover(src='./pic/card-1.jpg', width='370', height='370', alt='')
-								.product-gallery__slider--item.scale
-									img.img-cover(src='./pic/card-2.jpg', width='370', height='370', alt='')
-						.product-preview
-							.product-preview__slider(data-ratio='1')
-								.product-preview__slider--item
-									.product-preview__slider--pic.scale(data='1')
-										img.img-cover(src='./pic/preview-1.jpg', width='68', height='68', alt='')
-								.product-preview__slider--item
-									.product-preview__slider--pic.scale
-										img.img-cover(src='./pic/preview-2.jpg', width='68', height='68', alt='')
-								.product-preview__slider--item
-									.product-preview__slider--pic.scale
-										img.img-cover(src='./pic/preview-1.jpg', width='68', height='68', alt='')
-								.product-preview__slider--item
-									.product-preview__slider--pic.scale
-										img.img-cover(src='./pic/preview-2.jpg', width='68', height='68', alt='')
-								.product-preview__slider--item
-									.product-preview__slider--pic.scale
-										img.img-cover(src='./pic/preview-1.jpg', width='68', height='68', alt='')
-								.product-preview__slider--item
-									.product-preview__slider--pic.scale
-										img.img-cover(src='./pic/preview-2.jpg', width='68', height='68', alt='')
-					.product__rc
-						span.title-h1 Шкаф пекарский универсальный жаропрочный Unox XB 895
-						.product__data
-							span.product--code Код: 0191
-							span.elem--availability.elem--availability_true В наличии
-						.product-controls
-							.product__price
-								.product__price--title Цена:
-								.product__price--old 310 900 ₽
-								.product__price--current 1 255 500 ₽
-							.product__counter
-								.elem-quantity
-									.elem-quantity--minus
-									input.elem-quantity--input(value='2')
-									.elem-quantity--plus
-							.product-buy
-								.product-buy__buttons
-									.product-buy--item.product-buy--item_add(data-switch, data-default='В корзину', data-active='В корзине') В корзину
-									.product-buy--item.product-buy--item_one-click(data-open='buy-one-click') В 1 клик
-								a.product-buy--pay(href='javascript:void(0);') Как оплатить
-							.product__additional
-								a.product__additional--item.product__additional--item_compare.is-active(href='javascript:void(0);', data-switch, data-default='В сравнение', data-active='В сравнении') В сравнение
-								a.product__additional--item.product__additional--item_favorite(href='javascript:void(0);', data-switch, data-default='В избранное', data-active='В избранном') В избранное
-						.product-info
-							.product-info__item
-								span.product-info--title.product-info--title_compatibility.product-info--title_droppable.is-active Совместимость
-								.product-info__content
-									ul.product-info--list
-										li Печь хлебопекарная Восход ХПЭ-750/3 нерж.сталь, в обрешетке
-										li Печь подовая Wiesheu EBO 64 S EXCLUSIVE NEW
-										li Пароконвектомат XB 613G
-										li Пароконвектомат XB 893
-										li Пароконвектомат XB 895
-									a.product-info--more(href='javascript:void(0);') Показать еще
-							.product-info__item
-								span.product-info--title.product-info--title_delivery Стоимость доставки
-								.product-info__content
-									.product-delivery
-										.product-delivery__item.is-active
-											.product-delivery__lc
-												.product-delivery--logo
-													img.img-contain(src='./pic/ramec-logo.png', width='118', height='42', alt='')
-											.product-delivery__rc
-												span.product-delivery--text до Барнаула #[br] от 1200 руб.
-										.product-delivery__item
-											.product-delivery__lc
-												.product-delivery--logo
-													img.img-contain(src='./pic/dl.png', width='118', height='42', alt='')
-											.product-delivery__rc
-												span.product-delivery--text до Барнаула #[br] от 2400 руб.
-										.product-delivery__item
-											.product-delivery__lc
-												.product-delivery--logo
-													img.img-contain(src='./pic/pec.png', width='118', height='42', alt='')
-											.product-delivery__rc
-												span.product-delivery--text до Барнаула #[br] от 3600 руб.
-				.product-tabs
-					.product-tabs__nav
-						a.product-tabs__nav--item.is-active(href='1', data-fadetabs-item) #[span Описание]
-						a.product-tabs__nav--item(href='2', data-fadetabs-item) #[span Характеристики]
-						a.product-tabs__nav--item(href='3', data-fadetabs-item) #[span Отзывы]
-						a.product-tabs__nav--item(href='4', data-fadetabs-item) #[span Статьи]
-						a.product-tabs__nav--item(href='5', data-fadetabs-item) #[span Документация]
-						a.product-tabs__nav--item(href='6', data-fadetabs-item) #[span Задать вопрос]
-					.product-tabs__slider(data-fadetabs-slider)
-						.product-tabs__content
-							.product-description
-								.product-description__group
-									.product-description--title Описание
-									p Пароконвектомат UNOX XB 895 серии BakerLux Dynamic предназначен для приготовления различных блюд, выпечки хлебобулочных и кондитерских изделий на предприятиях общественного питания и торговли, в пекарнях и кондитерских. Модель оснащена подсветкой посредством галогеновых ламп и L-образными направляющими. Съемное внутреннее стекло облегчают чистку и обеспечивают максимальную гигиену. Камера с закругленными углами выполнена из нержавеющей стали AISI 304, направляющие - из нержавеющей стали, дверные петли выполнены из высокопрочного самосмазывающегося технополимера, дверной замок - из углеродного волокна.
-									p Листы для выпечки в комплект поставки не входят и приобретаются отдельно.
-								.product-description__group
-									.product-description--title Основные характеристики
-									.product-table
-										.product-table__row
-											.product-table--title #[span Производитель]
-											span.product-table--text Unox
-										.product-table__row
-											.product-table--title #[span Страна-производитель]
-											span.product-table--text Италия
-										.product-table__row
-											.product-table--title #[span Вид оборудования]
-											span.product-table--text Пекарский шкаф
-										.product-table__row
-											.product-table--title #[span Сфера использования]
-											span.product-table--text Fast-food, HoReCa, Пищевая промышленность
-										.product-table__row
-											.product-table--title #[span Источник питания]
-											span.product-table--text Электричество
-										.product-table__row
-											.product-table--title #[span Номинальное напряжение]
-											span.product-table--text 380 В
-										.product-table__row
-											.product-table--title #[span Номинальная потребляемая мощность]
-											span.product-table--text 15.8 (кВт)
-										.product-table__row
-											.product-table--title #[span Гарантийный срок]
-											span.product-table--text 12 (мес)
-								.product-description__group
-									.product-description--title Производитель
-									.product-brand
-										.product-brand--logo
-											img(src='./pic/unox-logo.png', width='175', height='66', alt='')
-										.product-brand__content
-											p Компания из Италии Unox вышла на рынок хлебопекарного оборудования в 1990 году. В течение 25 лет использует передовые подходы к производству техники, постоянно улучшает качество выпускаемой продукции. Как результат — многочисленные патенты на оригинальные разработки. Компания ежегодно реализует 150 тысяч печей и пароконвектоматов.
-						.product-tabs__content
-							.product-characteristics
-								.product-characteristics--title Режимы выпечки
-								ul
-									li Выпечка в режиме конвекции при температуре 30°C-260°C
-									li Выпечка в режиме конвекция + пар при температуре 48°C-260°C
-									li Максимальная температура предварительного разогрева 260° C
-								.product-characteristics--title Распределение воздушных потоков в камере готовки
-								ul
-									li Технология AIR.Plus: несколько вентиляторов с реверсивным движением
-									li Технология AIR.Plus: две скорости вентилятора
-								.product-characteristics--title Управление климатом в камере готовки
-								ul
-									li Технология DRY.Plus: быстрое изъятие влажности из камеры готовки
-									li Технология STEAM.Plus: установка влажности от 20 до 100%, программируется пользователем
-								.product-characteristics--title Запатентованная дверца
-								ul
-									li Дверные петли выполнены из высокопрочного самосмазывающегося технополимера (для дверей с боковым открытием)
-									li Реверсивная дверца с возможностью перевешивания даже после установки печи
-									li Блокировка произвольного открытия дверцы в позициях 60°-120°-180°
-						.product-tabs__content
-							.reviews
-								.reviews__item
-									.reviews--photo
-										img.img-cover(src='./pic/person-1.jpg', width='90', height='90', alt='')
-									.reviews--name Андрей Михайлов
-									.reviews--position шеф-повар ресторана «Териберка T.R. бар»
-									p В Тукано кофе первый раз я была частым гостем, живя в далеком 2010 году в Кишиневе. Там я попробовала свой первый раф и ещё тогда влюбилась в красочный интерьер и деревянные таблички-номерки на столах в виде сердечек.
-									p Когда узнала, что в Барнауле открылся Тукано, моей радости не было предела. А когда я случайно гуляя, на него наткнулась, радовалась искренне, как ребёнок. 2018 год, Барнаул, Тукано, лето...безумная ностальгия на меня нахлынула, я ходила по залу, как заворожённая, пока ждала свой напиток. Это было счастье, честное, неподдельное счастье. Мне дали снова деревянную табличку с сердечком и номерком, мне дали фирменные наклеечки, в витринах я видела те же огромные вкусные чизкейки и после кучи фоток во время ожидания я получила свой ягодный лимонад в фирменном стаканчике
-								.reviews__item
-									.reviews--photo
-										img.img-cover(src='./pic/person-2.jpg', width='90', height='90', alt='')
-									.reviews--name Вениамин Пивоваров
-									.reviews--position директор ресторана  «Пивной рай»
-									p Любимое место с прекрасным видом на город! Вот только почему у вас в таком огромном зале всегда так мало гостей? После прогулки по городу и изматывающей жары зашли к вам перекусить. Я взяла курицу по-тайски и попить чего-нибудь холодненького. Честно говоря, сильно сомневалась при выборе, т к обычно такие блюда бывают очень жирными, но только не здесь.
-								.reviews__item
-									.reviews--photo
-										img.img-cover(src='./pic/person-1.jpg', width='90', height='90', alt='')
-									.reviews--name Андрей Михайлов
-									.reviews--position шеф-повар ресторана «Териберка T.R. бар»
-									p В Тукано кофе первый раз я была частым гостем, живя в далеком 2010 году в Кишиневе. Там я попробовала свой первый раф и ещё тогда влюбилась в красочный интерьер и деревянные таблички-номерки на столах в виде сердечек.
-									p Когда узнала, что в Барнауле открылся Тукано, моей радости не было предела. А когда я случайно гуляя, на него наткнулась, радовалась искренне, как ребёнок. 2018 год, Барнаул, Тукано, лето...безумная ностальгия на меня нахлынула, я ходила по залу, как заворожённая, пока ждала свой напиток. Это было счастье, честное, неподдельное счастье. Мне дали снова деревянную табличку с сердечком и номерком, мне дали фирменные наклеечки, в витринах я видела те же огромные вкусные чизкейки и после кучи фоток во время ожидания я получила свой ягодный лимонад в фирменном стаканчике
-								.reviews__item
-									.reviews--photo
-										img.img-cover(src='./pic/person-2.jpg', width='90', height='90', alt='')
-									.reviews--name Вениамин Пивоваров
-									.reviews--position директор ресторана  «Пивной рай»
-									p Любимое место с прекрасным видом на город! Вот только почему у вас в таком огромном зале всегда так мало гостей? После прогулки по городу и изматывающей жары зашли к вам перекусить. Я взяла курицу по-тайски и попить чего-нибудь холодненького. Честно говоря, сильно сомневалась при выборе, т к обычно такие блюда бывают очень жирными, но только не здесь.
-						.product-tabs__content
-							.product-articles
-								.product-articles__grid(data-ratio='0.6522')
-									.product-articles__item
-										a.item-article(href='javascript:void(0)')
-											.item-article--pic.scale
-												span.item-article--date 10 июля 2017
-												img.img-cover(src='./pic/article-1.jpg', width='368', height='240', alt='')
-											.item-article--title Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R
-									.product-articles__item
-										a.item-article(href='javascript:void(0)')
-											.item-article--pic.scale
-												span.item-article--date 7 июля 2017
-												img.img-cover(src='./pic/article-2.jpg', width='368', height='240', alt='')
-											.item-article--title Миксер для молочных коктейлей !!!
-									.product-articles__item
-										a.item-article(href='javascript:void(0)')
-											.item-article--pic.scale
-												span.item-article--date 10 июля 2017
-												img.img-cover(src='./pic/article-3.jpg', width='368', height='240', alt='')
-											.item-article--title Vortmax. Максимальные возможности на вашей кухне
-						.product-tabs__content
-							.product-docs
-								.product-docs__list
-									a.product-docs__list--item(href='javascript:void(0)')
-										.product-docs__list--icon
-											i.icons.icons_download
-										.product-docs__list--text Инструкция по эксплуатации
-									a.product-docs__list--item(href='javascript:void(0)')
-										.product-docs__list--icon
-											i.icons.icons_download
-										.product-docs__list--text Документация
-									a.product-docs__list--item(href='javascript:void(0)')
-										.product-docs__list--icon
-											i.icons.icons_download
-										.product-docs__list--text Лицензионное соглашение
-						.product-tabs__content
-							.product-form
-								.form
-									.form__item
-										.form__item--label
-											label(for='name') #[span ФИО]
-										.form__item--input
-											input(type='text', id='name')
-									.form__item
-										.form__item--label
-											label(for='email') #[span Email]
-										.form__item--input
-											input(type='text', id='email')
-									.form__item
-										.form__item--label
-											label(for='question') #[span Вопрос]
-										.form__item--input
-											textarea(rows='8', id='question')
-									.form--agreement
-										label #[input(type='checkbox', checked) ] Я согласен на обработку персональных данных
-									.form__controls
-										button.form--button Отправить
-				.product-set
-					.product-set--title Выгодный комплект
-					.product-set__grid
-						.product-set__item
-							a.product-set__item--pic(href='javascript:void(0)')
-								img.img-contain(src='./pic/set-1.jpg', width='114' height='132', alt='')
-							.product-set__content
-								input(type='checkbox', checked)
-								a.product-set__content--title(href='javascript:void(0)') Котел пищеварочный стационарный КПЭМ-100/9Т
-								span.product-set__content--price 255 131 ₽
-						.product-set__item
-							a.product-set__item--pic(href='javascript:void(0)')
-								img.img-contain(src='./pic/set-2.jpg', width='131' height='131', alt='')
-							.product-set__content
-								input(type='checkbox', checked)
-								a.product-set__content--title(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-750/3 С
-								span.product-set__content--price 57 565 ₽
-						.product-set__item
-							a.product-set__item--pic(href='javascript:void(0)')
-								img.img-contain(src='./pic/set-3.jpg', width='133' height='111', alt='')
-							.product-set__content
-								input(type='checkbox', checked)
-								a.product-set__content--title(href='javascript:void(0)') Плита электрическая MARENO NC74EC
-								span.product-set__content--price 71 731 ₽
-						.product-set__total
-							.product-set__total--discount #[span Скидка 50 000 руб.]
-							.product-set__total--price 315 250 ₽
-							button.product-set__total--button Купить комплект
-				.same
-					.same--title С этим товаром покупают #[span Популярные предпочтения наших читателей]
-					.same__slider
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									span.tip-icon.tip-icon_special Акция
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
-									.item-catalog__price 
-										span.item-catalog__price--old 1 410 900 Р
-										span.item-catalog__price--current 1 395 689 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
-									.item-catalog__price 
-										span.item-catalog__price--current 255 131 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									span.tip-icon.tip-icon_hit Хит
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-6.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь подовая Wiesheu EBO 68 L COMFORT NEW
-									.item-catalog__price 
-										span.item-catalog__price--current 447 136 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									span.tip-icon.tip-icon_special Акция
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-5.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь
-									.item-catalog__price 
-										span.item-catalog__price--old 55 900 Р
-										span.item-catalog__price--current 45 380 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-				.same
-					.same--title Вы недавно смотрели #[span Возможно, Вы заходите вернуться к просмотренным ранее товарам:]
-					.same__slider
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
-									.item-catalog__price 
-										span.item-catalog__price--current 255 131 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-5.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь
-									.item-catalog__price 
-										span.item-catalog__price--old 55 900 Р
-										span.item-catalog__price--current 45 380 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									span.tip-icon.tip-icon_new New
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-7.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-750/3 С
-									.item-catalog__price 
-										span.item-catalog__price--current 57 565 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
-									.item-catalog__price 
-										span.item-catalog__price--current 255 131 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
-									.item-catalog__price 
-										span.item-catalog__price--current 255 131 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-5.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь
-									.item-catalog__price 
-										span.item-catalog__price--old 55 900 Р
-										span.item-catalog__price--current 45 380 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									span.tip-icon.tip-icon_new New
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-7.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-750/3 С
-									.item-catalog__price 
-										span.item-catalog__price--current 57 565 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
-									.item-catalog__price 
-										span.item-catalog__price--current 255 131 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-				.button-back
-					a(href='javascript:void(0)') Перейти ко всем товарам категории
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li 
+							a(href='javascript:void(0);') Каталог
+						li Шкаф для выпечки
+				.content__row
+					.product
+						a.product--print(href='javascript:void(0);') Версия для печати
+						.product__lc
+							.product-gallery
+								span.tip-icon.tip-icon_special Акция
+								.elem-country 
+									img.img-cover(src='./img/flag-se.png', width='50', height='50', alt='')
+								.product-gallery__slider(data-ratio='1')
+									.product-gallery__slider--item.scale
+										img.img-cover(src='./pic/card-1.jpg', width='370', height='370', alt='')
+									.product-gallery__slider--item.scale
+										img.img-cover(src='./pic/card-2.jpg', width='370', height='370', alt='')
+									.product-gallery__slider--item.scale
+										img.img-cover(src='./pic/card-1.jpg', width='370', height='370', alt='')
+									.product-gallery__slider--item.scale
+										img.img-cover(src='./pic/card-2.jpg', width='370', height='370', alt='')
+									.product-gallery__slider--item.scale
+										img.img-cover(src='./pic/card-1.jpg', width='370', height='370', alt='')
+									.product-gallery__slider--item.scale
+										img.img-cover(src='./pic/card-2.jpg', width='370', height='370', alt='')
+							.product-preview
+								.product-preview__slider(data-ratio='1')
+									.product-preview__slider--item
+										.product-preview__slider--pic.scale(data='1')
+											img.img-cover(src='./pic/preview-1.jpg', width='68', height='68', alt='')
+									.product-preview__slider--item
+										.product-preview__slider--pic.scale
+											img.img-cover(src='./pic/preview-2.jpg', width='68', height='68', alt='')
+									.product-preview__slider--item
+										.product-preview__slider--pic.scale
+											img.img-cover(src='./pic/preview-1.jpg', width='68', height='68', alt='')
+									.product-preview__slider--item
+										.product-preview__slider--pic.scale
+											img.img-cover(src='./pic/preview-2.jpg', width='68', height='68', alt='')
+									.product-preview__slider--item
+										.product-preview__slider--pic.scale
+											img.img-cover(src='./pic/preview-1.jpg', width='68', height='68', alt='')
+									.product-preview__slider--item
+										.product-preview__slider--pic.scale
+											img.img-cover(src='./pic/preview-2.jpg', width='68', height='68', alt='')
+						.product__rc
+							span.title-h1 Шкаф пекарский универсальный жаропрочный Unox XB 895
+							.product__data
+								span.product--code Код: 0191
+								span.elem--availability.elem--availability_true В наличии
+							.product-controls
+								.product__price
+									.product__price--title Цена:
+									.product__price--old 310 900 ₽
+									.product__price--current 1 255 500 ₽
+								.product__counter
+									.elem-quantity
+										.elem-quantity--minus
+										input.elem-quantity--input(value='2')
+										.elem-quantity--plus
+								.product-buy
+									.product-buy__buttons
+										.product-buy--item.product-buy--item_add(data-switch, data-default='В корзину', data-active='В корзине') В корзину
+										.product-buy--item.product-buy--item_one-click(data-open='buy-one-click') В 1 клик
+									a.product-buy--pay(href='javascript:void(0);') Как оплатить
+								.product__additional
+									a.product__additional--item.product__additional--item_compare.is-active(href='javascript:void(0);', data-switch, data-default='В сравнение', data-active='В сравнении') В сравнение
+									a.product__additional--item.product__additional--item_favorite(href='javascript:void(0);', data-switch, data-default='В избранное', data-active='В избранном') В избранное
+							.product-info
+								.product-info__item
+									span.product-info--title.product-info--title_compatibility.product-info--title_droppable.is-active Совместимость
+									.product-info__content
+										ul.product-info--list
+											li Печь хлебопекарная Восход ХПЭ-750/3 нерж.сталь, в обрешетке
+											li Печь подовая Wiesheu EBO 64 S EXCLUSIVE NEW
+											li Пароконвектомат XB 613G
+											li Пароконвектомат XB 893
+											li Пароконвектомат XB 895
+										a.product-info--more(href='javascript:void(0);') Показать еще
+								.product-info__item
+									span.product-info--title.product-info--title_delivery Стоимость доставки
+									.product-info__content
+										.product-delivery
+											.product-delivery__item.is-active
+												.product-delivery__lc
+													.product-delivery--logo
+														img.img-contain(src='./pic/ramec-logo.png', width='118', height='42', alt='')
+												.product-delivery__rc
+													span.product-delivery--text до Барнаула #[br] от 1200 руб.
+											.product-delivery__item
+												.product-delivery__lc
+													.product-delivery--logo
+														img.img-contain(src='./pic/dl.png', width='118', height='42', alt='')
+												.product-delivery__rc
+													span.product-delivery--text до Барнаула #[br] от 2400 руб.
+											.product-delivery__item
+												.product-delivery__lc
+													.product-delivery--logo
+														img.img-contain(src='./pic/pec.png', width='118', height='42', alt='')
+												.product-delivery__rc
+													span.product-delivery--text до Барнаула #[br] от 3600 руб.
+					.product-tabs
+						.product-tabs__nav
+							a.product-tabs__nav--item.is-active(href='1', data-fadetabs-item) #[span Описание]
+							a.product-tabs__nav--item(href='2', data-fadetabs-item) #[span Характеристики]
+							a.product-tabs__nav--item(href='3', data-fadetabs-item) #[span Отзывы]
+							a.product-tabs__nav--item(href='4', data-fadetabs-item) #[span Статьи]
+							a.product-tabs__nav--item(href='5', data-fadetabs-item) #[span Документация]
+							a.product-tabs__nav--item(href='6', data-fadetabs-item) #[span Задать вопрос]
+						.product-tabs__slider(data-fadetabs-slider)
+							.product-tabs__content
+								.product-description
+									.product-description__group
+										.product-description--title Описание
+										p Пароконвектомат UNOX XB 895 серии BakerLux Dynamic предназначен для приготовления различных блюд, выпечки хлебобулочных и кондитерских изделий на предприятиях общественного питания и торговли, в пекарнях и кондитерских. Модель оснащена подсветкой посредством галогеновых ламп и L-образными направляющими. Съемное внутреннее стекло облегчают чистку и обеспечивают максимальную гигиену. Камера с закругленными углами выполнена из нержавеющей стали AISI 304, направляющие - из нержавеющей стали, дверные петли выполнены из высокопрочного самосмазывающегося технополимера, дверной замок - из углеродного волокна.
+										p Листы для выпечки в комплект поставки не входят и приобретаются отдельно.
+									.product-description__group
+										.product-description--title Основные характеристики
+										.product-table
+											.product-table__row
+												.product-table--title #[span Производитель]
+												span.product-table--text Unox
+											.product-table__row
+												.product-table--title #[span Страна-производитель]
+												span.product-table--text Италия
+											.product-table__row
+												.product-table--title #[span Вид оборудования]
+												span.product-table--text Пекарский шкаф
+											.product-table__row
+												.product-table--title #[span Сфера использования]
+												span.product-table--text Fast-food, HoReCa, Пищевая промышленность
+											.product-table__row
+												.product-table--title #[span Источник питания]
+												span.product-table--text Электричество
+											.product-table__row
+												.product-table--title #[span Номинальное напряжение]
+												span.product-table--text 380 В
+											.product-table__row
+												.product-table--title #[span Номинальная потребляемая мощность]
+												span.product-table--text 15.8 (кВт)
+											.product-table__row
+												.product-table--title #[span Гарантийный срок]
+												span.product-table--text 12 (мес)
+									.product-description__group
+										.product-description--title Производитель
+										.product-brand
+											.product-brand--logo
+												img(src='./pic/unox-logo.png', width='175', height='66', alt='')
+											.product-brand__content
+												p Компания из Италии Unox вышла на рынок хлебопекарного оборудования в 1990 году. В течение 25 лет использует передовые подходы к производству техники, постоянно улучшает качество выпускаемой продукции. Как результат — многочисленные патенты на оригинальные разработки. Компания ежегодно реализует 150 тысяч печей и пароконвектоматов.
+							.product-tabs__content
+								.product-characteristics
+									.product-characteristics--title Режимы выпечки
+									ul
+										li Выпечка в режиме конвекции при температуре 30°C-260°C
+										li Выпечка в режиме конвекция + пар при температуре 48°C-260°C
+										li Максимальная температура предварительного разогрева 260° C
+									.product-characteristics--title Распределение воздушных потоков в камере готовки
+									ul
+										li Технология AIR.Plus: несколько вентиляторов с реверсивным движением
+										li Технология AIR.Plus: две скорости вентилятора
+									.product-characteristics--title Управление климатом в камере готовки
+									ul
+										li Технология DRY.Plus: быстрое изъятие влажности из камеры готовки
+										li Технология STEAM.Plus: установка влажности от 20 до 100%, программируется пользователем
+									.product-characteristics--title Запатентованная дверца
+									ul
+										li Дверные петли выполнены из высокопрочного самосмазывающегося технополимера (для дверей с боковым открытием)
+										li Реверсивная дверца с возможностью перевешивания даже после установки печи
+										li Блокировка произвольного открытия дверцы в позициях 60°-120°-180°
+							.product-tabs__content
+								.reviews
+									.reviews__item
+										.reviews--photo
+											img.img-cover(src='./pic/person-1.jpg', width='90', height='90', alt='')
+										.reviews--name Андрей Михайлов
+										.reviews--position шеф-повар ресторана «Териберка T.R. бар»
+										p В Тукано кофе первый раз я была частым гостем, живя в далеком 2010 году в Кишиневе. Там я попробовала свой первый раф и ещё тогда влюбилась в красочный интерьер и деревянные таблички-номерки на столах в виде сердечек.
+										p Когда узнала, что в Барнауле открылся Тукано, моей радости не было предела. А когда я случайно гуляя, на него наткнулась, радовалась искренне, как ребёнок. 2018 год, Барнаул, Тукано, лето...безумная ностальгия на меня нахлынула, я ходила по залу, как заворожённая, пока ждала свой напиток. Это было счастье, честное, неподдельное счастье. Мне дали снова деревянную табличку с сердечком и номерком, мне дали фирменные наклеечки, в витринах я видела те же огромные вкусные чизкейки и после кучи фоток во время ожидания я получила свой ягодный лимонад в фирменном стаканчике
+									.reviews__item
+										.reviews--photo
+											img.img-cover(src='./pic/person-2.jpg', width='90', height='90', alt='')
+										.reviews--name Вениамин Пивоваров
+										.reviews--position директор ресторана  «Пивной рай»
+										p Любимое место с прекрасным видом на город! Вот только почему у вас в таком огромном зале всегда так мало гостей? После прогулки по городу и изматывающей жары зашли к вам перекусить. Я взяла курицу по-тайски и попить чего-нибудь холодненького. Честно говоря, сильно сомневалась при выборе, т к обычно такие блюда бывают очень жирными, но только не здесь.
+									.reviews__item
+										.reviews--photo
+											img.img-cover(src='./pic/person-1.jpg', width='90', height='90', alt='')
+										.reviews--name Андрей Михайлов
+										.reviews--position шеф-повар ресторана «Териберка T.R. бар»
+										p В Тукано кофе первый раз я была частым гостем, живя в далеком 2010 году в Кишиневе. Там я попробовала свой первый раф и ещё тогда влюбилась в красочный интерьер и деревянные таблички-номерки на столах в виде сердечек.
+										p Когда узнала, что в Барнауле открылся Тукано, моей радости не было предела. А когда я случайно гуляя, на него наткнулась, радовалась искренне, как ребёнок. 2018 год, Барнаул, Тукано, лето...безумная ностальгия на меня нахлынула, я ходила по залу, как заворожённая, пока ждала свой напиток. Это было счастье, честное, неподдельное счастье. Мне дали снова деревянную табличку с сердечком и номерком, мне дали фирменные наклеечки, в витринах я видела те же огромные вкусные чизкейки и после кучи фоток во время ожидания я получила свой ягодный лимонад в фирменном стаканчике
+									.reviews__item
+										.reviews--photo
+											img.img-cover(src='./pic/person-2.jpg', width='90', height='90', alt='')
+										.reviews--name Вениамин Пивоваров
+										.reviews--position директор ресторана  «Пивной рай»
+										p Любимое место с прекрасным видом на город! Вот только почему у вас в таком огромном зале всегда так мало гостей? После прогулки по городу и изматывающей жары зашли к вам перекусить. Я взяла курицу по-тайски и попить чего-нибудь холодненького. Честно говоря, сильно сомневалась при выборе, т к обычно такие блюда бывают очень жирными, но только не здесь.
+							.product-tabs__content
+								.product-articles
+									.product-articles__grid(data-ratio='0.6522')
+										.product-articles__item
+											a.item-article(href='javascript:void(0)')
+												.item-article--pic.scale
+													span.item-article--date 10 июля 2017
+													img.img-cover(src='./pic/article-1.jpg', width='368', height='240', alt='')
+												.item-article--title Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R
+										.product-articles__item
+											a.item-article(href='javascript:void(0)')
+												.item-article--pic.scale
+													span.item-article--date 7 июля 2017
+													img.img-cover(src='./pic/article-2.jpg', width='368', height='240', alt='')
+												.item-article--title Миксер для молочных коктейлей !!!
+										.product-articles__item
+											a.item-article(href='javascript:void(0)')
+												.item-article--pic.scale
+													span.item-article--date 10 июля 2017
+													img.img-cover(src='./pic/article-3.jpg', width='368', height='240', alt='')
+												.item-article--title Vortmax. Максимальные возможности на вашей кухне
+							.product-tabs__content
+								.product-docs
+									.product-docs__list
+										a.product-docs__list--item(href='javascript:void(0)')
+											.product-docs__list--icon
+												i.icons.icons_download
+											.product-docs__list--text Инструкция по эксплуатации
+										a.product-docs__list--item(href='javascript:void(0)')
+											.product-docs__list--icon
+												i.icons.icons_download
+											.product-docs__list--text Документация
+										a.product-docs__list--item(href='javascript:void(0)')
+											.product-docs__list--icon
+												i.icons.icons_download
+											.product-docs__list--text Лицензионное соглашение
+							.product-tabs__content
+								.product-form
+									.form
+										.form__item
+											.form__item--label
+												label(for='name') #[span ФИО]
+											.form__item--input
+												input(type='text', id='name')
+										.form__item
+											.form__item--label
+												label(for='email') #[span Email]
+											.form__item--input
+												input(type='text', id='email')
+										.form__item
+											.form__item--label
+												label(for='question') #[span Вопрос]
+											.form__item--input
+												textarea(rows='8', id='question')
+										.form--agreement
+											label #[input(type='checkbox', checked) ] Я согласен на обработку персональных данных
+										.form__controls
+											button.form--button Отправить
+					.product-set
+						.product-set--title Выгодный комплект
+						.product-set__grid
+							.product-set__item
+								a.product-set__item--pic(href='javascript:void(0)')
+									img.img-contain(src='./pic/set-1.jpg', width='114' height='132', alt='')
+								.product-set__content
+									input(type='checkbox', checked)
+									a.product-set__content--title(href='javascript:void(0)') Котел пищеварочный стационарный КПЭМ-100/9Т
+									span.product-set__content--price 255 131 ₽
+							.product-set__item
+								a.product-set__item--pic(href='javascript:void(0)')
+									img.img-contain(src='./pic/set-2.jpg', width='131' height='131', alt='')
+								.product-set__content
+									input(type='checkbox', checked)
+									a.product-set__content--title(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-750/3 С
+									span.product-set__content--price 57 565 ₽
+							.product-set__item
+								a.product-set__item--pic(href='javascript:void(0)')
+									img.img-contain(src='./pic/set-3.jpg', width='133' height='111', alt='')
+								.product-set__content
+									input(type='checkbox', checked)
+									a.product-set__content--title(href='javascript:void(0)') Плита электрическая MARENO NC74EC
+									span.product-set__content--price 71 731 ₽
+							.product-set__total
+								.product-set__total--discount #[span Скидка 50 000 руб.]
+								.product-set__total--price 315 250 ₽
+								button.product-set__total--button Купить комплект
+					.same
+						.same--title С этим товаром покупают #[span Популярные предпочтения наших читателей]
+						.same__slider
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										span.tip-icon.tip-icon_special Акция
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+										.item-catalog__price 
+											span.item-catalog__price--old 1 410 900 Р
+											span.item-catalog__price--current 1 395 689 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
+										.item-catalog__price 
+											span.item-catalog__price--current 255 131 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										span.tip-icon.tip-icon_hit Хит
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-6.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь подовая Wiesheu EBO 68 L COMFORT NEW
+										.item-catalog__price 
+											span.item-catalog__price--current 447 136 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										span.tip-icon.tip-icon_special Акция
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-5.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь
+										.item-catalog__price 
+											span.item-catalog__price--old 55 900 Р
+											span.item-catalog__price--current 45 380 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+					.same
+						.same--title Вы недавно смотрели #[span Возможно, Вы заходите вернуться к просмотренным ранее товарам:]
+						.same__slider
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
+										.item-catalog__price 
+											span.item-catalog__price--current 255 131 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-5.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь
+										.item-catalog__price 
+											span.item-catalog__price--old 55 900 Р
+											span.item-catalog__price--current 45 380 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										span.tip-icon.tip-icon_new New
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-7.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-750/3 С
+										.item-catalog__price 
+											span.item-catalog__price--current 57 565 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
+										.item-catalog__price 
+											span.item-catalog__price--current 255 131 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
+										.item-catalog__price 
+											span.item-catalog__price--current 255 131 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-5.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь
+										.item-catalog__price 
+											span.item-catalog__price--old 55 900 Р
+											span.item-catalog__price--current 45 380 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										span.tip-icon.tip-icon_new New
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-7.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-750/3 С
+										.item-catalog__price 
+											span.item-catalog__price--current 57 565 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
+										.item-catalog__price 
+											span.item-catalog__price--current 255 131 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+					.button-back
+						a(href='javascript:void(0)') Перейти ко всем товарам категории
 		include modules/footer.pug
 		include modules/modals.pug
 		script(src='./js/libs.js')

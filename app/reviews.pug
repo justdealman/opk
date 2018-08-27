@@ -5,107 +5,108 @@ html(lang='ru')
 	meta(name='viewport', content='width=device-width, user-scalable=yes')
 	link(href='./css/style.css', rel='stylesheet')
 	body
-		include modules/header.pug
-		.content
-			.breadcrumbs
-				ul
-					li
-						a(href='javascript:void(0);') Главная
-					li Портфолио и отзывы
-			.content__row
-				span.title-h1 Портфолио и отзывы
-				.blog
-					.blog__row
-						.blog-nav
-							.blog-nav__links
-								a(href='1', data-tabs-link) Портфолио
-								a.is-active(href='2', data-tabs-link) Отзывы
-							button.blog-nav--button(data-tabs-tip='2') Добавить отзыв
-						.blog-slider(data-tabs)
-							.blog-slider__item
-								.blog__grid(data-ratio='0.6522')
-									.blog__item
-										a.item-blog(href='javascript:void(0);')
-											.item-blog--pic.scale
-												span.item-blog--date Барнаул
-												img.img-cover(src='./pic/portfolio-1.jpg', width='368', height='240', alt='')
-											span.item-blog--title Duo Asia
-									.blog__item
-										a.item-blog(href='javascript:void(0);')
-											.item-blog--pic.scale
-												span.item-blog--date Москва
-												img.img-cover(src='./pic/portfolio-2.jpg', width='368', height='240', alt='')
-											span.item-blog--title «Вокруг света»
-									.blog__item
-										a.item-blog(href='javascript:void(0);')
-											.item-blog--pic.scale
-												span.item-blog--date Барнаул
-												img.img-cover(src='./pic/portfolio-3.jpg', width='368', height='240', alt='')
-											span.item-blog--title Birch
-									.blog__item
-										a.item-blog(href='javascript:void(0);')
-											.item-blog--pic.scale
-												span.item-blog--date Москва
-												img.img-cover(src='./pic/portfolio-4.jpg', width='368', height='240', alt='')
-											span.item-blog--title «Пельмени и вареники»
-									.blog__item
-										a.item-blog(href='javascript:void(0);')
-											.item-blog--pic.scale
-												span.item-blog--date Барнаул
-												img.img-cover(src='./pic/portfolio-5.jpg', width='368', height='240', alt='')
-											span.item-blog--title «Бочкари»
-									.blog__item
-										a.item-blog(href='javascript:void(0);')
-											.item-blog--pic.scale
-												span.item-blog--date Москва
-												img.img-cover(src='./pic/portfolio-6.jpg', width='368', height='240', alt='')
-											span.item-blog--title Vortmax. Максимальные возможности на вашей кухне
-									.blog__item
-										a.item-blog(href='javascript:void(0);')
-											.item-blog--pic.scale
-												span.item-blog--date Барнаул
-												img.img-cover(src='./pic/portfolio-7.jpg', width='368', height='240', alt='')
-											span.item-blog--title «Рис, баран и барбарис»
-									.blog__item
-										a.item-blog(href='javascript:void(0);')
-											.item-blog--pic.scale
-												span.item-blog--date Москва
-												img.img-cover(src='./pic/portfolio-8.jpg', width='368', height='240', alt='')
-											span.item-blog--title Upgrade
-									.blog__item
-										a.item-blog(href='javascript:void(0);')
-											.item-blog--pic.scale
-												span.item-blog--date Барнаул
-												img.img-cover(src='./pic/portfolio-1.jpg', width='368', height='240', alt='')
-											span.item-blog--title «Японкин Brothers»
-							.blog-slider__item
-								.reviews
-									.reviews__item
-										.reviews--photo
-											img.img-cover(src='./pic/person-1.jpg', width='90', height='90', alt='')
-										.reviews--name Андрей Михайлов
-										.reviews--position шеф-повар ресторана «Териберка T.R. бар»
-										p В Тукано кофе первый раз я была частым гостем, живя в далеком 2010 году в Кишиневе. Там я попробовала свой первый раф и ещё тогда влюбилась в красочный интерьер и деревянные таблички-номерки на столах в виде сердечек.
-										p Когда узнала, что в Барнауле открылся Тукано, моей радости не было предела. А когда я случайно гуляя, на него наткнулась, радовалась искренне, как ребёнок. 2018 год, Барнаул, Тукано, лето...безумная ностальгия на меня нахлынула, я ходила по залу, как заворожённая, пока ждала свой напиток. Это было счастье, честное, неподдельное счастье. Мне дали снова деревянную табличку с сердечком и номерком, мне дали фирменные наклеечки, в витринах я видела те же огромные вкусные чизкейки и после кучи фоток во время ожидания я получила свой ягодный лимонад в фирменном стаканчике
-									.reviews__item
-										.reviews--photo
-											img.img-cover(src='./pic/person-2.jpg', width='90', height='90', alt='')
-										.reviews--name Вениамин Пивоваров
-										.reviews--position директор ресторана  «Пивной рай»
-										p Любимое место с прекрасным видом на город! Вот только почему у вас в таком огромном зале всегда так мало гостей? После прогулки по городу и изматывающей жары зашли к вам перекусить. Я взяла курицу по-тайски и попить чего-нибудь холодненького. Честно говоря, сильно сомневалась при выборе, т к обычно такие блюда бывают очень жирными, но только не здесь.
-									.reviews__item
-										.reviews--photo
-											img.img-cover(src='./pic/person-1.jpg', width='90', height='90', alt='')
-										.reviews--name Андрей Михайлов
-										.reviews--position шеф-повар ресторана «Териберка T.R. бар»
-										p В Тукано кофе первый раз я была частым гостем, живя в далеком 2010 году в Кишиневе. Там я попробовала свой первый раф и ещё тогда влюбилась в красочный интерьер и деревянные таблички-номерки на столах в виде сердечек.
-										p Когда узнала, что в Барнауле открылся Тукано, моей радости не было предела. А когда я случайно гуляя, на него наткнулась, радовалась искренне, как ребёнок. 2018 год, Барнаул, Тукано, лето...безумная ностальгия на меня нахлынула, я ходила по залу, как заворожённая, пока ждала свой напиток. Это было счастье, честное, неподдельное счастье. Мне дали снова деревянную табличку с сердечком и номерком, мне дали фирменные наклеечки, в витринах я видела те же огромные вкусные чизкейки и после кучи фоток во время ожидания я получила свой ягодный лимонад в фирменном стаканчике
-									.reviews__item
-										.reviews--photo
-											img.img-cover(src='./pic/person-2.jpg', width='90', height='90', alt='')
-										.reviews--name Вениамин Пивоваров
-										.reviews--position директор ресторана  «Пивной рай»
-										p Любимое место с прекрасным видом на город! Вот только почему у вас в таком огромном зале всегда так мало гостей? После прогулки по городу и изматывающей жары зашли к вам перекусить. Я взяла курицу по-тайски и попить чего-нибудь холодненького. Честно говоря, сильно сомневалась при выборе, т к обычно такие блюда бывают очень жирными, но только не здесь.
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li Портфолио и отзывы
+				.content__row
+					span.title-h1 Портфолио и отзывы
+					.blog
+						.blog__row(data-tabs-container)
+							.blog-nav
+								.blog-nav__links
+									a(href='1', data-tabs-link) Портфолио
+									a.is-active(href='2', data-tabs-link) Отзывы
+								button.blog-nav--button(data-tabs-tip='2', data-open='add-review') Добавить отзыв
+							.blog-slider(data-tabs)
+								.blog-slider__item
+									.blog__grid(data-ratio='0.6522')
+										.blog__item
+											a.item-blog(href='javascript:void(0);')
+												.item-blog--pic.scale
+													span.item-blog--date Барнаул
+													img.img-cover(src='./pic/portfolio-1.jpg', width='368', height='240', alt='')
+												span.item-blog--title Duo Asia
+										.blog__item
+											a.item-blog(href='javascript:void(0);')
+												.item-blog--pic.scale
+													span.item-blog--date Москва
+													img.img-cover(src='./pic/portfolio-2.jpg', width='368', height='240', alt='')
+												span.item-blog--title «Вокруг света»
+										.blog__item
+											a.item-blog(href='javascript:void(0);')
+												.item-blog--pic.scale
+													span.item-blog--date Барнаул
+													img.img-cover(src='./pic/portfolio-3.jpg', width='368', height='240', alt='')
+												span.item-blog--title Birch
+										.blog__item
+											a.item-blog(href='javascript:void(0);')
+												.item-blog--pic.scale
+													span.item-blog--date Москва
+													img.img-cover(src='./pic/portfolio-4.jpg', width='368', height='240', alt='')
+												span.item-blog--title «Пельмени и вареники»
+										.blog__item
+											a.item-blog(href='javascript:void(0);')
+												.item-blog--pic.scale
+													span.item-blog--date Барнаул
+													img.img-cover(src='./pic/portfolio-5.jpg', width='368', height='240', alt='')
+												span.item-blog--title «Бочкари»
+										.blog__item
+											a.item-blog(href='javascript:void(0);')
+												.item-blog--pic.scale
+													span.item-blog--date Москва
+													img.img-cover(src='./pic/portfolio-6.jpg', width='368', height='240', alt='')
+												span.item-blog--title Vortmax. Максимальные возможности на вашей кухне
+										.blog__item
+											a.item-blog(href='javascript:void(0);')
+												.item-blog--pic.scale
+													span.item-blog--date Барнаул
+													img.img-cover(src='./pic/portfolio-7.jpg', width='368', height='240', alt='')
+												span.item-blog--title «Рис, баран и барбарис»
+										.blog__item
+											a.item-blog(href='javascript:void(0);')
+												.item-blog--pic.scale
+													span.item-blog--date Москва
+													img.img-cover(src='./pic/portfolio-8.jpg', width='368', height='240', alt='')
+												span.item-blog--title Upgrade
+										.blog__item
+											a.item-blog(href='javascript:void(0);')
+												.item-blog--pic.scale
+													span.item-blog--date Барнаул
+													img.img-cover(src='./pic/portfolio-1.jpg', width='368', height='240', alt='')
+												span.item-blog--title «Японкин Brothers»
+								.blog-slider__item
+									.reviews
+										.reviews__item
+											.reviews--photo
+												img.img-cover(src='./pic/person-1.jpg', width='90', height='90', alt='')
+											.reviews--name Андрей Михайлов
+											.reviews--position шеф-повар ресторана «Териберка T.R. бар»
+											p В Тукано кофе первый раз я была частым гостем, живя в далеком 2010 году в Кишиневе. Там я попробовала свой первый раф и ещё тогда влюбилась в красочный интерьер и деревянные таблички-номерки на столах в виде сердечек.
+											p Когда узнала, что в Барнауле открылся Тукано, моей радости не было предела. А когда я случайно гуляя, на него наткнулась, радовалась искренне, как ребёнок. 2018 год, Барнаул, Тукано, лето...безумная ностальгия на меня нахлынула, я ходила по залу, как заворожённая, пока ждала свой напиток. Это было счастье, честное, неподдельное счастье. Мне дали снова деревянную табличку с сердечком и номерком, мне дали фирменные наклеечки, в витринах я видела те же огромные вкусные чизкейки и после кучи фоток во время ожидания я получила свой ягодный лимонад в фирменном стаканчике
+										.reviews__item
+											.reviews--photo
+												img.img-cover(src='./pic/person-2.jpg', width='90', height='90', alt='')
+											.reviews--name Вениамин Пивоваров
+											.reviews--position директор ресторана  «Пивной рай»
+											p Любимое место с прекрасным видом на город! Вот только почему у вас в таком огромном зале всегда так мало гостей? После прогулки по городу и изматывающей жары зашли к вам перекусить. Я взяла курицу по-тайски и попить чего-нибудь холодненького. Честно говоря, сильно сомневалась при выборе, т к обычно такие блюда бывают очень жирными, но только не здесь.
+										.reviews__item
+											.reviews--photo
+												img.img-cover(src='./pic/person-1.jpg', width='90', height='90', alt='')
+											.reviews--name Андрей Михайлов
+											.reviews--position шеф-повар ресторана «Териберка T.R. бар»
+											p В Тукано кофе первый раз я была частым гостем, живя в далеком 2010 году в Кишиневе. Там я попробовала свой первый раф и ещё тогда влюбилась в красочный интерьер и деревянные таблички-номерки на столах в виде сердечек.
+											p Когда узнала, что в Барнауле открылся Тукано, моей радости не было предела. А когда я случайно гуляя, на него наткнулась, радовалась искренне, как ребёнок. 2018 год, Барнаул, Тукано, лето...безумная ностальгия на меня нахлынула, я ходила по залу, как заворожённая, пока ждала свой напиток. Это было счастье, честное, неподдельное счастье. Мне дали снова деревянную табличку с сердечком и номерком, мне дали фирменные наклеечки, в витринах я видела те же огромные вкусные чизкейки и после кучи фоток во время ожидания я получила свой ягодный лимонад в фирменном стаканчике
+										.reviews__item
+											.reviews--photo
+												img.img-cover(src='./pic/person-2.jpg', width='90', height='90', alt='')
+											.reviews--name Вениамин Пивоваров
+											.reviews--position директор ресторана  «Пивной рай»
+											p Любимое место с прекрасным видом на город! Вот только почему у вас в таком огромном зале всегда так мало гостей? После прогулки по городу и изматывающей жары зашли к вам перекусить. Я взяла курицу по-тайски и попить чего-нибудь холодненького. Честно говоря, сильно сомневалась при выборе, т к обычно такие блюда бывают очень жирными, но только не здесь.
 		include modules/footer.pug
 		include modules/modals.pug
 		script(src='./js/libs.js')

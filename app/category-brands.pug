@@ -5,949 +5,951 @@ html(lang='ru')
 	meta(name='viewport', content='width=device-width, user-scalable=yes')
 	link(href='./css/style.css', rel='stylesheet')
 	body
-		include modules/header.pug
-		.content
-			.breadcrumbs
-				ul
-					li
-						a(href='javascript:void(0);') Главная
-					li Каталог
-			.content__row
-				span.title-h1 Каталог
-				.category
-					.category__nav
-						a.category__nav--item(href='1', data-tabs-link) Вид
-						a.category__nav--item.is-active(href='2', data-tabs-link) Бренды
-						a.category__nav--item(href='3', data-tabs-link) Направления
-					.category__content(data-tabs)
-						.category-tab.category-tab_view
-							.category-tab__grid
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-contain(src='./pic/category-1.jpg', width='184', height='149', alt='')
-									a.category-tab--title(href='javascript:void(0);') Тепловое оборудование
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Пароконвектоматы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Печи конвекционные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Печи хлебопекарные 
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Печи ротационные
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Печи для пиццы
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-contain(src='./pic/category-2.jpg', width='188', height='188', alt='')
-									a.category-tab--title(href='javascript:void(0);') Холодильное оборудование
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Камеры холодильные
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Машины холодильные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Лари морозильные
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Столы холодильные и морозильные
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Витрины холодильные
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 5 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-contain(src='./pic/category-3.jpg', width='188', height='188', alt='')
-									a.category-tab--title(href='javascript:void(0);') Технологическое оборудование
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Тестомесы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Миксеры
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Овощерезки
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Терки и слайсеры
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Тестораскаточные машины
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-contain(src='./pic/category-4.jpg', width='185', height='185', alt='')
-									a.category-tab--title(href='javascript:void(0);') Нейтральное оборудование
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Столы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Ванны моечные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Котломойки
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Стеллажи
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Вытяжки
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 10 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-contain(src='./pic/category-5.jpg', width='197', height='197', alt='')
-									a.category-tab--title(href='javascript:void(0);') Барное оборудование
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Пароконвектоматы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Печи конвекционные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Печи хлебопекарные 
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Печи ротационные
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Печи для пиццы
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-contain(src='./pic/category-6.jpg', width='192', height='192', alt='')
-									a.category-tab--title(href='javascript:void(0);') Упаковочное оборудование
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Камеры холодильные
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Машины холодильные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Лари морозильные
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Столы холодильные и морозильные
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Витрины холодильные
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 5 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-contain(src='./pic/category-7.jpg', width='195', height='194', alt='')
-									a.category-tab--title(href='javascript:void(0);') Клининговое оборудование
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Тестомесы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Миксеры
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Овощерезки
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Терки и слайсеры
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Тестораскаточные машины
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-contain(src='./pic/category-8.jpg', width='191', height='156', alt='')
-									a.category-tab--title(href='javascript:void(0);') Линии раздач
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Столы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Ванны моечные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Котломойки
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Стеллажи
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Вытяжки
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 10 категорий
-						.category-tab.category-tab_brands
-							.category-abc
-								.category-abc__lang
-									a(href='javascript:void(0);') A
-									a(href='javascript:void(0);') B
-									a(href='javascript:void(0);') C
-									a.is-active(href='javascript:void(0);') D
-									a(href='javascript:void(0);') E 
-									a(href='javascript:void(0);') F
-									a(href='javascript:void(0);') G
-									a(href='javascript:void(0);') H
-									a(href='javascript:void(0);') I
-									a(href='javascript:void(0);') J
-									a(href='javascript:void(0);') K
-									a(href='javascript:void(0);') L
-									a(href='javascript:void(0);') M
-									a(href='javascript:void(0);') N
-									a(href='javascript:void(0);') O
-									a(href='javascript:void(0);') P
-									a(href='javascript:void(0);') Q
-									a(href='javascript:void(0);') R
-									a(href='javascript:void(0);') S
-									a(href='javascript:void(0);') U
-									a(href='javascript:void(0);') V
-									a(href='javascript:void(0);') W
-									a(href='javascript:void(0);') X
-									a(href='javascript:void(0);') Y
-									a(href='javascript:void(0);') Z
-								.category-abc__lang
-									a(href='javascript:void(0);') А
-									a(href='javascript:void(0);') Б
-									a(href='javascript:void(0);') В
-									a(href='javascript:void(0);') Г
-									a(href='javascript:void(0);') Д
-									a(href='javascript:void(0);') К
-									a(href='javascript:void(0);') Л
-									a(href='javascript:void(0);') М
-									a(href='javascript:void(0);') Н
-									a(href='javascript:void(0);') О
-									a(href='javascript:void(0);') Р
-									a(href='javascript:void(0);') Т
-									a(href='javascript:void(0);') Э 
-							.category-tab__grid
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') A
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span AEG
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span ASKO
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span ATESY
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Abat
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Airhot
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span AlexanderSolia
-												sup 39
-										li
-											a(href='javascript:void(0);')
-												span Apach
-												sup 530
-										li
-											a(href='javascript:void(0);')
-												span Ascobloc
-												sup 34
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') B
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Beckers
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Bear Varimixer
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Blanco
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Bras
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Bravilor Bonamat
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Brema
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') C
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span CAS
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Cambro
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Carboma
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Climadiff
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Cooleq
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Cryspi1
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') D
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Dihr
-												sup 58
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') E
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Electrolux Professional
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Elettrobar
-												sup 132
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') F
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span FIAMMA
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Faber
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Faema
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Climadiff
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Cooleq
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Cryspi1
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') G
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span AEG
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span ASKO
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span ATESY
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Abat
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Airhot
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span AlexanderSolia
-												sup 39
-										li
-											a(href='javascript:void(0);')
-												span Apach
-												sup 530
-										li
-											a(href='javascript:void(0);')
-												span Ascobloc
-												sup 34
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') H
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Beckers
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Bear Varimixer
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Blanco
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Bras
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Bravilor Bonamat
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Brema
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') I
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span CAS
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Cambro
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Carboma
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Climadiff
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Cooleq
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Cryspi1
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') K
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Dihr
-												sup 58
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') E
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Electrolux Professional
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Elettrobar
-												sup 132
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') L
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span FIAMMA
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Faber
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Faema
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Climadiff
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Cooleq
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Cryspi1
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') N
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span AEG
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span ASKO
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span ATESY
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Abat
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Airhot
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span AlexanderSolia
-												sup 39
-										li
-											a(href='javascript:void(0);')
-												span Apach
-												sup 530
-										li
-											a(href='javascript:void(0);')
-												span Ascobloc
-												sup 34
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') O
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Beckers
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Bear Varimixer
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Blanco
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Bras
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Bravilor Bonamat
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Brema
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') P
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span CAS
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Cambro
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Carboma
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Climadiff
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Cooleq
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Cryspi1
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') R
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Dihr
-												sup 58
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') S
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Electrolux Professional
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Elettrobar
-												sup 132
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') T
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span FIAMMA
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Faber
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Faema
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Climadiff
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Cooleq
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Cryspi1
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') U
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span AEG
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span ASKO
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span ATESY
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Abat
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Airhot
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span AlexanderSolia
-												sup 39
-										li
-											a(href='javascript:void(0);')
-												span Apach
-												sup 530
-										li
-											a(href='javascript:void(0);')
-												span Ascobloc
-												sup 34
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') V
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Beckers
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Bear Varimixer
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Blanco
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Bras
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Bravilor Bonamat
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Brema
-												sup 39
-								.category-tab__item
-									a.category-tab--title(href='javascript:void(0);') W
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span CAS
-												sup 58
-										li
-											a(href='javascript:void(0);')
-												span Cambro
-												sup 132
-										li
-											a(href='javascript:void(0);')
-												span Carboma
-												sup 404
-										li
-											a(href='javascript:void(0);')
-												span Climadiff
-												sup 580
-										li
-											a(href='javascript:void(0);')
-												span Cooleq
-												sup 95
-										li
-											a(href='javascript:void(0);')
-												span Cryspi1
-												sup 39
-						.category-tab.category-tab_directions
-							.category-tab__grid
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-cover(src='./pic/direction-1.jpg', width='200', height='200', alt='')
-									a.category-tab--title(href='javascript:void(0);') Бургерные
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Пароконвектоматы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Печи конвекционные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Печи хлебопекарные 
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Печи ротационные
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Печи для пиццы
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-cover(src='./pic/direction-2.jpg', width='200', height='200', alt='')
-									a.category-tab--title(href='javascript:void(0);') Пиццерии
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Камеры холодильные
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Машины холодильные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Лари морозильные
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Столы холодильные и морозильные
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Витрины холодильные
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 5 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-cover(src='./pic/direction-3.jpg', width='200', height='200', alt='')
-									a.category-tab--title(href='javascript:void(0);') Рестораны
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Тестомесы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Миксеры
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Овощерезки
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Терки и слайсеры
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Тестораскаточные машины
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-cover(src='./pic/direction-4.jpg', width='200', height='200', alt='')
-									a.category-tab--title(href='javascript:void(0);') Столовые
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Столы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Ванны моечные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Котломойки
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Стеллажи
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Вытяжки
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 10 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-cover(src='./pic/direction-5.jpg', width='200', height='200', alt='')
-									a.category-tab--title(href='javascript:void(0);') Пекарни
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Пароконвектоматы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Печи конвекционные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Печи хлебопекарные 
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Печи ротационные
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Печи для пиццы
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-cover(src='./pic/direction-6.jpg', width='200', height='200', alt='')
-									a.category-tab--title(href='javascript:void(0);') Кофейни
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Камеры холодильные
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Машины холодильные
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Лари морозильные
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Столы холодильные и морозильные
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Витрины холодильные
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 5 категорий
-								.category-tab__item
-									a.category-tab--pic(href='javascript:void(0);')
-										img.img-cover(src='./pic/direction-7.jpg', width='200', height='200', alt='')
-									a.category-tab--title(href='javascript:void(0);') Бары
-									ul.category-tab__list
-										li
-											a(href='javascript:void(0);')
-												span Тестомесы
-												sup 257
-										li
-											a(href='javascript:void(0);')
-												span Миксеры
-												sup 48
-										li
-											a(href='javascript:void(0);')
-												span Овощерезки
-												sup 122
-										li
-											a(href='javascript:void(0);')
-												span Терки и слайсеры
-												sup 65
-										li
-											a(href='javascript:void(0);')
-												span Тестораскаточные машины
-												sup 29
-									a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li Каталог
+				.content__row
+					span.title-h1 Каталог
+					.category(data-tabs-container)
+						.category__nav
+							a.category__nav--item(href='1', data-tabs-link) Вид
+							a.category__nav--item.is-active(href='2', data-tabs-link) Бренды
+							a.category__nav--item(href='3', data-tabs-link) Направления
+						.category__content(data-tabs)
+							.category-tab.category-tab_view
+								.category-tab__grid
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-contain(src='./pic/category-1.jpg', width='184', height='149', alt='')
+										a.category-tab--title(href='javascript:void(0);') Тепловое оборудование
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Пароконвектоматы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Печи конвекционные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Печи хлебопекарные 
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Печи ротационные
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Печи для пиццы
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-contain(src='./pic/category-2.jpg', width='188', height='188', alt='')
+										a.category-tab--title(href='javascript:void(0);') Холодильное оборудование
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Камеры холодильные
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Машины холодильные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Лари морозильные
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Столы холодильные и морозильные
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Витрины холодильные
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 5 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-contain(src='./pic/category-3.jpg', width='188', height='188', alt='')
+										a.category-tab--title(href='javascript:void(0);') Технологическое оборудование
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Тестомесы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Миксеры
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Овощерезки
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Терки и слайсеры
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Тестораскаточные машины
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-contain(src='./pic/category-4.jpg', width='185', height='185', alt='')
+										a.category-tab--title(href='javascript:void(0);') Нейтральное оборудование
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Столы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Ванны моечные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Котломойки
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Стеллажи
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Вытяжки
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 10 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-contain(src='./pic/category-5.jpg', width='197', height='197', alt='')
+										a.category-tab--title(href='javascript:void(0);') Барное оборудование
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Пароконвектоматы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Печи конвекционные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Печи хлебопекарные 
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Печи ротационные
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Печи для пиццы
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-contain(src='./pic/category-6.jpg', width='192', height='192', alt='')
+										a.category-tab--title(href='javascript:void(0);') Упаковочное оборудование
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Камеры холодильные
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Машины холодильные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Лари морозильные
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Столы холодильные и морозильные
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Витрины холодильные
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 5 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-contain(src='./pic/category-7.jpg', width='195', height='194', alt='')
+										a.category-tab--title(href='javascript:void(0);') Клининговое оборудование
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Тестомесы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Миксеры
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Овощерезки
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Терки и слайсеры
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Тестораскаточные машины
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-contain(src='./pic/category-8.jpg', width='191', height='156', alt='')
+										a.category-tab--title(href='javascript:void(0);') Линии раздач
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Столы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Ванны моечные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Котломойки
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Стеллажи
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Вытяжки
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 10 категорий
+							.category-tab.category-tab_brands
+								.category-abc
+									.category-abc__lang
+										a(href='javascript:void(0);') A
+										a(href='javascript:void(0);') B
+										a(href='javascript:void(0);') C
+										a.is-active(href='javascript:void(0);') D
+										a(href='javascript:void(0);') E 
+										a(href='javascript:void(0);') F
+										a(href='javascript:void(0);') G
+										a(href='javascript:void(0);') H
+										a(href='javascript:void(0);') I
+										a(href='javascript:void(0);') J
+										a(href='javascript:void(0);') K
+										a(href='javascript:void(0);') L
+										a(href='javascript:void(0);') M
+										a(href='javascript:void(0);') N
+										a(href='javascript:void(0);') O
+										a(href='javascript:void(0);') P
+										a(href='javascript:void(0);') Q
+										a(href='javascript:void(0);') R
+										a(href='javascript:void(0);') S
+										a(href='javascript:void(0);') U
+										a(href='javascript:void(0);') V
+										a(href='javascript:void(0);') W
+										a(href='javascript:void(0);') X
+										a(href='javascript:void(0);') Y
+										a(href='javascript:void(0);') Z
+									.category-abc__lang
+										a(href='javascript:void(0);') А
+										a(href='javascript:void(0);') Б
+										a(href='javascript:void(0);') В
+										a(href='javascript:void(0);') Г
+										a(href='javascript:void(0);') Д
+										a(href='javascript:void(0);') К
+										a(href='javascript:void(0);') Л
+										a(href='javascript:void(0);') М
+										a(href='javascript:void(0);') Н
+										a(href='javascript:void(0);') О
+										a(href='javascript:void(0);') Р
+										a(href='javascript:void(0);') Т
+										a(href='javascript:void(0);') Э 
+								.category-tab__grid
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') A
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span AEG
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span ASKO
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span ATESY
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Abat
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Airhot
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span AlexanderSolia
+													sup 39
+											li
+												a(href='javascript:void(0);')
+													span Apach
+													sup 530
+											li
+												a(href='javascript:void(0);')
+													span Ascobloc
+													sup 34
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') B
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Beckers
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Bear Varimixer
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Blanco
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Bras
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Bravilor Bonamat
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Brema
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') C
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span CAS
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Cambro
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Carboma
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Climadiff
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Cooleq
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Cryspi1
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') D
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Dihr
+													sup 58
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') E
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Electrolux Professional
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Elettrobar
+													sup 132
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') F
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span FIAMMA
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Faber
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Faema
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Climadiff
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Cooleq
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Cryspi1
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') G
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span AEG
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span ASKO
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span ATESY
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Abat
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Airhot
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span AlexanderSolia
+													sup 39
+											li
+												a(href='javascript:void(0);')
+													span Apach
+													sup 530
+											li
+												a(href='javascript:void(0);')
+													span Ascobloc
+													sup 34
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') H
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Beckers
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Bear Varimixer
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Blanco
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Bras
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Bravilor Bonamat
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Brema
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') I
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span CAS
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Cambro
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Carboma
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Climadiff
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Cooleq
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Cryspi1
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') K
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Dihr
+													sup 58
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') E
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Electrolux Professional
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Elettrobar
+													sup 132
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') L
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span FIAMMA
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Faber
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Faema
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Climadiff
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Cooleq
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Cryspi1
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') N
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span AEG
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span ASKO
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span ATESY
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Abat
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Airhot
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span AlexanderSolia
+													sup 39
+											li
+												a(href='javascript:void(0);')
+													span Apach
+													sup 530
+											li
+												a(href='javascript:void(0);')
+													span Ascobloc
+													sup 34
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') O
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Beckers
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Bear Varimixer
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Blanco
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Bras
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Bravilor Bonamat
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Brema
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') P
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span CAS
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Cambro
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Carboma
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Climadiff
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Cooleq
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Cryspi1
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') R
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Dihr
+													sup 58
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') S
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Electrolux Professional
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Elettrobar
+													sup 132
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') T
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span FIAMMA
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Faber
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Faema
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Climadiff
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Cooleq
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Cryspi1
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') U
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span AEG
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span ASKO
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span ATESY
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Abat
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Airhot
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span AlexanderSolia
+													sup 39
+											li
+												a(href='javascript:void(0);')
+													span Apach
+													sup 530
+											li
+												a(href='javascript:void(0);')
+													span Ascobloc
+													sup 34
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') V
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Beckers
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Bear Varimixer
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Blanco
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Bras
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Bravilor Bonamat
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Brema
+													sup 39
+									.category-tab__item
+										a.category-tab--title(href='javascript:void(0);') W
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span CAS
+													sup 58
+											li
+												a(href='javascript:void(0);')
+													span Cambro
+													sup 132
+											li
+												a(href='javascript:void(0);')
+													span Carboma
+													sup 404
+											li
+												a(href='javascript:void(0);')
+													span Climadiff
+													sup 580
+											li
+												a(href='javascript:void(0);')
+													span Cooleq
+													sup 95
+											li
+												a(href='javascript:void(0);')
+													span Cryspi1
+													sup 39
+							.category-tab.category-tab_directions
+								.category-tab__grid
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-cover(src='./pic/direction-1.jpg', width='200', height='200', alt='')
+										a.category-tab--title(href='javascript:void(0);') Бургерные
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Пароконвектоматы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Печи конвекционные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Печи хлебопекарные 
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Печи ротационные
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Печи для пиццы
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-cover(src='./pic/direction-2.jpg', width='200', height='200', alt='')
+										a.category-tab--title(href='javascript:void(0);') Пиццерии
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Камеры холодильные
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Машины холодильные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Лари морозильные
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Столы холодильные и морозильные
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Витрины холодильные
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 5 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-cover(src='./pic/direction-3.jpg', width='200', height='200', alt='')
+										a.category-tab--title(href='javascript:void(0);') Рестораны
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Тестомесы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Миксеры
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Овощерезки
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Терки и слайсеры
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Тестораскаточные машины
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-cover(src='./pic/direction-4.jpg', width='200', height='200', alt='')
+										a.category-tab--title(href='javascript:void(0);') Столовые
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Столы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Ванны моечные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Котломойки
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Стеллажи
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Вытяжки
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 10 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-cover(src='./pic/direction-5.jpg', width='200', height='200', alt='')
+										a.category-tab--title(href='javascript:void(0);') Пекарни
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Пароконвектоматы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Печи конвекционные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Печи хлебопекарные 
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Печи ротационные
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Печи для пиццы
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-cover(src='./pic/direction-6.jpg', width='200', height='200', alt='')
+										a.category-tab--title(href='javascript:void(0);') Кофейни
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Камеры холодильные
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Машины холодильные
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Лари морозильные
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Столы холодильные и морозильные
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Витрины холодильные
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 5 категорий
+									.category-tab__item
+										a.category-tab--pic(href='javascript:void(0);')
+											img.img-cover(src='./pic/direction-7.jpg', width='200', height='200', alt='')
+										a.category-tab--title(href='javascript:void(0);') Бары
+										ul.category-tab__list
+											li
+												a(href='javascript:void(0);')
+													span Тестомесы
+													sup 257
+											li
+												a(href='javascript:void(0);')
+													span Миксеры
+													sup 48
+											li
+												a(href='javascript:void(0);')
+													span Овощерезки
+													sup 122
+											li
+												a(href='javascript:void(0);')
+													span Терки и слайсеры
+													sup 65
+											li
+												a(href='javascript:void(0);')
+													span Тестораскаточные машины
+													sup 29
+										a.category-tab--more(href='javascript:void(0);') Еще 8 категорий
 		include modules/footer.pug
+		include modules/modals.pug
 		script(src='./js/libs.js')
 		script(src='./js/scripts.js')

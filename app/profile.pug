@@ -5,115 +5,117 @@ html(lang='ru')
 	meta(name='viewport', content='width=device-width, user-scalable=yes')
 	link(href='./css/style.css', rel='stylesheet')
 	body
-		include modules/header.pug
-		.content
-			.breadcrumbs
-				ul
-					li
-						a(href='javascript:void(0);') Главная
-					li
-						a(href='javascript:void(0);') Личный кабинет
-					li Мои заказы
-			.content__row
-				span.title-h1 Мои заказы
-				.catalog
-					.catalog__lc
-						.profile
-							.profile__group
-								.profile--title Физическое лицо
-								.profile__item.profile__item_editable
-									label.profile--label Фамилия имя отчество *
-									.profile__content
-										input.profile--data(type='text', value='Петренко Иван Сергеевич')
-										.profile--value Петренко Иван Сергеевич
-										span.profile--edit
-								.profile__item.profile__item_editable
-									label.profile--label Электронная почта *
-									.profile__content
-										input.profile--data(type='text', value='petrenko@mail.ru')
-										.profile--value petrenko@mail.ru
-										span.profile--edit
-								.profile__item.profile__item_editable
-									label.profile--label Телефон *
-									.profile__content
-										input.profile--data(type='text', value='+ 7 (913) 222-33-44')
-										.profile--value + 7 (913) 222-33-44
-										span.profile--edit
-								.profile__item.profile__item_editable
-									label.profile--label Пол
-									.profile__content
-										.profile__choice
-											label.profile__choice--item #[input(type='radio', name='sex', checked)] Мужской
-											label.profile__choice--item #[input(type='radio', name='sex')] Женский
-								.profile__item.profile__item_editable
-									label.profile--label Дата рождения
-									.profile__content
-										input.profile--data(type='text', value='01.01.1970')
-										.profile--value 01.01.1970
-										span.profile--edit
-								.profile__item.profile__item_editable
-									label.profile--label Название организации
-									.profile__content
-										input.profile--data(type='text', value='Лапша и уши')
-										.profile--value Лапша и уши
-										span.profile--edit
-								.profile__item.profile__item_editable
-									label.profile--label Телефон организации
-									.profile__content
-										input.profile--data(type='text', value='+ 7 (913) 222-33-44')
-										.profile--value + 7 (913) 222-33-44
-										span.profile--edit
-								.profile__item.profile__item_editable
-									label.profile--label Пароль
-									.profile__content
-										input.profile--data(type='password', value='******')
-										.profile--value ******
-										span.profile--edit
-							.profile__group
-								.profile--title Организация
-								.profile__item.profile__item_editable.profile__item_processing
-									label.profile--label ИНН
-									.profile__content
-										input.profile--data(type='text', value='')
-										.profile--value
-										span.profile--edit
-										span.profile--confirm Ок
-								.profile__item
-									label.profile--label Название организации
-									.profile__content
-										.profile--value ООО «Лапша и уши»
-								.profile__item
-									label.profile--label Полное наименование организации
-									.profile__content
-										.profile--value Общество с ограниченной ответственностью «Лапша и уши»
-								.profile__item
-									label.profile--label ОГРН
-									.profile__content
-										.profile--value 345634563453
-								.profile__item
-									label.profile--label КПП
-									.profile__content
-										.profile--value 220122020
-								.profile__item
-									label.profile--label Дата государственной регистрации
-									.profile__content
-										.profile--value 01.02.2003
-								.profile__item
-									label.profile--label Генеральный директор
-									.profile__content
-										.profile--value Иванов Сергей Михайлович
-							button.profile--save Сохранить изменения
-					.catalog__rc
-						.user
-							.user__about
-								.user--name Петренко Иван Сергеевич
-								.user--contact +7 (913) 222-33-44
-								.user--contact ivanov@mail.ru
-							.user__nav
-								a.is-active(href='javascript:void(0);') Мой профиль
-								a(href='javascript:void(0);') Мои заказы
-								a(href='javascript:void(0);') Избранные товары
-								a(href='javascript:void(0);') Выйти
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li
+							a(href='javascript:void(0);') Личный кабинет
+						li Мои заказы
+				.content__row
+					span.title-h1 Мои заказы
+					.catalog
+						.catalog__lc
+							.profile
+								.profile__group
+									.profile--title Физическое лицо
+									.profile__item.profile__item_editable
+										label.profile--label Фамилия имя отчество *
+										.profile__content
+											input.profile--data(type='text', value='Петренко Иван Сергеевич')
+											.profile--value Петренко Иван Сергеевич
+											span.profile--edit
+									.profile__item.profile__item_editable
+										label.profile--label Электронная почта *
+										.profile__content
+											input.profile--data(type='text', value='petrenko@mail.ru')
+											.profile--value petrenko@mail.ru
+											span.profile--edit
+									.profile__item.profile__item_editable
+										label.profile--label Телефон *
+										.profile__content
+											input.profile--data(type='text', value='+ 7 (913) 222-33-44')
+											.profile--value + 7 (913) 222-33-44
+											span.profile--edit
+									.profile__item.profile__item_editable
+										label.profile--label Пол
+										.profile__content
+											.profile__choice
+												label.profile__choice--item #[input(type='radio', name='sex', checked)] Мужской
+												label.profile__choice--item #[input(type='radio', name='sex')] Женский
+									.profile__item.profile__item_editable
+										label.profile--label Дата рождения
+										.profile__content
+											input.profile--data(type='text', value='01.01.1970')
+											.profile--value 01.01.1970
+											span.profile--edit
+									.profile__item.profile__item_editable
+										label.profile--label Название организации
+										.profile__content
+											input.profile--data(type='text', value='Лапша и уши')
+											.profile--value Лапша и уши
+											span.profile--edit
+									.profile__item.profile__item_editable
+										label.profile--label Телефон организации
+										.profile__content
+											input.profile--data(type='text', value='+ 7 (913) 222-33-44')
+											.profile--value + 7 (913) 222-33-44
+											span.profile--edit
+									.profile__item.profile__item_editable
+										label.profile--label Пароль
+										.profile__content
+											input.profile--data(type='password', value='******')
+											.profile--value ******
+											span.profile--edit
+								.profile__group
+									.profile--title Организация
+									.profile__item.profile__item_editable.profile__item_processing
+										label.profile--label ИНН
+										.profile__content
+											input.profile--data(type='text', value='')
+											.profile--value
+											span.profile--edit
+											span.profile--confirm Ок
+									.profile__item
+										label.profile--label Название организации
+										.profile__content
+											.profile--value ООО «Лапша и уши»
+									.profile__item
+										label.profile--label Полное наименование организации
+										.profile__content
+											.profile--value Общество с ограниченной ответственностью «Лапша и уши»
+									.profile__item
+										label.profile--label ОГРН
+										.profile__content
+											.profile--value 345634563453
+									.profile__item
+										label.profile--label КПП
+										.profile__content
+											.profile--value 220122020
+									.profile__item
+										label.profile--label Дата государственной регистрации
+										.profile__content
+											.profile--value 01.02.2003
+									.profile__item
+										label.profile--label Генеральный директор
+										.profile__content
+											.profile--value Иванов Сергей Михайлович
+								button.profile--save Сохранить изменения
+						.catalog__rc
+							.user
+								.user__about
+									.user--name Петренко Иван Сергеевич
+									.user--contact +7 (913) 222-33-44
+									.user--contact ivanov@mail.ru
+								.user__nav
+									a.is-active(href='javascript:void(0);') Мой профиль
+									a(href='javascript:void(0);') Мои заказы
+									a(href='javascript:void(0);') Избранные товары
+									a(href='javascript:void(0);') Выйти
 		include modules/footer.pug
+		include modules/modals.pug
 		script(src='./js/libs.js')
 		script(src='./js/scripts.js')

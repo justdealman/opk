@@ -5,54 +5,55 @@ html(lang='ru')
 	meta(name='viewport', content='width=device-width, user-scalable=yes')
 	link(href='./css/style.css', rel='stylesheet')
 	body
-		include modules/header.pug
-		.content
-			.breadcrumbs
-				ul
-					li
-						a(href='javascript:void(0);') Главная
-					li Контакты
-			.content__row
-				span.title-h1 Контакты
-				.contacts
-					.contacts--map
-					.contacts-grid
-						.contacts-location
-							.contacts-location__group
-								.contacts--title Наш адрес
-								.contacts-location--address Россия, Московская область, Балашиха, #[br] шоссе Энтузиастов, 4
-							.contacts-location__group
-								.contacts--title Схема проезда
-								.contacts-location--map
-						.contacts-content
-							.contacts--title Свяжитесь с нами
-							.contacts-content__item
-								.contacts-content--subtitle звонок бесплатный по России
-								a.contacts-content--link(href='tel:+78007006669') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (800) 700-66-69
-							.contacts-content__item
-								.contacts-content--subtitle звонок бесплатный по России
-								a.contacts-content--link(href='tel:+74999255706') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (499) 925-57-06
-							.contacts-content__item
-								.contacts-content--subtitle электронная почта
-								a.contacts-content--link(href='mailto:info@texnika-profi.ru') #[i.contacts-content--icon.contacts-content--icon_email] #[span info@texnika-profi.ru]
-							.contacts-content__item
-								.contacts-content--subtitle старший менеджер по закупкам Иван Иванов
-								a.contacts-content--link(href='tel:+74999255706') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (499) 925-57-06
-							.contacts-content__item
-								.contacts-content--subtitle телефон в Новокузнецке
-								a.contacts-content--link(href='tel:+74999255706') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (499) 925-57-06
-							.contacts-content__item
-								.contacts-content--subtitle телефон в Барнауле
-								a.contacts-content--link(href='tel:+79139002255') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (913) 900-22-55
-							.contacts-ask
-								.contacts-ask--photo
-									img.img-cover(src='./pic/director-photo.jpg', width='70', height='70', alt='')
-								button.contacts-ask--button Задать вопрос директору
-							.contacts-social
-								a.contacts-social--item.vk-icon(href='javascript:void(0);') 
-								a.contacts-social--item.fb-icon(href='javascript:void(0);') 
-								a.contacts-social--item.ig-icon(href='javascript:void(0);') 
-								a.contacts-social--item.ok-icon(href='javascript:void(0);') 
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li Контакты
+				.content__row
+					span.title-h1 Контакты
+					.contacts
+						.contacts--map
+						.contacts-grid
+							.contacts-location
+								.contacts-location__group
+									.contacts--title Наш адрес
+									.contacts-location--address Россия, Московская область, Балашиха, #[br] шоссе Энтузиастов, 4
+								.contacts-location__group
+									.contacts--title Схема проезда
+									.contacts-location--map
+							.contacts-content
+								.contacts--title Свяжитесь с нами
+								.contacts-content__item
+									.contacts-content--subtitle звонок бесплатный по России
+									a.contacts-content--link(href='tel:+78007006669') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (800) 700-66-69
+								.contacts-content__item
+									.contacts-content--subtitle звонок бесплатный по России
+									a.contacts-content--link(href='tel:+74999255706') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (499) 925-57-06
+								.contacts-content__item
+									.contacts-content--subtitle электронная почта
+									a.contacts-content--link(href='mailto:info@texnika-profi.ru') #[i.contacts-content--icon.contacts-content--icon_email] #[span info@texnika-profi.ru]
+								.contacts-content__item
+									.contacts-content--subtitle старший менеджер по закупкам Иван Иванов
+									a.contacts-content--link(href='tel:+74999255706') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (499) 925-57-06
+								.contacts-content__item
+									.contacts-content--subtitle телефон в Новокузнецке
+									a.contacts-content--link(href='tel:+74999255706') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (499) 925-57-06
+								.contacts-content__item
+									.contacts-content--subtitle телефон в Барнауле
+									a.contacts-content--link(href='tel:+79139002255') #[i.contacts-content--icon.contacts-content--icon_phone] +7 (913) 900-22-55
+								.contacts-ask
+									.contacts-ask--photo
+										img.img-cover(src='./pic/director-photo.jpg', width='70', height='70', alt='')
+									button.contacts-ask--button Задать вопрос директору
+								.contacts-social
+									a.contacts-social--item.vk-icon(href='javascript:void(0);') 
+									a.contacts-social--item.fb-icon(href='javascript:void(0);') 
+									a.contacts-social--item.ig-icon(href='javascript:void(0);') 
+									a.contacts-social--item.ok-icon(href='javascript:void(0);') 
 		include modules/footer.pug
 		include modules/modals.pug
 		script(src='./js/libs.js')

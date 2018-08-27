@@ -5,55 +5,56 @@ html(lang='ru')
 	meta(name='viewport', content='width=device-width, user-scalable=yes')
 	link(href='./css/style.css', rel='stylesheet')
 	body
-		include modules/header.pug
-		.content
-			.breadcrumbs
-				ul
-					li
-						a(href='javascript:void(0);') Главная
-					li Филиалы и склады
-			.content__row
-				span.title-h1 Филиалы и склады
-				.branches
-					.branches-list
-						.branches-content
-							.branches-content__item
-								span.branches--title ООО «Название организации»
-								span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
-								.branches__controls
-									a(href='javascript:void(0);') Подробнее
-									a(href='javascript:void(0);') Показать на карте
-							.branches-content__item
-								span.branches--title ООО «Название организации»
-								span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
-								.branches__controls
-									a(href='javascript:void(0);') Подробнее
-									a(href='javascript:void(0);') Показать на карте
-							.branches-content__item
-								span.branches--title ООО «Название организации»
-								span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
-								.branches__controls
-									a(href='javascript:void(0);') Подробнее
-									a(href='javascript:void(0);') Показать на карте
-							.branches-content__item
-								span.branches--title ООО «Название организации»
-								span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
-								.branches__controls
-									a(href='javascript:void(0);') Подробнее
-									a(href='javascript:void(0);') Показать на карте
-							.branches-content__item
-								span.branches--title ООО «Название организации»
-								span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
-								.branches__controls
-									a(href='javascript:void(0);') Подробнее
-									a(href='javascript:void(0);') Показать на карте
-							.branches-content__item
-								span.branches--title ООО «Название организации»
-								span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
-								.branches__controls
-									a(href='javascript:void(0);') Подробнее
-									a(href='javascript:void(0);') Показать на карте
-					.branches--map
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li Филиалы и склады
+				.content__row
+					span.title-h1 Филиалы и склады
+					.branches
+						.branches-list
+							.branches-content
+								.branches-content__item
+									span.branches--title ООО «Название организации»
+									span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
+									.branches__controls
+										a(href='javascript:void(0);', data-open='branch') Подробнее
+										a(href='javascript:void(0);') Показать на карте
+								.branches-content__item
+									span.branches--title ООО «Название организации»
+									span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
+									.branches__controls
+										a(href='javascript:void(0);', data-open='branch') Подробнее
+										a(href='javascript:void(0);') Показать на карте
+								.branches-content__item
+									span.branches--title ООО «Название организации»
+									span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
+									.branches__controls
+										a(href='javascript:void(0);', data-open='branch') Подробнее
+										a(href='javascript:void(0);') Показать на карте
+								.branches-content__item
+									span.branches--title ООО «Название организации»
+									span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
+									.branches__controls
+										a(href='javascript:void(0);', data-open='branch') Подробнее
+										a(href='javascript:void(0);') Показать на карте
+								.branches-content__item
+									span.branches--title ООО «Название организации»
+									span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
+									.branches__controls
+										a(href='javascript:void(0);', data-open='branch') Подробнее
+										a(href='javascript:void(0);') Показать на карте
+								.branches-content__item
+									span.branches--title ООО «Название организации»
+									span.branches--address Россия, #[br] Московская область, Балашиха, шоссе Энтузиастов, 4
+									.branches__controls
+										a(href='javascript:void(0);', data-open='branch') Подробнее
+										a(href='javascript:void(0);') Показать на карте
+						.branches--map
 		include modules/footer.pug
 		include modules/modals.pug
 		script(src='./js/libs.js')

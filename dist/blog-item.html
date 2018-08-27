@@ -5,218 +5,456 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
 	<link href="./css/style.css" rel="stylesheet">
 	<body>
-		<div class="panel">
-			<div class="panel__row">
-				<span class="panel--city">Ваш город:
-					<a class="panel--city_link" href="javascript:void(0);">Барнаул</a>
-				</span>
-				<div class="panel__nav">
-					<a href="javascript:void(0);">Доставка и оплата</a>
-					<a href="javascript:void(0);">Отзывы и портфолио</a>
-					<a href="javascript:void(0);">О нас</a>
-					<a href="javascript:void(0);">Новости </a>
-					<a href="javascript:void(0);">Контакты</a>
-				</div>
-				<ul class="panel__user">
-					<li>
-						<a href="javascript:void(0);">Вход</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);">регистрация</a>
-					</li>
-				</ul>
-				<div class="panel__rc">
-					<a class="panel--icon panel--icon_compare" href="javascript:void(0);">
-						<span>54</span>
-					</a>
-					<a class="panel--icon panel--icon_favorite" href="javascript:void(0);">
-						<span>27</span>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="header">
-			<div class="header__row">
-				<div class="header__lc">
-					<a class="header--logo" href="javascript:void(0);"></a>
-				</div>
-				<div class="header__cc">
-					<div class="header-contacts">
-						<div class="header-contacts__item">
-							<a class="header-contacts--email" href="javascript:void(0);">info@texnika-profi.ru</a>
+		<div class="wrapper">
+			<div class="top-group">
+				<div class="panel">
+					<div class="panel__row">
+						<span class="panel--city">Ваш город:
+							<a class="panel--city_link" href="javascript:void(0);">Барнаул</a>
+						</span>
+						<div class="city-drop is-opened">
+							<div class="city-drop__row is-visible" data="1">
+								<span class="city-drop--title">Вы находитесь в городе Москва?</span>
+								<button class="btn btn_confirm" data-city-drop-close>Да, верно</button>
+								<a class="city-drop--select" href="javascript:void(0);">Нет, выбрать другой</a>
+							</div>
+							<div class="city-drop__row" data="2">
+								<span class="city-drop--close" data-city-drop-close></span>
+								<span class="city-drop--title">Начните вводить название города</span>
+								<input class="city-drop--input" type="text" value="Комсомольск-на-Амуре">
+								<button class="btn btn_confirm">Да, верно</button>
+							</div>
 						</div>
-						<div class="header-contacts__item">
-							<a class="header-contacts--phone_big" href="tel:+78007006669">+7 (800)
-								<strong>700-66-69</strong>
-							</a>
-							<a class="header-contacts--phone_small" href="tel:+74999255706">+7 (499) 925-57-06</a>
+						<div class="panel__nav">
+							<a href="javascript:void(0);">Доставка и оплата</a>
+							<a href="javascript:void(0);">Отзывы и портфолио</a>
+							<a href="javascript:void(0);">О нас</a>
+							<a href="javascript:void(0);">Новости </a>
+							<a href="javascript:void(0);">Контакты</a>
 						</div>
-						<div class="header-contacts__item">
-							<a class="header-contacts--consultation" href="javascript:void(0);">Заказать консультацию</a>
-						</div>
-					</div>
-					<div class="header__search">
-						<input type="text" placeholder="Поиск">
-						<button class="header__search--submit">
-							<span>Найти</span>
-						</button>
-					</div>
-				</div>
-				<div class="header__rc">
-					<a class="header__basket" href="javascript:void(0);">
-						<span class="header__basket--quantity">29</span>
-						<span class="header__basket--price">1 564 820 руб.</span>
-					</a>
-				</div>
-			</div>
-			<div class="nav">
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_1"></i>
-					<span class="nav--text">Тепловое оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_2"></i>
-					<span class="nav--text">Холодильное оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_1"></i>
-					<span class="nav--text">Технологическое оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_1"></i>
-					<span class="nav--text">Нейтральное оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_3"></i>
-					<span class="nav--text">Барное оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_3"></i>
-					<span class="nav--text">Упаковочное оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_3"></i>
-					<span class="nav--text">Клининговое оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_3"></i>
-					<span class="nav--text">Линии раздач</span>
-				</a>
-			</div>
-		</div>
-		<div class="content">
-			<div class="breadcrumbs">
-				<ul>
-					<li>
-						<a href="javascript:void(0);">Главная</a>
-					</li>
-					<li>Блог</li>
-				</ul>
-			</div>
-			<div class="content__row">
-				<span class="title-h1">
-					<span>Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R</span>
-				</span>
-				<div class="article">
-					<div class="article__grid">
-						<div class="article__content">
-							<span class="article--date">
-								<span>10 июля 2017</span>
+						<div class="panel__mini">
+							<span class="panel--email">
+								<a href="mailto:info@texnika-profi.ru">info@texnika-profi.ru</a>
 							</span>
-							<div class="article-slider" data-ratio="0.493">
-								<div class="article-slider__item scale">
-									<img class="img-cover" src="./pic/blog-big-1.jpg" width="858" height="423" alt="">
+							<span class="panel--phones">
+								<a class="has-icon" href="tel:+78007006669">+7 (800)
+									<strong>700-66-69</strong>
+								</a>
+								<a href="tel:+74999255706">+7 (499)
+									<strong>925-57-06</strong>
+								</a>
+							</span>
+							<div class="panel__search">
+								<input type="text" placeholder="Поиск">
+								<input type="submit" value=""> </div>
+						</div>
+						<ul class="panel__user">
+							<li>
+								<a href="javascript:void(0);" data-open="user" data-tab-set="2">Вход</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-open="user" data-tab-set="1">регистрация</a>
+							</li>
+						</ul>
+						<div class="panel__rc">
+							<a class="panel--icon panel--icon_compare" href="javascript:void(0);">
+								<span>54</span>
+							</a>
+							<a class="panel--icon panel--icon_favorite" href="javascript:void(0);">
+								<span>27</span>
+							</a>
+							<a class="panel--icon panel--icon_basket" href="javascript:void(0);">
+								<span>29</span>
+								<strong>1 564 820 руб.</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header">
+					<div class="header__row">
+						<div class="header__lc">
+							<a class="header--logo" href="javascript:void(0);"></a>
+						</div>
+						<div class="header__cc">
+							<div class="header-contacts">
+								<div class="header-contacts__item">
+									<a class="header-contacts--email" href="javascript:void(0);">info@texnika-profi.ru</a>
 								</div>
-								<div class="article-slider__item scale">
-									<img class="img-cover" src="./pic/blog-big-2.jpg" width="858" height="423" alt="">
+								<div class="header-contacts__item">
+									<a class="header-contacts--phone_big" href="tel:+78007006669">+7 (800)
+										<strong>700-66-69</strong>
+									</a>
+									<a class="header-contacts--phone_small" href="tel:+74999255706">+7 (499) 925-57-06</a>
 								</div>
-								<div class="article-slider__item scale">
-									<img class="img-cover" src="./pic/blog-big-3.jpg" width="858" height="423" alt="">
-								</div>
-								<div class="article-slider__item scale">
-									<img class="img-cover" src="./pic/blog-big-4.jpg" width="858" height="423" alt="">
-								</div>
-								<div class="article-slider__item scale">
-									<img class="img-cover" src="./pic/blog-big-5.jpg" width="858" height="423" alt="">
+								<div class="header-contacts__item">
+									<a class="header-contacts--consultation" href="javascript:void(0);">Заказать консультацию</a>
 								</div>
 							</div>
-							<p>Повседневная практика показывает, что сложившаяся структура организации в значительной степени обуславливает создание существенных финансовых и административных условий. Не следует, однако забывать, что новая модель организационной деятельности
-								позволяет выполнять важные задания по разработке систем массового участия.</p>
-							<p>Равным образом реализация намеченных плановых заданий в значительной степени обуславливает создание форм развития. С другой стороны сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного
-								развития. Не следует, однако забывать, что рамки и место обучения кадров играет важную роль в формировании форм развития.</p>
-							<p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что новая модель
-								организационной деятельности требуют определения и уточнения дальнейших направлений развития. Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании форм развития.
-								Таким образом новая модель организационной деятельности требуют от нас анализа систем массового участия.</p>
-							<p>Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации модели развития. Товарищи! начало повседневной работы по формированию позиции позволяет выполнять важные задания
-								по разработке новых предложений.</p>
-							<ul>
-								<li>Таким образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет выполнять
-									важжные задания по разработке новых предложений. </li>
-								<li>Равным образом постоянный количественный рост и сфера нашей активности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. </li>
-								<li>Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых предложений.</li>
-							</ul>
+							<div class="header__search">
+								<input type="text" placeholder="Поиск">
+								<button class="header__search--submit">
+									<span>Найти</span>
+								</button>
+							</div>
 						</div>
-						<div class="article__rc">
-							<div class="article-preview" data-ratio="0.96">
-								<div class="article-preview__item is-active">
-									<div class="article-preview--pic scale">
-										<img class="img-cover" src="./pic/blog-preview-1.jpg" width="126" height="121" alt="">
-									</div>
+						<div class="header__rc">
+							<a class="header__basket" href="javascript:void(0);">
+								<span class="header__basket--quantity">29</span>
+								<span class="header__basket--price">1 564 820 руб.</span>
+							</a>
+						</div>
+					</div>
+					<div class="nav">
+						<a class="nav__link" href="javascript:void(0);" data-drop="1">
+							<i class="nav--icon nav--icon_1"></i>
+							<span class="nav--text">Тепловое оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="2">
+							<i class="nav--icon nav--icon_2"></i>
+							<span class="nav--text">Холодильное оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="3">
+							<i class="nav--icon nav--icon_1"></i>
+							<span class="nav--text">Технологическое оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);">
+							<i class="nav--icon nav--icon_1"></i>
+							<span class="nav--text">Нейтральное оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="5">
+							<i class="nav--icon nav--icon_3"></i>
+							<span class="nav--text">Барное оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="6">
+							<i class="nav--icon nav--icon_3"></i>
+							<span class="nav--text">Упаковочное оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="7">
+							<i class="nav--icon nav--icon_3"></i>
+							<span class="nav--text">Клининговое оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="8">
+							<i class="nav--icon nav--icon_3"></i>
+							<span class="nav--text">Линии раздач</span>
+						</a>
+					</div>
+				</div>
+				<div class="nav-drop">
+					<div class="nav-drop__inner">
+						<i class="nav-drop--arrow"></i>
+						<div class="nav-drop__row">
+							<div class="nav-drop__content" data-sub="1">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Пароконвектоматы</span>
+										<sup>257</sup>
+									</a>
 								</div>
-								<div class="article-preview__item">
-									<div class="article-preview--pic scale">
-										<img class="img-cover" src="./pic/blog-preview-2.jpg" width="126" height="121" alt="">
-									</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи конвекционные</span>
+										<sup>48</sup>
+									</a>
 								</div>
-								<div class="article-preview__item">
-									<div class="article-preview--pic scale">
-										<img class="img-cover" src="./pic/blog-preview-3.jpg" width="126" height="121" alt="">
-									</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи хлебопекарные</span>
+										<sup>122</sup>
+									</a>
 								</div>
-								<div class="article-preview__item">
-									<div class="article-preview--pic scale">
-										<img class="img-cover" src="./pic/blog-preview-4.jpg" width="126" height="121" alt="">
-									</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи ротационные</span>
+										<sup>149</sup>
+									</a>
 								</div>
-								<div class="article-preview__item">
-									<div class="article-preview--pic scale">
-										<img class="img-cover" src="./pic/blog-preview-5.jpg" width="126" height="121" alt="">
-									</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи для пиццы</span>
+										<sup>54</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи-коптильни</span>
+										<sup>89</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Шкафы расстоечные</span>
+										<sup>45</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Шкафы жаропрочные, пекарские, подовые</span>
+										<sup>51</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Блинницы, вафельницы</span>
+										<sup>257</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Тепловые витрины, столы, полки</span>
+										<sup>48</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>СВЧ-печи</span>
+										<sup>122</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Грили, жарочные поверхности, аппараты для шаурмы, шашлычницы</span>
+										<sup>149</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Котлы пищеварочные, пароварки, электросковороды, газовые сковороды</span>
+										<sup>54</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Мармиты, тепловые витрины, электрокипятильники</span>
+										<sup>45</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Чебуречницы, пончиковые аппараты, фритюрницы</span>
+										<sup>51</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Шкафы жаропрочные, пекарские, подовые</span>
+										<sup>89</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Блинницы, вафельницы</span>
+										<sup>257</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Тепловые витрины, столы, полки</span>
+										<sup>48</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>СВЧ-печи</span>
+										<sup>122</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Грили, жарочные поверхности, аппараты для шаурмы, шашлычницы</span>
+										<sup>149</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Котлы пищеварочные, пароварки, электросковороды, газовые сковороды</span>
+										<sup>54</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Мармиты, тепловые витрины, электрокипятильники</span>
+										<sup>45</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Чебуречницы, пончиковые аппараты, фритюрницы</span>
+										<sup>51</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Шкафы жаропрочные, пекарские, подовые</span>
+										<sup>89</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="2">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Холодильное оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="3">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Технологическое оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="5">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Барное оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="6">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Упаковочное оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="7">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Клининговое оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="8">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Линии раздач</span>
+										<sup>257</sup>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="blog">
-					<span class="title-h2">Другие публикации</span>
-					<div class="blog__row">
-						<div class="blog__grid" data-ratio="0.6522">
-							<div class="blog__item">
-								<a class="item-blog" href="javascript:void(0);">
-									<div class="item-blog--pic scale">
-										<span class="item-blog--date">10 июля 2017</span>
-										<img class="img-cover" src="./pic/blog-1.jpg" width="368" height="240" alt="">
+			</div>
+			<div class="content">
+				<div class="breadcrumbs">
+					<ul>
+						<li>
+							<a href="javascript:void(0);">Главная</a>
+						</li>
+						<li>Блог</li>
+					</ul>
+				</div>
+				<div class="content__row">
+					<span class="title-h1">
+						<span>Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R</span>
+					</span>
+					<div class="article">
+						<div class="article__grid">
+							<div class="article__content">
+								<span class="article--date">
+									<span>10 июля 2017</span>
+								</span>
+								<div class="article-slider" data-ratio="0.493">
+									<div class="article-slider__item scale">
+										<img class="img-cover" src="./pic/blog-big-1.jpg" width="858" height="423" alt="">
 									</div>
-									<span class="item-blog--title">Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R</span>
-								</a>
+									<div class="article-slider__item scale">
+										<img class="img-cover" src="./pic/blog-big-2.jpg" width="858" height="423" alt="">
+									</div>
+									<div class="article-slider__item scale">
+										<img class="img-cover" src="./pic/blog-big-3.jpg" width="858" height="423" alt="">
+									</div>
+									<div class="article-slider__item scale">
+										<img class="img-cover" src="./pic/blog-big-4.jpg" width="858" height="423" alt="">
+									</div>
+									<div class="article-slider__item scale">
+										<img class="img-cover" src="./pic/blog-big-5.jpg" width="858" height="423" alt="">
+									</div>
+								</div>
+								<p>Повседневная практика показывает, что сложившаяся структура организации в значительной степени обуславливает создание существенных финансовых и административных условий. Не следует, однако забывать, что новая модель организационной деятельности
+									позволяет выполнять важные задания по разработке систем массового участия.</p>
+								<p>Равным образом реализация намеченных плановых заданий в значительной степени обуславливает создание форм развития. С другой стороны сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного
+									развития. Не следует, однако забывать, что рамки и место обучения кадров играет важную роль в формировании форм развития.</p>
+								<p>Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что новая модель
+									организационной деятельности требуют определения и уточнения дальнейших направлений развития. Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании форм развития.
+									Таким образом новая модель организационной деятельности требуют от нас анализа систем массового участия.</p>
+								<p>Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации модели развития. Товарищи! начало повседневной работы по формированию позиции позволяет выполнять важные задания
+									по разработке новых предложений.</p>
+								<ul>
+									<li>Таким образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет
+										выполнять важжные задания по разработке новых предложений. </li>
+									<li>Равным образом постоянный количественный рост и сфера нашей активности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. </li>
+									<li>Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых предложений.</li>
+								</ul>
 							</div>
-							<div class="blog__item">
-								<a class="item-blog" href="javascript:void(0);">
-									<div class="item-blog--pic scale">
-										<span class="item-blog--date">7 июля 2017</span>
-										<img class="img-cover" src="./pic/blog-2.jpg" width="368" height="240" alt="">
+							<div class="article__rc">
+								<div class="article-preview" data-ratio="0.96">
+									<div class="article-preview__item is-active">
+										<div class="article-preview--pic scale">
+											<img class="img-cover" src="./pic/blog-preview-1.jpg" width="126" height="121" alt="">
+										</div>
 									</div>
-									<span class="item-blog--title">Миксер для молочных коктейлей !!!</span>
-								</a>
+									<div class="article-preview__item">
+										<div class="article-preview--pic scale">
+											<img class="img-cover" src="./pic/blog-preview-2.jpg" width="126" height="121" alt="">
+										</div>
+									</div>
+									<div class="article-preview__item">
+										<div class="article-preview--pic scale">
+											<img class="img-cover" src="./pic/blog-preview-3.jpg" width="126" height="121" alt="">
+										</div>
+									</div>
+									<div class="article-preview__item">
+										<div class="article-preview--pic scale">
+											<img class="img-cover" src="./pic/blog-preview-4.jpg" width="126" height="121" alt="">
+										</div>
+									</div>
+									<div class="article-preview__item">
+										<div class="article-preview--pic scale">
+											<img class="img-cover" src="./pic/blog-preview-5.jpg" width="126" height="121" alt="">
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="blog__item">
-								<a class="item-blog" href="javascript:void(0);">
-									<div class="item-blog--pic scale">
-										<span class="item-blog--date">10 июля 2017</span>
-										<img class="img-cover" src="./pic/blog-3.jpg" width="368" height="240" alt="">
-									</div>
-									<span class="item-blog--title">Vortmax. Максимальные возможности на вашей кухне</span>
-								</a>
+						</div>
+					</div>
+					<div class="blog">
+						<span class="title-h2">Другие публикации</span>
+						<div class="blog__row">
+							<div class="blog__grid" data-ratio="0.6522">
+								<div class="blog__item">
+									<a class="item-blog" href="javascript:void(0);">
+										<div class="item-blog--pic scale">
+											<span class="item-blog--date">10 июля 2017</span>
+											<img class="img-cover" src="./pic/blog-1.jpg" width="368" height="240" alt="">
+										</div>
+										<span class="item-blog--title">Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R</span>
+									</a>
+								</div>
+								<div class="blog__item">
+									<a class="item-blog" href="javascript:void(0);">
+										<div class="item-blog--pic scale">
+											<span class="item-blog--date">7 июля 2017</span>
+											<img class="img-cover" src="./pic/blog-2.jpg" width="368" height="240" alt="">
+										</div>
+										<span class="item-blog--title">Миксер для молочных коктейлей !!!</span>
+									</a>
+								</div>
+								<div class="blog__item">
+									<a class="item-blog" href="javascript:void(0);">
+										<div class="item-blog--pic scale">
+											<span class="item-blog--date">10 июля 2017</span>
+											<img class="img-cover" src="./pic/blog-3.jpg" width="368" height="240" alt="">
+										</div>
+										<span class="item-blog--title">Vortmax. Максимальные возможности на вашей кухне</span>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -308,6 +546,140 @@
 				<label class="modal__form--agreement">
 					<input type="checkbox" checked> Я согласен на обработку персональных данных </label>
 				<button class="modal__form--button">Отправить</button>
+			</div>
+		</div>
+		<div class="modal modal_user" data-target="user" data-tabs-container>
+			<span class="modal--close"></span>
+			<div class="modal_user__nav">
+				<a href="1" data-tabs-link>Регистрация</a>
+				<a href="2" data-tabs-link>Вход</a>
+			</div>
+			<div class="modal_user__tabs" data-tabs>
+				<div class="modal_user__col">
+					<div class="modal_user__grid">
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Фамилия имя отчество *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Email *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Телефон *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Пароль *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item modal_user__item_wide">
+							<span class="modal_user__item--label">Пол</span>
+							<div class="modal_user__list">
+								<label class="modal_user__list--label">
+									<input type="radio" name="sex"> Мужской </label>
+								<label class="modal_user__list--label">
+									<input type="radio" name="sex"> Женский </label>
+							</div>
+						</div>
+						<div class="modal_user__item modal_user__item_wide">
+							<label class="modal_user__item--label">Дата рождения</label>
+							<div class="modal_user__date">
+								<div class="modal_user__date--item">
+									<select>
+										<option>День</option>
+										<option>1</option>
+									</select>
+								</div>
+								<div class="modal_user__date--item">
+									<select>
+										<option>Мес.</option>
+										<option>1</option>
+									</select>
+								</div>
+								<div class="modal_user__date--item">
+									<select>
+										<option>Год</option>
+										<option>1</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Название организации *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Телефон организации *</label>
+							<input class="standart" type="text"> </div>
+					</div>
+					<label class="modal_user--agreement">
+						<input type="checkbox" checked> Я согласен на обработку персональных данных </label>
+					<button class="btn">Зарегистрироваться</button>
+				</div>
+				<div class="modal_user__col">
+					<div class="modal_user__grid">
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Логин *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Пароль *</label>
+							<input class="standart" type="text"> </div>
+					</div>
+					<div class="modal_user__login">
+						<button class="btn">Войти</button>
+						<a class="modal_user--recover" href="javascript:void(0);">Забыли пароль?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal_review" data-target="add-review">
+			<span class="modal--close"></span>
+			<span class="modal--title">Добавить отзыв</span>
+			<div class="modal_review__grid">
+				<div class="modal_review__item">
+					<label class="modal_review__item--label">Имя</label>
+					<input class="standart" type="text" value="Иван"> </div>
+				<div class="modal_review__item">
+					<label class="modal_review__item--label">Организация</label>
+					<input class="standart" type="text" value="Бочка"> </div>
+				<div class="modal_review__item">
+					<label class="modal_review__item--label">Должность</label>
+					<input class="standart" type="text" value="Шеф-повар"> </div>
+				<div class="modal_review__item modal_review__item_wide">
+					<label class="modal_review__item--label">Отзыв</label>
+					<textarea class="standart" rows="15"></textarea>
+				</div>
+			</div>
+			<button class="btn">Опубликовать</button>
+		</div>
+		<div class="modal modal_branch" data-target="branch">
+			<span class="modal--close"></span>
+			<span class="modal--title">ООО «Название организации»</span>
+			<div class="modal_branch__grid">
+				<div class="modal_branch__content">
+					<div class="modal_branch-list">
+						<li>
+							<span class="modal_branch-list--address">
+								<i class="modal_branch-list--icon modal_branch-list--icon_pin"></i> Россия, Московская область,
+								<br> Балашиха, шоссе Энтузиастов, 4</span>
+						</li>
+						<li>
+							<span class="modal_branch-list--title">
+								<i class="modal_branch-list--icon modal_branch-list--icon_user"></i> контактное лицо</span>
+							<span class="modal_branch-list--link">Васильев Сергей Анатольевич</span>
+						</li>
+						<li>
+							<span class="modal_branch-list--title">звонок бесплатный по России</span>
+							<a class="modal_branch-list--phone" href="tel:+79128005588">
+								<i class="modal_branch-list--icon modal_branch-list--icon_phone"></i> +7 (912) 800-55-88</a>
+						</li>
+						<li>
+							<span class="modal_branch-list--title">электронная почта</span>
+							<a class="modal_branch-list--link" href="mailto:info@texnika-profi.ru">
+								<i class="modal_branch-list--icon modal_branch-list--icon_email"></i> info@texnika-profi.ru</a>
+						</li>
+					</div>
+				</div>
+				<div class="modal_branch__rc">
+					<span class="modal_branch__rc--title">Схема проезда</span>
+					<div class="modal_branch--map"></div>
+				</div>
 			</div>
 		</div>
 		<script src="./js/libs.js"></script>

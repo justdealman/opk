@@ -5,200 +5,201 @@ html(lang='ru')
 	meta(name='viewport', content='width=device-width, user-scalable=yes')
 	link(href='./css/style.css', rel='stylesheet')
 	body
-		include modules/header.pug
-		.content
-			.breadcrumbs
-				ul
-					li
-						a(href='javascript:void(0);') Главная
-					li Корзина
-			.content__row
-				span.title-h1 Корзина
-				.basket
-					.basket__row
-						.basket__cell.basket__cell_photo
-							.basket--photo
-								img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-						.basket__cell.basket__cell_code Код: 0191
-						.basket__cell.basket__cell_title
-							a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-						.basket__cell.basket__cell_quantity
-							.elem-quantity.elem-quantity_sm
-								.elem-quantity--minus
-								input.elem-quantity--input(value='2')
-								.elem-quantity--plus
-						.basket__cell.basket__cell_price 1 395 689 ₽
-						.basket__cell.basket__cell_remove
-							a.basket--remove(href='javascript:void(0)') удалить
-					.basket__row
-						.basket__cell.basket__cell_photo
-							.basket--photo
-								img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-						.basket__cell.basket__cell_code Код: 0191
-						.basket__cell.basket__cell_title
-							a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-						.basket__cell.basket__cell_quantity
-							.elem-quantity.elem-quantity_sm
-								.elem-quantity--minus
-								input.elem-quantity--input(value='1')
-								.elem-quantity--plus
-						.basket__cell.basket__cell_price 685 680 ₽
-						.basket__cell.basket__cell_remove
-							a.basket--remove(href='javascript:void(0)') удалить
-					.basket__row
-						.basket__cell.basket__cell_photo
-							.basket--photo
-								img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-						.basket__cell.basket__cell_code Код: 0191
-						.basket__cell.basket__cell_title
-							a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-						.basket__cell.basket__cell_quantity
-							.elem-quantity.elem-quantity_sm
-								.elem-quantity--minus
-								input.elem-quantity--input(value='1')
-								.elem-quantity--plus
-						.basket__cell.basket__cell_price 1 395 689 ₽
-						.basket__cell.basket__cell_remove
-							a.basket--remove(href='javascript:void(0)') удалить
-					.basket__row
-						.basket__cell.basket__cell_photo
-							.basket--photo
-								img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-						.basket__cell.basket__cell_code Код: 0191
-						.basket__cell.basket__cell_title
-							a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-						.basket__cell.basket__cell_quantity
-							.elem-quantity.elem-quantity_sm
-								.elem-quantity--minus
-								input.elem-quantity--input(value='1')
-								.elem-quantity--plus
-						.basket__cell.basket__cell_price 478 000 ₽
-						.basket__cell.basket__cell_remove
-							a.basket--remove(href='javascript:void(0)') удалить
-					.basket__row
-						.basket__cell.basket__cell_photo
-							.basket--photo
-								img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
-						.basket__cell.basket__cell_code Код: 0191
-						.basket__cell.basket__cell_title
-							a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
-						.basket__cell.basket__cell_quantity
-							.elem-quantity.elem-quantity_sm
-								.elem-quantity--minus
-								input.elem-quantity--input(value='1')
-								.elem-quantity--plus
-						.basket__cell.basket__cell_price 588 685 ₽
-						.basket__cell.basket__cell_remove
-							a.basket--remove(href='javascript:void(0)') удалить
-				.basket-complect
-					.product-set.product-set_basket
-						.product-set--title Выгодный комплект
-						.product-set__grid
-							.product-set__item
-								a.product-set__item--pic(href='javascript:void(0)')
-									img.img-contain(src='./pic/set-1.jpg', width='114' height='132', alt='')
-								.product-set__content
-									input(type='checkbox', checked)
-									a.product-set__content--title(href='javascript:void(0)') Котел пищеварочный стационарный КПЭМ-100/9Т
-									span.product-set__content--price 255 131 ₽
-							.product-set__item
-								a.product-set__item--pic(href='javascript:void(0)')
-									img.img-contain(src='./pic/set-2.jpg', width='131' height='131', alt='')
-								.product-set__content
-									input(type='checkbox', checked)
-									a.product-set__content--title(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-750/3 С
-									span.product-set__content--price 57 565 ₽
-							.product-set__item
-								a.product-set__item--pic(href='javascript:void(0)')
-									img.img-contain(src='./pic/set-3.jpg', width='133' height='111', alt='')
-								.product-set__content
-									input(type='checkbox', checked)
-									a.product-set__content--title(href='javascript:void(0)') Плита электрическая MARENO NC74EC
-									span.product-set__content--price 71 731 ₽
-							.product-set__total
-								.product-set__total--discount #[span Скидка 50 000 руб.]
-								.product-set__total--price 315 250 ₽
-								button.product-set__total--button Добавить в корзину
-					.basket-complect__total
-						.basket-complect__total--title #[span Итого:] 1 200 000 руб.
-						button.basket-complect__total--order Оформить заказ
-						button.basket-complect__total--save Сохранить #[br] и продолжить покупки
-				.same
-					.same--title Вас может заинтересовать #[span Рекомендуем к покупке]
-					.same__slider
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									span.tip-icon.tip-icon_special Акция
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
-									.item-catalog__price 
-										span.item-catalog__price--old 1 410 900 Р
-										span.item-catalog__price--current 1 395 689 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
-									.item-catalog__price 
-										span.item-catalog__price--current 255 131 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									span.tip-icon.tip-icon_hit Хит
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-6.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь подовая Wiesheu EBO 68 L COMFORT NEW
-									.item-catalog__price 
-										span.item-catalog__price--current 447 136 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
-						.same__item
-							.item-catalog
-								.item-catalog__content
-									span.tip-icon.tip-icon_special Акция
-									.item-catalog--pic
-										img.img-contain(src='./pic/catalog-5.jpg', width='200', height='200', alt='')
-									.item-catalog__info
-										span.item-catalog--code Код: 0191
-										span.elem--availability.elem--availability_true В наличии
-										a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь
-									.item-catalog__price 
-										span.item-catalog__price--old 55 900 Р
-										span.item-catalog__price--current 45 380 ₽
-										.item-catalog__more
-											span.item-catalog__more--button.item-catalog__more--button_compare
-											span.item-catalog__more--button.item-catalog__more--button_favorite
-									.item-catalog__controls
-										button.item-catalog--button.item-catalog--button_buy Купить
-										button.item-catalog--button.item-catalog--button_one-click в 1 клик
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li Корзина
+				.content__row
+					span.title-h1 Корзина
+					.basket
+						.basket__row
+							.basket__cell.basket__cell_photo
+								.basket--photo
+									img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+							.basket__cell.basket__cell_code Код: 0191
+							.basket__cell.basket__cell_title
+								a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+							.basket__cell.basket__cell_quantity
+								.elem-quantity.elem-quantity_sm
+									.elem-quantity--minus
+									input.elem-quantity--input(value='2')
+									.elem-quantity--plus
+							.basket__cell.basket__cell_price 1 395 689 ₽
+							.basket__cell.basket__cell_remove
+								a.basket--remove(href='javascript:void(0)') удалить
+						.basket__row
+							.basket__cell.basket__cell_photo
+								.basket--photo
+									img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+							.basket__cell.basket__cell_code Код: 0191
+							.basket__cell.basket__cell_title
+								a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+							.basket__cell.basket__cell_quantity
+								.elem-quantity.elem-quantity_sm
+									.elem-quantity--minus
+									input.elem-quantity--input(value='1')
+									.elem-quantity--plus
+							.basket__cell.basket__cell_price 685 680 ₽
+							.basket__cell.basket__cell_remove
+								a.basket--remove(href='javascript:void(0)') удалить
+						.basket__row
+							.basket__cell.basket__cell_photo
+								.basket--photo
+									img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+							.basket__cell.basket__cell_code Код: 0191
+							.basket__cell.basket__cell_title
+								a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+							.basket__cell.basket__cell_quantity
+								.elem-quantity.elem-quantity_sm
+									.elem-quantity--minus
+									input.elem-quantity--input(value='1')
+									.elem-quantity--plus
+							.basket__cell.basket__cell_price 1 395 689 ₽
+							.basket__cell.basket__cell_remove
+								a.basket--remove(href='javascript:void(0)') удалить
+						.basket__row
+							.basket__cell.basket__cell_photo
+								.basket--photo
+									img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+							.basket__cell.basket__cell_code Код: 0191
+							.basket__cell.basket__cell_title
+								a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+							.basket__cell.basket__cell_quantity
+								.elem-quantity.elem-quantity_sm
+									.elem-quantity--minus
+									input.elem-quantity--input(value='1')
+									.elem-quantity--plus
+							.basket__cell.basket__cell_price 478 000 ₽
+							.basket__cell.basket__cell_remove
+								a.basket--remove(href='javascript:void(0)') удалить
+						.basket__row
+							.basket__cell.basket__cell_photo
+								.basket--photo
+									img.img-contain(src='./pic/catalog-1.png', width='46', height='46', alt='')
+							.basket__cell.basket__cell_code Код: 0191
+							.basket__cell.basket__cell_title
+								a(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке
+							.basket__cell.basket__cell_quantity
+								.elem-quantity.elem-quantity_sm
+									.elem-quantity--minus
+									input.elem-quantity--input(value='1')
+									.elem-quantity--plus
+							.basket__cell.basket__cell_price 588 685 ₽
+							.basket__cell.basket__cell_remove
+								a.basket--remove(href='javascript:void(0)') удалить
+					.basket-complect
+						.product-set.product-set_basket
+							.product-set--title Выгодный комплект
+							.product-set__grid
+								.product-set__item
+									a.product-set__item--pic(href='javascript:void(0)')
+										img.img-contain(src='./pic/set-1.jpg', width='114' height='132', alt='')
+									.product-set__content
+										input(type='checkbox', checked)
+										a.product-set__content--title(href='javascript:void(0)') Котел пищеварочный стационарный КПЭМ-100/9Т
+										span.product-set__content--price 255 131 ₽
+								.product-set__item
+									a.product-set__item--pic(href='javascript:void(0)')
+										img.img-contain(src='./pic/set-2.jpg', width='131' height='131', alt='')
+									.product-set__content
+										input(type='checkbox', checked)
+										a.product-set__content--title(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-750/3 С
+										span.product-set__content--price 57 565 ₽
+								.product-set__item
+									a.product-set__item--pic(href='javascript:void(0)')
+										img.img-contain(src='./pic/set-3.jpg', width='133' height='111', alt='')
+									.product-set__content
+										input(type='checkbox', checked)
+										a.product-set__content--title(href='javascript:void(0)') Плита электрическая MARENO NC74EC
+										span.product-set__content--price 71 731 ₽
+								.product-set__total
+									.product-set__total--discount #[span Скидка 50 000 руб.]
+									.product-set__total--price 315 250 ₽
+									button.product-set__total--button Добавить в корзину
+						.basket-complect__total
+							.basket-complect__total--title #[span Итого:] 1 200 000 руб.
+							button.basket-complect__total--order Оформить заказ
+							button.basket-complect__total--save Сохранить #[br] и продолжить покупки
+					.same
+						.same--title Вас может заинтересовать #[span Рекомендуем к покупке]
+						.same__slider
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										span.tip-icon.tip-icon_special Акция
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+										.item-catalog__price 
+											span.item-catalog__price--old 1 410 900 Р
+											span.item-catalog__price--current 1 395 689 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-4.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Котел пищеварочный стационарный КПЭМ-100/9Т
+										.item-catalog__price 
+											span.item-catalog__price--current 255 131 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										span.tip-icon.tip-icon_hit Хит
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-6.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь подовая Wiesheu EBO 68 L COMFORT NEW
+										.item-catalog__price 
+											span.item-catalog__price--current 447 136 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
+							.same__item
+								.item-catalog
+									.item-catalog__content
+										span.tip-icon.tip-icon_special Акция
+										.item-catalog--pic
+											img.img-contain(src='./pic/catalog-5.jpg', width='200', height='200', alt='')
+										.item-catalog__info
+											span.item-catalog--code Код: 0191
+											span.elem--availability.elem--availability_true В наличии
+											a.item-catalog--title(href='javascript:void(0);') Печь хлебопекарная Восход ХПЭ-500 нерж. сталь
+										.item-catalog__price 
+											span.item-catalog__price--old 55 900 Р
+											span.item-catalog__price--current 45 380 ₽
+											.item-catalog__more
+												span.item-catalog__more--button.item-catalog__more--button_compare
+												span.item-catalog__more--button.item-catalog__more--button_favorite
+										.item-catalog__controls
+											button.item-catalog--button.item-catalog--button_buy Купить
+											button.item-catalog--button.item-catalog--button_one-click в 1 клик
 		include modules/footer.pug
 		include modules/modals.pug
 		script(src='./js/libs.js')

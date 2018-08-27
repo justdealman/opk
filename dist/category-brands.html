@@ -5,1508 +5,1746 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
 	<link href="./css/style.css" rel="stylesheet">
 	<body>
-		<div class="panel">
-			<div class="panel__row">
-				<span class="panel--city">Ваш город:
-					<a class="panel--city_link" href="javascript:void(0);">Барнаул</a>
-				</span>
-				<div class="panel__nav">
-					<a href="javascript:void(0);">Доставка и оплата</a>
-					<a href="javascript:void(0);">Отзывы и портфолио</a>
-					<a href="javascript:void(0);">О нас</a>
-					<a href="javascript:void(0);">Новости </a>
-					<a href="javascript:void(0);">Контакты</a>
-				</div>
-				<ul class="panel__user">
-					<li>
-						<a href="javascript:void(0);">Вход</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);">регистрация</a>
-					</li>
-				</ul>
-				<div class="panel__rc">
-					<a class="panel--icon panel--icon_compare" href="javascript:void(0);">
-						<span>54</span>
-					</a>
-					<a class="panel--icon panel--icon_favorite" href="javascript:void(0);">
-						<span>27</span>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="header">
-			<div class="header__row">
-				<div class="header__lc">
-					<a class="header--logo" href="javascript:void(0);"></a>
-				</div>
-				<div class="header__cc">
-					<div class="header-contacts">
-						<div class="header-contacts__item">
-							<a class="header-contacts--email" href="javascript:void(0);">info@texnika-profi.ru</a>
+		<div class="wrapper">
+			<div class="top-group">
+				<div class="panel">
+					<div class="panel__row">
+						<span class="panel--city">Ваш город:
+							<a class="panel--city_link" href="javascript:void(0);">Барнаул</a>
+						</span>
+						<div class="city-drop is-opened">
+							<div class="city-drop__row is-visible" data="1">
+								<span class="city-drop--title">Вы находитесь в городе Москва?</span>
+								<button class="btn btn_confirm" data-city-drop-close>Да, верно</button>
+								<a class="city-drop--select" href="javascript:void(0);">Нет, выбрать другой</a>
+							</div>
+							<div class="city-drop__row" data="2">
+								<span class="city-drop--close" data-city-drop-close></span>
+								<span class="city-drop--title">Начните вводить название города</span>
+								<input class="city-drop--input" type="text" value="Комсомольск-на-Амуре">
+								<button class="btn btn_confirm">Да, верно</button>
+							</div>
 						</div>
-						<div class="header-contacts__item">
-							<a class="header-contacts--phone_big" href="tel:+78007006669">+7 (800)
-								<strong>700-66-69</strong>
+						<div class="panel__nav">
+							<a href="javascript:void(0);">Доставка и оплата</a>
+							<a href="javascript:void(0);">Отзывы и портфолио</a>
+							<a href="javascript:void(0);">О нас</a>
+							<a href="javascript:void(0);">Новости </a>
+							<a href="javascript:void(0);">Контакты</a>
+						</div>
+						<div class="panel__mini">
+							<span class="panel--email">
+								<a href="mailto:info@texnika-profi.ru">info@texnika-profi.ru</a>
+							</span>
+							<span class="panel--phones">
+								<a class="has-icon" href="tel:+78007006669">+7 (800)
+									<strong>700-66-69</strong>
+								</a>
+								<a href="tel:+74999255706">+7 (499)
+									<strong>925-57-06</strong>
+								</a>
+							</span>
+							<div class="panel__search">
+								<input type="text" placeholder="Поиск">
+								<input type="submit" value=""> </div>
+						</div>
+						<ul class="panel__user">
+							<li>
+								<a href="javascript:void(0);" data-open="user" data-tab-set="2">Вход</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" data-open="user" data-tab-set="1">регистрация</a>
+							</li>
+						</ul>
+						<div class="panel__rc">
+							<a class="panel--icon panel--icon_compare" href="javascript:void(0);">
+								<span>54</span>
 							</a>
-							<a class="header-contacts--phone_small" href="tel:+74999255706">+7 (499) 925-57-06</a>
+							<a class="panel--icon panel--icon_favorite" href="javascript:void(0);">
+								<span>27</span>
+							</a>
+							<a class="panel--icon panel--icon_basket" href="javascript:void(0);">
+								<span>29</span>
+								<strong>1 564 820 руб.</strong>
+							</a>
 						</div>
-						<div class="header-contacts__item">
-							<a class="header-contacts--consultation" href="javascript:void(0);">Заказать консультацию</a>
-						</div>
-					</div>
-					<div class="header__search">
-						<input type="text" placeholder="Поиск">
-						<button class="header__search--submit">
-							<span>Найти</span>
-						</button>
 					</div>
 				</div>
-				<div class="header__rc">
-					<a class="header__basket" href="javascript:void(0);">
-						<span class="header__basket--quantity">29</span>
-						<span class="header__basket--price">1 564 820 руб.</span>
-					</a>
+				<div class="header">
+					<div class="header__row">
+						<div class="header__lc">
+							<a class="header--logo" href="javascript:void(0);"></a>
+						</div>
+						<div class="header__cc">
+							<div class="header-contacts">
+								<div class="header-contacts__item">
+									<a class="header-contacts--email" href="javascript:void(0);">info@texnika-profi.ru</a>
+								</div>
+								<div class="header-contacts__item">
+									<a class="header-contacts--phone_big" href="tel:+78007006669">+7 (800)
+										<strong>700-66-69</strong>
+									</a>
+									<a class="header-contacts--phone_small" href="tel:+74999255706">+7 (499) 925-57-06</a>
+								</div>
+								<div class="header-contacts__item">
+									<a class="header-contacts--consultation" href="javascript:void(0);">Заказать консультацию</a>
+								</div>
+							</div>
+							<div class="header__search">
+								<input type="text" placeholder="Поиск">
+								<button class="header__search--submit">
+									<span>Найти</span>
+								</button>
+							</div>
+						</div>
+						<div class="header__rc">
+							<a class="header__basket" href="javascript:void(0);">
+								<span class="header__basket--quantity">29</span>
+								<span class="header__basket--price">1 564 820 руб.</span>
+							</a>
+						</div>
+					</div>
+					<div class="nav">
+						<a class="nav__link" href="javascript:void(0);" data-drop="1">
+							<i class="nav--icon nav--icon_1"></i>
+							<span class="nav--text">Тепловое оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="2">
+							<i class="nav--icon nav--icon_2"></i>
+							<span class="nav--text">Холодильное оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="3">
+							<i class="nav--icon nav--icon_1"></i>
+							<span class="nav--text">Технологическое оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);">
+							<i class="nav--icon nav--icon_1"></i>
+							<span class="nav--text">Нейтральное оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="5">
+							<i class="nav--icon nav--icon_3"></i>
+							<span class="nav--text">Барное оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="6">
+							<i class="nav--icon nav--icon_3"></i>
+							<span class="nav--text">Упаковочное оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="7">
+							<i class="nav--icon nav--icon_3"></i>
+							<span class="nav--text">Клининговое оборудование</span>
+						</a>
+						<a class="nav__link" href="javascript:void(0);" data-drop="8">
+							<i class="nav--icon nav--icon_3"></i>
+							<span class="nav--text">Линии раздач</span>
+						</a>
+					</div>
+				</div>
+				<div class="nav-drop">
+					<div class="nav-drop__inner">
+						<i class="nav-drop--arrow"></i>
+						<div class="nav-drop__row">
+							<div class="nav-drop__content" data-sub="1">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Пароконвектоматы</span>
+										<sup>257</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи конвекционные</span>
+										<sup>48</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи хлебопекарные</span>
+										<sup>122</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи ротационные</span>
+										<sup>149</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи для пиццы</span>
+										<sup>54</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Печи-коптильни</span>
+										<sup>89</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Шкафы расстоечные</span>
+										<sup>45</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Шкафы жаропрочные, пекарские, подовые</span>
+										<sup>51</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Блинницы, вафельницы</span>
+										<sup>257</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Тепловые витрины, столы, полки</span>
+										<sup>48</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>СВЧ-печи</span>
+										<sup>122</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Грили, жарочные поверхности, аппараты для шаурмы, шашлычницы</span>
+										<sup>149</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Котлы пищеварочные, пароварки, электросковороды, газовые сковороды</span>
+										<sup>54</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Мармиты, тепловые витрины, электрокипятильники</span>
+										<sup>45</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Чебуречницы, пончиковые аппараты, фритюрницы</span>
+										<sup>51</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Шкафы жаропрочные, пекарские, подовые</span>
+										<sup>89</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Блинницы, вафельницы</span>
+										<sup>257</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Тепловые витрины, столы, полки</span>
+										<sup>48</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>СВЧ-печи</span>
+										<sup>122</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Грили, жарочные поверхности, аппараты для шаурмы, шашлычницы</span>
+										<sup>149</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Котлы пищеварочные, пароварки, электросковороды, газовые сковороды</span>
+										<sup>54</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Мармиты, тепловые витрины, электрокипятильники</span>
+										<sup>45</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Чебуречницы, пончиковые аппараты, фритюрницы</span>
+										<sup>51</sup>
+									</a>
+								</div>
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Шкафы жаропрочные, пекарские, подовые</span>
+										<sup>89</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="2">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Холодильное оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="3">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Технологическое оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="5">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Барное оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="6">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Упаковочное оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="7">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Клининговое оборудование</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+							<div class="nav-drop__content" data-sub="8">
+								<div class="nav-drop--item">
+									<a href="javascript:void(0);">
+										<span>Линии раздач</span>
+										<sup>257</sup>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="nav">
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_1"></i>
-					<span class="nav--text">Тепловое оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_2"></i>
-					<span class="nav--text">Холодильное оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_1"></i>
-					<span class="nav--text">Технологическое оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_1"></i>
-					<span class="nav--text">Нейтральное оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_3"></i>
-					<span class="nav--text">Барное оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_3"></i>
-					<span class="nav--text">Упаковочное оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_3"></i>
-					<span class="nav--text">Клининговое оборудование</span>
-				</a>
-				<a class="nav__link" href="javascript:void(0);">
-					<i class="nav--icon nav--icon_3"></i>
-					<span class="nav--text">Линии раздач</span>
-				</a>
-			</div>
-		</div>
-		<div class="content">
-			<div class="breadcrumbs">
-				<ul>
-					<li>
-						<a href="javascript:void(0);">Главная</a>
-					</li>
-					<li>Каталог</li>
-				</ul>
-			</div>
-			<div class="content__row">
-				<span class="title-h1">Каталог</span>
-				<div class="category">
-					<div class="category__nav">
-						<a class="category__nav--item" href="1" data-tabs-link>Вид</a>
-						<a class="category__nav--item is-active" href="2" data-tabs-link>Бренды</a>
-						<a class="category__nav--item" href="3" data-tabs-link>Направления</a>
-					</div>
-					<div class="category__content" data-tabs>
-						<div class="category-tab category-tab_view">
-							<div class="category-tab__grid">
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-contain" src="./pic/category-1.jpg" width="184" height="149" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Тепловое оборудование</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Пароконвектоматы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи конвекционные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи хлебопекарные </span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи ротационные</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи для пиццы</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-contain" src="./pic/category-2.jpg" width="188" height="188" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Холодильное оборудование</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Камеры холодильные</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Машины холодильные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Лари морозильные</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Столы холодильные и морозильные</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Витрины холодильные</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 5 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-contain" src="./pic/category-3.jpg" width="188" height="188" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Технологическое оборудование</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Тестомесы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Миксеры</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Овощерезки</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Терки и слайсеры</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Тестораскаточные машины</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-contain" src="./pic/category-4.jpg" width="185" height="185" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Нейтральное оборудование</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Столы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Ванны моечные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Котломойки</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Стеллажи</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Вытяжки</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 10 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-contain" src="./pic/category-5.jpg" width="197" height="197" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Барное оборудование</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Пароконвектоматы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи конвекционные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи хлебопекарные </span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи ротационные</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи для пиццы</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-contain" src="./pic/category-6.jpg" width="192" height="192" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Упаковочное оборудование</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Камеры холодильные</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Машины холодильные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Лари морозильные</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Столы холодильные и морозильные</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Витрины холодильные</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 5 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-contain" src="./pic/category-7.jpg" width="195" height="194" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Клининговое оборудование</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Тестомесы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Миксеры</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Овощерезки</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Терки и слайсеры</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Тестораскаточные машины</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-contain" src="./pic/category-8.jpg" width="191" height="156" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Линии раздач</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Столы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Ванны моечные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Котломойки</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Стеллажи</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Вытяжки</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 10 категорий</a>
-								</div>
-							</div>
+			<div class="content">
+				<div class="breadcrumbs">
+					<ul>
+						<li>
+							<a href="javascript:void(0);">Главная</a>
+						</li>
+						<li>Каталог</li>
+					</ul>
+				</div>
+				<div class="content__row">
+					<span class="title-h1">Каталог</span>
+					<div class="category" data-tabs-container>
+						<div class="category__nav">
+							<a class="category__nav--item" href="1" data-tabs-link>Вид</a>
+							<a class="category__nav--item is-active" href="2" data-tabs-link>Бренды</a>
+							<a class="category__nav--item" href="3" data-tabs-link>Направления</a>
 						</div>
-						<div class="category-tab category-tab_brands">
-							<div class="category-abc">
-								<div class="category-abc__lang">
-									<a href="javascript:void(0);">A</a>
-									<a href="javascript:void(0);">B</a>
-									<a href="javascript:void(0);">C</a>
-									<a class="is-active" href="javascript:void(0);">D</a>
-									<a href="javascript:void(0);">E </a>
-									<a href="javascript:void(0);">F</a>
-									<a href="javascript:void(0);">G</a>
-									<a href="javascript:void(0);">H</a>
-									<a href="javascript:void(0);">I</a>
-									<a href="javascript:void(0);">J</a>
-									<a href="javascript:void(0);">K</a>
-									<a href="javascript:void(0);">L</a>
-									<a href="javascript:void(0);">M</a>
-									<a href="javascript:void(0);">N</a>
-									<a href="javascript:void(0);">O</a>
-									<a href="javascript:void(0);">P</a>
-									<a href="javascript:void(0);">Q</a>
-									<a href="javascript:void(0);">R</a>
-									<a href="javascript:void(0);">S</a>
-									<a href="javascript:void(0);">U</a>
-									<a href="javascript:void(0);">V</a>
-									<a href="javascript:void(0);">W</a>
-									<a href="javascript:void(0);">X</a>
-									<a href="javascript:void(0);">Y</a>
-									<a href="javascript:void(0);">Z</a>
-								</div>
-								<div class="category-abc__lang">
-									<a href="javascript:void(0);">А</a>
-									<a href="javascript:void(0);">Б</a>
-									<a href="javascript:void(0);">В</a>
-									<a href="javascript:void(0);">Г</a>
-									<a href="javascript:void(0);">Д</a>
-									<a href="javascript:void(0);">К</a>
-									<a href="javascript:void(0);">Л</a>
-									<a href="javascript:void(0);">М</a>
-									<a href="javascript:void(0);">Н</a>
-									<a href="javascript:void(0);">О</a>
-									<a href="javascript:void(0);">Р</a>
-									<a href="javascript:void(0);">Т</a>
-									<a href="javascript:void(0);">Э </a>
-								</div>
-							</div>
-							<div class="category-tab__grid">
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">A</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>AEG</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>ASKO</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>ATESY</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Abat</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Airhot</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>AlexanderSolia</span>
-												<sup>39</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Apach</span>
-												<sup>530</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Ascobloc</span>
-												<sup>34</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">B</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Beckers</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bear Varimixer</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Blanco</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bras</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bravilor Bonamat</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Brema</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">C</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>CAS</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cambro</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Carboma</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Climadiff</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cooleq</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cryspi1</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">D</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Dihr</span>
-												<sup>58</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">E</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Electrolux Professional</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Elettrobar</span>
-												<sup>132</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">F</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>FIAMMA</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Faber</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Faema</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Climadiff</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cooleq</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cryspi1</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">G</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>AEG</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>ASKO</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>ATESY</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Abat</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Airhot</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>AlexanderSolia</span>
-												<sup>39</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Apach</span>
-												<sup>530</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Ascobloc</span>
-												<sup>34</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">H</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Beckers</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bear Varimixer</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Blanco</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bras</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bravilor Bonamat</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Brema</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">I</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>CAS</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cambro</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Carboma</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Climadiff</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cooleq</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cryspi1</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">K</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Dihr</span>
-												<sup>58</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">E</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Electrolux Professional</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Elettrobar</span>
-												<sup>132</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">L</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>FIAMMA</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Faber</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Faema</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Climadiff</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cooleq</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cryspi1</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">N</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>AEG</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>ASKO</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>ATESY</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Abat</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Airhot</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>AlexanderSolia</span>
-												<sup>39</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Apach</span>
-												<sup>530</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Ascobloc</span>
-												<sup>34</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">O</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Beckers</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bear Varimixer</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Blanco</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bras</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bravilor Bonamat</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Brema</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">P</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>CAS</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cambro</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Carboma</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Climadiff</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cooleq</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cryspi1</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">R</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Dihr</span>
-												<sup>58</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">S</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Electrolux Professional</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Elettrobar</span>
-												<sup>132</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">T</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>FIAMMA</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Faber</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Faema</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Climadiff</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cooleq</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cryspi1</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">U</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>AEG</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>ASKO</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>ATESY</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Abat</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Airhot</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>AlexanderSolia</span>
-												<sup>39</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Apach</span>
-												<sup>530</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Ascobloc</span>
-												<sup>34</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">V</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Beckers</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bear Varimixer</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Blanco</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bras</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Bravilor Bonamat</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Brema</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--title" href="javascript:void(0);">W</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>CAS</span>
-												<sup>58</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cambro</span>
-												<sup>132</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Carboma</span>
-												<sup>404</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Climadiff</span>
-												<sup>580</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cooleq</span>
-												<sup>95</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Cryspi1</span>
-												<sup>39</sup>
-											</a>
-										</li>
-									</ul>
+						<div class="category__content" data-tabs>
+							<div class="category-tab category-tab_view">
+								<div class="category-tab__grid">
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-contain" src="./pic/category-1.jpg" width="184" height="149" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Тепловое оборудование</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Пароконвектоматы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи конвекционные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи хлебопекарные </span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи ротационные</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи для пиццы</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-contain" src="./pic/category-2.jpg" width="188" height="188" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Холодильное оборудование</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Камеры холодильные</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Машины холодильные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Лари морозильные</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Столы холодильные и морозильные</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Витрины холодильные</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 5 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-contain" src="./pic/category-3.jpg" width="188" height="188" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Технологическое оборудование</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Тестомесы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Миксеры</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Овощерезки</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Терки и слайсеры</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Тестораскаточные машины</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-contain" src="./pic/category-4.jpg" width="185" height="185" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Нейтральное оборудование</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Столы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Ванны моечные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Котломойки</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Стеллажи</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Вытяжки</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 10 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-contain" src="./pic/category-5.jpg" width="197" height="197" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Барное оборудование</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Пароконвектоматы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи конвекционные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи хлебопекарные </span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи ротационные</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи для пиццы</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-contain" src="./pic/category-6.jpg" width="192" height="192" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Упаковочное оборудование</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Камеры холодильные</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Машины холодильные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Лари морозильные</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Столы холодильные и морозильные</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Витрины холодильные</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 5 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-contain" src="./pic/category-7.jpg" width="195" height="194" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Клининговое оборудование</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Тестомесы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Миксеры</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Овощерезки</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Терки и слайсеры</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Тестораскаточные машины</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-contain" src="./pic/category-8.jpg" width="191" height="156" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Линии раздач</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Столы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Ванны моечные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Котломойки</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Стеллажи</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Вытяжки</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 10 категорий</a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="category-tab category-tab_directions">
-							<div class="category-tab__grid">
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-cover" src="./pic/direction-1.jpg" width="200" height="200" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Бургерные</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Пароконвектоматы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи конвекционные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи хлебопекарные </span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи ротационные</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи для пиццы</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+							<div class="category-tab category-tab_brands">
+								<div class="category-abc">
+									<div class="category-abc__lang">
+										<a href="javascript:void(0);">A</a>
+										<a href="javascript:void(0);">B</a>
+										<a href="javascript:void(0);">C</a>
+										<a class="is-active" href="javascript:void(0);">D</a>
+										<a href="javascript:void(0);">E </a>
+										<a href="javascript:void(0);">F</a>
+										<a href="javascript:void(0);">G</a>
+										<a href="javascript:void(0);">H</a>
+										<a href="javascript:void(0);">I</a>
+										<a href="javascript:void(0);">J</a>
+										<a href="javascript:void(0);">K</a>
+										<a href="javascript:void(0);">L</a>
+										<a href="javascript:void(0);">M</a>
+										<a href="javascript:void(0);">N</a>
+										<a href="javascript:void(0);">O</a>
+										<a href="javascript:void(0);">P</a>
+										<a href="javascript:void(0);">Q</a>
+										<a href="javascript:void(0);">R</a>
+										<a href="javascript:void(0);">S</a>
+										<a href="javascript:void(0);">U</a>
+										<a href="javascript:void(0);">V</a>
+										<a href="javascript:void(0);">W</a>
+										<a href="javascript:void(0);">X</a>
+										<a href="javascript:void(0);">Y</a>
+										<a href="javascript:void(0);">Z</a>
+									</div>
+									<div class="category-abc__lang">
+										<a href="javascript:void(0);">А</a>
+										<a href="javascript:void(0);">Б</a>
+										<a href="javascript:void(0);">В</a>
+										<a href="javascript:void(0);">Г</a>
+										<a href="javascript:void(0);">Д</a>
+										<a href="javascript:void(0);">К</a>
+										<a href="javascript:void(0);">Л</a>
+										<a href="javascript:void(0);">М</a>
+										<a href="javascript:void(0);">Н</a>
+										<a href="javascript:void(0);">О</a>
+										<a href="javascript:void(0);">Р</a>
+										<a href="javascript:void(0);">Т</a>
+										<a href="javascript:void(0);">Э </a>
+									</div>
 								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-cover" src="./pic/direction-2.jpg" width="200" height="200" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Пиццерии</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Камеры холодильные</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Машины холодильные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Лари морозильные</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Столы холодильные и морозильные</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Витрины холодильные</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 5 категорий</a>
+								<div class="category-tab__grid">
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">A</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>AEG</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>ASKO</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>ATESY</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Abat</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Airhot</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>AlexanderSolia</span>
+													<sup>39</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Apach</span>
+													<sup>530</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Ascobloc</span>
+													<sup>34</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">B</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Beckers</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bear Varimixer</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Blanco</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bras</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bravilor Bonamat</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Brema</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">C</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>CAS</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cambro</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Carboma</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Climadiff</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cooleq</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cryspi1</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">D</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Dihr</span>
+													<sup>58</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">E</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Electrolux Professional</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Elettrobar</span>
+													<sup>132</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">F</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>FIAMMA</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Faber</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Faema</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Climadiff</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cooleq</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cryspi1</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">G</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>AEG</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>ASKO</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>ATESY</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Abat</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Airhot</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>AlexanderSolia</span>
+													<sup>39</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Apach</span>
+													<sup>530</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Ascobloc</span>
+													<sup>34</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">H</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Beckers</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bear Varimixer</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Blanco</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bras</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bravilor Bonamat</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Brema</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">I</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>CAS</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cambro</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Carboma</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Climadiff</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cooleq</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cryspi1</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">K</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Dihr</span>
+													<sup>58</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">E</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Electrolux Professional</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Elettrobar</span>
+													<sup>132</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">L</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>FIAMMA</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Faber</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Faema</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Climadiff</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cooleq</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cryspi1</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">N</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>AEG</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>ASKO</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>ATESY</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Abat</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Airhot</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>AlexanderSolia</span>
+													<sup>39</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Apach</span>
+													<sup>530</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Ascobloc</span>
+													<sup>34</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">O</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Beckers</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bear Varimixer</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Blanco</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bras</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bravilor Bonamat</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Brema</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">P</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>CAS</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cambro</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Carboma</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Climadiff</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cooleq</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cryspi1</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">R</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Dihr</span>
+													<sup>58</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">S</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Electrolux Professional</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Elettrobar</span>
+													<sup>132</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">T</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>FIAMMA</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Faber</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Faema</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Climadiff</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cooleq</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cryspi1</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">U</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>AEG</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>ASKO</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>ATESY</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Abat</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Airhot</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>AlexanderSolia</span>
+													<sup>39</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Apach</span>
+													<sup>530</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Ascobloc</span>
+													<sup>34</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">V</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Beckers</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bear Varimixer</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Blanco</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bras</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Bravilor Bonamat</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Brema</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--title" href="javascript:void(0);">W</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>CAS</span>
+													<sup>58</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cambro</span>
+													<sup>132</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Carboma</span>
+													<sup>404</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Climadiff</span>
+													<sup>580</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cooleq</span>
+													<sup>95</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Cryspi1</span>
+													<sup>39</sup>
+												</a>
+											</li>
+										</ul>
+									</div>
 								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-cover" src="./pic/direction-3.jpg" width="200" height="200" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Рестораны</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Тестомесы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Миксеры</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Овощерезки</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Терки и слайсеры</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Тестораскаточные машины</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-cover" src="./pic/direction-4.jpg" width="200" height="200" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Столовые</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Столы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Ванны моечные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Котломойки</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Стеллажи</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Вытяжки</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 10 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-cover" src="./pic/direction-5.jpg" width="200" height="200" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Пекарни</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Пароконвектоматы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи конвекционные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи хлебопекарные </span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи ротационные</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Печи для пиццы</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-cover" src="./pic/direction-6.jpg" width="200" height="200" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Кофейни</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Камеры холодильные</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Машины холодильные</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Лари морозильные</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Столы холодильные и морозильные</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Витрины холодильные</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 5 категорий</a>
-								</div>
-								<div class="category-tab__item">
-									<a class="category-tab--pic" href="javascript:void(0);">
-										<img class="img-cover" src="./pic/direction-7.jpg" width="200" height="200" alt="">
-									</a>
-									<a class="category-tab--title" href="javascript:void(0);">Бары</a>
-									<ul class="category-tab__list">
-										<li>
-											<a href="javascript:void(0);">
-												<span>Тестомесы</span>
-												<sup>257</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Миксеры</span>
-												<sup>48</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Овощерезки</span>
-												<sup>122</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Терки и слайсеры</span>
-												<sup>65</sup>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0);">
-												<span>Тестораскаточные машины</span>
-												<sup>29</sup>
-											</a>
-										</li>
-									</ul>
-									<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+							</div>
+							<div class="category-tab category-tab_directions">
+								<div class="category-tab__grid">
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-cover" src="./pic/direction-1.jpg" width="200" height="200" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Бургерные</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Пароконвектоматы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи конвекционные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи хлебопекарные </span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи ротационные</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи для пиццы</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-cover" src="./pic/direction-2.jpg" width="200" height="200" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Пиццерии</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Камеры холодильные</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Машины холодильные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Лари морозильные</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Столы холодильные и морозильные</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Витрины холодильные</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 5 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-cover" src="./pic/direction-3.jpg" width="200" height="200" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Рестораны</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Тестомесы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Миксеры</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Овощерезки</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Терки и слайсеры</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Тестораскаточные машины</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-cover" src="./pic/direction-4.jpg" width="200" height="200" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Столовые</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Столы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Ванны моечные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Котломойки</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Стеллажи</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Вытяжки</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 10 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-cover" src="./pic/direction-5.jpg" width="200" height="200" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Пекарни</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Пароконвектоматы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи конвекционные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи хлебопекарные </span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи ротационные</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Печи для пиццы</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-cover" src="./pic/direction-6.jpg" width="200" height="200" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Кофейни</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Камеры холодильные</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Машины холодильные</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Лари морозильные</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Столы холодильные и морозильные</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Витрины холодильные</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 5 категорий</a>
+									</div>
+									<div class="category-tab__item">
+										<a class="category-tab--pic" href="javascript:void(0);">
+											<img class="img-cover" src="./pic/direction-7.jpg" width="200" height="200" alt="">
+										</a>
+										<a class="category-tab--title" href="javascript:void(0);">Бары</a>
+										<ul class="category-tab__list">
+											<li>
+												<a href="javascript:void(0);">
+													<span>Тестомесы</span>
+													<sup>257</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Миксеры</span>
+													<sup>48</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Овощерезки</span>
+													<sup>122</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Терки и слайсеры</span>
+													<sup>65</sup>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<span>Тестораскаточные машины</span>
+													<sup>29</sup>
+												</a>
+											</li>
+										</ul>
+										<a class="category-tab--more" href="javascript:void(0);">Еще 8 категорий</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1564,6 +1802,174 @@
 							<img src="./img/letsrock-logo.png" width="104" height="23" alt="">
 						</a>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fade-bg"></div>
+		<div class="modal modal_buy" data-target="buy-one-click">
+			<span class="modal--close"></span>
+			<div class="modal__content">
+				<span class="modal__content--title">Купить в 1 клик</span>
+				<div class="modal__item">
+					<div class="modal__item--pic">
+						<span>
+							<img class="img-cover" src="./pic/catalog-3.png" width="55" height="55" alt="">
+						</span>
+					</div>
+					<div class="modal__item--code">Код: 0191</div>
+					<div class="modal__item--title">Печь хлебопекарная Восход ХПЭ-500 нерж. сталь, в обрешетке</div>
+					<div class="modal__item--price">
+						<span>1 410 900 Р</span> 1 395 689 ₽</div>
+				</div>
+			</div>
+			<div class="modal__form">
+				<div class="modal__form--title">Введите ваши данные</div>
+				<div class="modal__form--item">
+					<label for="modal-name">
+						<span>Имя</span>
+					</label>
+					<input type="text" id="modal-name"> </div>
+				<div class="modal__form--item">
+					<label for="modal-phone">
+						<span>Телефон</span>
+					</label>
+					<input type="text" id="modal-phone"> </div>
+				<label class="modal__form--agreement">
+					<input type="checkbox" checked> Я согласен на обработку персональных данных </label>
+				<button class="modal__form--button">Отправить</button>
+			</div>
+		</div>
+		<div class="modal modal_user" data-target="user" data-tabs-container>
+			<span class="modal--close"></span>
+			<div class="modal_user__nav">
+				<a href="1" data-tabs-link>Регистрация</a>
+				<a href="2" data-tabs-link>Вход</a>
+			</div>
+			<div class="modal_user__tabs" data-tabs>
+				<div class="modal_user__col">
+					<div class="modal_user__grid">
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Фамилия имя отчество *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Email *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Телефон *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Пароль *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item modal_user__item_wide">
+							<span class="modal_user__item--label">Пол</span>
+							<div class="modal_user__list">
+								<label class="modal_user__list--label">
+									<input type="radio" name="sex"> Мужской </label>
+								<label class="modal_user__list--label">
+									<input type="radio" name="sex"> Женский </label>
+							</div>
+						</div>
+						<div class="modal_user__item modal_user__item_wide">
+							<label class="modal_user__item--label">Дата рождения</label>
+							<div class="modal_user__date">
+								<div class="modal_user__date--item">
+									<select>
+										<option>День</option>
+										<option>1</option>
+									</select>
+								</div>
+								<div class="modal_user__date--item">
+									<select>
+										<option>Мес.</option>
+										<option>1</option>
+									</select>
+								</div>
+								<div class="modal_user__date--item">
+									<select>
+										<option>Год</option>
+										<option>1</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Название организации *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Телефон организации *</label>
+							<input class="standart" type="text"> </div>
+					</div>
+					<label class="modal_user--agreement">
+						<input type="checkbox" checked> Я согласен на обработку персональных данных </label>
+					<button class="btn">Зарегистрироваться</button>
+				</div>
+				<div class="modal_user__col">
+					<div class="modal_user__grid">
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Логин *</label>
+							<input class="standart" type="text"> </div>
+						<div class="modal_user__item">
+							<label class="modal_user__item--label">Пароль *</label>
+							<input class="standart" type="text"> </div>
+					</div>
+					<div class="modal_user__login">
+						<button class="btn">Войти</button>
+						<a class="modal_user--recover" href="javascript:void(0);">Забыли пароль?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal_review" data-target="add-review">
+			<span class="modal--close"></span>
+			<span class="modal--title">Добавить отзыв</span>
+			<div class="modal_review__grid">
+				<div class="modal_review__item">
+					<label class="modal_review__item--label">Имя</label>
+					<input class="standart" type="text" value="Иван"> </div>
+				<div class="modal_review__item">
+					<label class="modal_review__item--label">Организация</label>
+					<input class="standart" type="text" value="Бочка"> </div>
+				<div class="modal_review__item">
+					<label class="modal_review__item--label">Должность</label>
+					<input class="standart" type="text" value="Шеф-повар"> </div>
+				<div class="modal_review__item modal_review__item_wide">
+					<label class="modal_review__item--label">Отзыв</label>
+					<textarea class="standart" rows="15"></textarea>
+				</div>
+			</div>
+			<button class="btn">Опубликовать</button>
+		</div>
+		<div class="modal modal_branch" data-target="branch">
+			<span class="modal--close"></span>
+			<span class="modal--title">ООО «Название организации»</span>
+			<div class="modal_branch__grid">
+				<div class="modal_branch__content">
+					<div class="modal_branch-list">
+						<li>
+							<span class="modal_branch-list--address">
+								<i class="modal_branch-list--icon modal_branch-list--icon_pin"></i> Россия, Московская область,
+								<br> Балашиха, шоссе Энтузиастов, 4</span>
+						</li>
+						<li>
+							<span class="modal_branch-list--title">
+								<i class="modal_branch-list--icon modal_branch-list--icon_user"></i> контактное лицо</span>
+							<span class="modal_branch-list--link">Васильев Сергей Анатольевич</span>
+						</li>
+						<li>
+							<span class="modal_branch-list--title">звонок бесплатный по России</span>
+							<a class="modal_branch-list--phone" href="tel:+79128005588">
+								<i class="modal_branch-list--icon modal_branch-list--icon_phone"></i> +7 (912) 800-55-88</a>
+						</li>
+						<li>
+							<span class="modal_branch-list--title">электронная почта</span>
+							<a class="modal_branch-list--link" href="mailto:info@texnika-profi.ru">
+								<i class="modal_branch-list--icon modal_branch-list--icon_email"></i> info@texnika-profi.ru</a>
+						</li>
+					</div>
+				</div>
+				<div class="modal_branch__rc">
+					<span class="modal_branch__rc--title">Схема проезда</span>
+					<div class="modal_branch--map"></div>
 				</div>
 			</div>
 		</div>

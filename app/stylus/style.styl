@@ -28,7 +28,7 @@ html
 		vertical-align top
 		box-sizing border-box
 
-	*:before,
+	*:before
 	*:after 
 		vertical-align top
 		box-sizing border-box
@@ -125,6 +125,9 @@ button
 .img-cover,
 .img-contain
 	display none !important
+	
+.wrapper
+	padding-top 331px
 
 // Libs
 
@@ -132,16 +135,168 @@ button
 	
 // Core
 
+.top-group
+	position absolute
+	left 0
+	top 0
+	z-index 100
+	width 100%
+	
+	&.is-minified
+		position fixed
+		border-bottom-width 2px
+
+		.header__row
+			display none
+
+		.nav--icon
+		.nav--text:before
+			display none
+			
+		.nav
+			padding-bottom 8px
+			
+		.nav__link
+			padding-top 7px
+			
+		.panel
+			&__row
+				height 48px
+				padding-top 11px
+				padding-bottom 7px
+	
+			&--city
+			&__nav
+				display none
+				
+			&__mini
+				display block
+				
+			&__rc
+				margin-top -3px
+				margin-right -5px
+				padding-right 0
+				
+			&--icon
+				&_basket
+					display inline-block
+					
+			.city-drop
+				margin-top -10px
+					
+		.nav-drop
+			margin-top -198px
+
 .panel
+	position relative
+	z-index 102
 	background #f8f8f8
 	box-shadow inset 0 -2px 4px rgba(0, 0, 0, 0.09)
 	
 	&__row
-		clear both
-		overflow hidden
+		position relative
+		height 58px
 		max-width:1300px
 		padding 15px 30px 13px
 		margin 0 auto
+		
+	&__mini
+		float left
+		display none
+		font-size 0
+		font-family 'Source Sans Pro', serif
+		margin-top 3px
+		
+	&--email
+		display inline-block
+		min-width 177px
+		margin-right 40px
+		
+		a
+			position relative
+			display inline-block
+			font-size 15px
+			line-height 22px
+			font-weight 600
+			padding-left 26px
+		
+			&:before
+				content ''
+				position absolute
+				left 0
+				top 6px
+				width 16px
+				height 14px
+				background url('../img/header-email-icon.svg') no-repeat 0 -1px
+				background-size 16px 16px
+				
+			&:after
+				content ''
+				position absolute
+				left 26px
+				bottom 2px
+				width calc(100% - 26px)
+				border-bottom 1px solid #ff7a08
+				transition opacity .2s ease
+				
+			&:hover
+				&:after
+					opacity 0
+					
+	&--phones
+		display inline-block
+		margin-right 20px
+		margin-top -1px
+		
+		a
+			display inline-block
+			color #242424
+			font-size 16px
+			line-height 22px
+			margin-right 20px
+			
+			strong
+				font-weight 600
+			
+			&.has-icon
+				position relative
+				padding-left 19px
+				
+				&:before
+					content ''
+					position absolute
+					left 0
+					top 2px
+					width 11px
+					height 17px
+					background url('../img/header-phone-icon.png') no-repeat 0 0
+
+	&__search
+		position relative
+		display inline-block
+		width 190px
+		margin -7px 60px 0 0
+	
+		input[type="text"]
+			width 100%
+			height 34px
+			font-size 16px
+			font-weight bold
+			padding 6px 36px 7px 15px
+			background #ffffff
+			border 1px solid #dddddd
+			border-radius 4px
+			
+		input[type="submit"]
+			position absolute
+			right 0
+			top 0
+			z-index 1
+			width 36px
+			height 34px
+			font-size 0
+			cursor pointer
+			background url('../img/search-icon.png') no-repeat 10px 10px
 		
 	&--city
 		position relative
@@ -268,7 +423,7 @@ button
 		float left
 		min-width 30px
 		height 30px
-		font-size 0
+		white-space nowrap
 		padding 2px 8px 6px 16px
 		
 		span 
@@ -305,7 +460,120 @@ button
 			&:before
 				width 16px
 				background url('../img/panel-favorite-icon.png') no-repeat 0 0
+		
+		&_basket
+			display none
 
+			&:before
+				width 18px
+				height 18px
+				margin -2px 0 0 -5px
+				background url('../img/header-basket-icon.png') no-repeat 0 0
+				background-size 100% 100%
+				
+		strong
+			display inline-block
+			font-size 15px
+			line-height 22px
+			font-weight normal
+			padding 4px 0 2px 8px
+			margin-right -3px
+			
+.city-drop
+	position absolute
+	left 10px
+	top 54px
+	z-index 10
+	min-width 340px
+	background #f8f8f8
+	box-shadow 0 6px 5px rgba(0, 0, 0, 0.15)
+	transition opacity .2s ease, transform .2s ease, visibility .2s ease
+	opacity 0
+	visibility hidden
+	transform translateY(-5px)
+	
+	&.is-opened
+		opacity 1
+		visibility visible
+		transform translateY(0)	
+	
+	&--close
+		position absolute
+		top 12px
+		right 22px
+		display block
+		width 24px
+		height 24px
+		cursor pointer
+		background url('../img/modal-close.png') no-repeat 0 0
+		background-size 100% 100%
+		border-radius 50%
+	
+	&__row
+		display none
+		position relative
+		font-size 0
+		padding 20px 40px 34px
+		
+		&.is-visible
+			display block
+		
+	&--title
+		display block
+		color colorBlack
+		font-size 16px
+		line-height 22px
+		white-space nowrap
+		margin 0 0 18px
+		
+	&--input
+		display inline-block
+		width 205px
+		color colorBlack
+		font-size 14px
+		padding 8px 15px 9px
+		margin-right 10px
+		background #ffffff
+		border 1px solid #dddddd
+		border-radius 4px
+		
+	.btn
+		display inline-block
+		font-size 14px
+		line-height 20px
+		font-weight normal
+		font-family 'Roboto', sans-serif
+		text-transform none
+		letter-spacing 0
+		padding 8px 15px
+		
+		&_confirm
+			margin 0 15px 0 0
+		
+		&_select
+			margin 0 37px 0 0
+		
+	&--select
+		position relative
+		display inline-block
+		color #414141
+		font-size 14px
+		line-height 20px
+		margin 9px 0 7px
+		
+		&:after
+			content ''
+			position absolute
+			left 0
+			bottom 0
+			width 100%
+			border-bottom 1px solid #ff8400
+			transition opacity .2s ease
+			
+		&:hover
+			&:after
+				border-bottom-color transparent
+	
 .header
 	position relative
 	background #ffffff
@@ -368,7 +636,8 @@ button
 				width 16px
 				height 14px
 				margin 6px 10px 2px 0
-				background url('../img/header-email-icon.png') no-repeat 0 0
+				background url('../img/header-email-icon.svg') no-repeat 0 -1px
+				background-size 16px 16px
 				
 			&:after
 				content ''
@@ -398,7 +667,8 @@ button
 				width 18px
 				height 19px
 				margin 1px 6px 1px 0
-				background url('../img/header-consultation-icon.png') no-repeat 0 0
+				background url('../img/header-consultation-icon.svg') no-repeat 0 0
+				background-size 100% 100%
 				
 			&:after
 				content ''
@@ -498,22 +768,18 @@ button
 	&__basket
 		position relative
 		display inline-block
-		height 75px
+		height 57px
 		font-size 0
 		white-space nowrap
 		vertical-align top
-		padding 12px 15px 0 40px
-		margin 0 0 0 4px
-		border 2px solid #f8f8f8
-		transition border-color .2s ease
-		
-		&:hover
-			border-color #ebebeb
+		padding 12px 0 0 23px
+		margin 20px 14px 0 4px
+		border-bottom 2px solid #ff7a08
 		
 		&:before
 			content ''
 			position absolute
-			left 17px
+			left 0
 			top 21px
 			width 30px
 			height 30px
@@ -534,14 +800,14 @@ button
 			transition background-color .2s ease
 
 		&:hover
-			.header__basket--quantity
+			& ^[-1]--quantity
 				background-color #5ec3eb
 				
 		&--price
 			display inline-block
-			color colorOrange
 			font-size 15px
 			line-height 22px
+			font-weight 500
 			margin 17px 0 0
 			
 .nav
@@ -587,7 +853,6 @@ button
 			top 0
 			height 40px
 			background-repeat no-repeat
-			background-size 200% auto
 			transition opacity .2s ease
 			
 		&:before
@@ -604,16 +869,22 @@ button
 				background-image url('../img/nav-icon-1.png')
 
 		&_2
-			&:before,
+			&:before
 			&:after
 				width 32px
 				background-image url('../img/nav-icon-2.png')
 
 		&_3
-			&:before,
+			&:before
 			&:after
 				width 32px
-				background-image url('../img/nav-icon-3.png')
+				background-size 32px 33px
+				
+			&:before
+				background-image url('../img/nav-icon-3.svg')
+				
+			&:after
+				background-image url('../img/nav-icon-3-h.svg')
 
 	&--text
 		position relative
@@ -629,6 +900,79 @@ button
 			width 40px
 			height 2px
 			background colorOrange
+			
+.nav-drop
+	position absolute
+	left 0
+	top 319px
+	z-index 101
+	width 100%
+	padding-top 6px
+	transition opacity .3s ease, transform .3s ease, visibility .3s ease
+	transform translateY(-10px)
+	opacity 0
+	visibility hidden
+	
+	&.is-opened
+		transform translateY(0)
+		opacity 1
+		visibility visible
+		
+		& ^[0]--arrow
+			transition left .3s ease
+	
+	&__inner
+		position relative
+		background #3e3e3e
+	
+	&--arrow
+		position absolute
+		left 500px
+		display block
+		top -8px
+		margin-left 20px
+		border-left 11px solid transparent
+		border-right 11px solid transparent
+		border-bottom 8px solid #3e3e3e
+	
+	&__row
+		overflow-y auto
+		
+	&__content
+		display none
+		column-count 3
+		column-gap 30px
+		max-width 1300px
+		padding 24px 30px 33px
+		margin 0 auto
+		
+		&.is-visible
+			display block
+		
+	&--item
+		max-width 310px
+		break-inside avoid
+		padding 7px 0
+		
+		a
+			display inline-block
+			color #ffffff
+			font-size 14px
+			line-height 20px
+			
+			span
+				padding-right 3px
+			
+			sup
+				display inline-block
+				color #ff8400
+				font-size 13px
+				line-height 18px
+				margin -2px 0 0
+			
+			&:hover
+				span
+					text-decoration underline
 			
 .content
 	overflow hidden
@@ -1698,7 +2042,8 @@ button
 				top 6px
 				width 16px
 				height 14px
-				background url('../img/header-email-icon.png')
+				background url('../img/header-email-icon.svg') no-repeat 0 -1px
+				background-size 16px 16px
 			
 			&:after
 				content ''
@@ -3525,7 +3870,6 @@ button
 		display inline-block
 		margin-right 20px
 		background-repeat no-repeat
-		background-position 0 0
 		
 		&_burger
 			width 60px
@@ -3675,10 +4019,6 @@ button
 			width 100%
 			height 100%
 			transition opacity .2s linear
-			
-		&:hover
-			& ^[1]--bg
-				opacity 0.95
 
 			&_green
 				&:before
@@ -3690,6 +4030,10 @@ button
 					height 100%
 					background #00901d
 					opacity 0.6
+			
+		&:hover
+			& ^[1]--bg
+				opacity 0.95
 					
 		&--event
 			position absolute
@@ -3971,6 +4315,311 @@ button
 			&:hover
 				background-color #e57700
 				
+	&_user
+		width 553px
+		padding 38px 48px 43px
+		margin-left -277px
+		
+		&__nav
+			font-size 0
+			margin 0 -13px 41px
+			
+			a
+				display inline-block
+				color #828282
+				font-size 20px
+				line-height 26px
+				font-weight bold
+				font-family 'Source Sans Pro', serif
+				margin 0 13px
+				padding 0 0 4px
+				border-bottom 4px solid transparent
+				
+				&:hover
+					color colorDark
+					
+				&.is-active
+					color colorDark
+					border-bottom-color #ff8400
+					
+		&__tabs
+			margin 0 -48px
+			
+		&__col
+			padding 0 48px
+					
+		&__grid
+			font-size 0
+			margin 0 -8px 0 -7px
+			
+		&__item
+			position relative
+			display inline-block
+			width 50%
+			padding 0 8px 0 7px
+			margin 0 0 27px
+			
+			&_wide
+				width 100%
+				
+			&--label
+				display block
+				color #939393
+				font-size 14px
+				line-height 20px
+				margin 0 0 9px
+				
+		&__list
+			font-size 0
+			margin 0 -19px -11px
+			
+			&--label
+				position relative
+				display inline-block
+				color #000000
+				font-size 14px
+				line-height 20px
+				padding 1px 0 0 32px
+				margin 0 19px 10px
+				
+				.radio
+					position absolute
+					left 0
+					top 0
+					
+		&__date
+			font-size 0
+			margin 0 -8px 0 -7px
+			
+			&--item
+				display inline-block
+				width 95px
+				padding 0 8px 0 7px
+				
+		&--agreement
+			position relative
+			display inline-block
+			width 100%
+			color colorBlack
+			font-size 14px
+			line-height 20px
+			padding-left 34px
+			margin 10px 0 27px
+			
+			.checker
+				position absolute
+				left 0
+				top -2px
+				
+		.btn
+			margin-top 22px
+			
+		&__login
+			font-size 0
+			margin-top 23px
+			margin-bottom 5px
+			
+			.btn
+				display inline-block
+				min-width 180px
+				margin 0 30px 20px 0
+				
+		&--recover
+			display inline-block
+			font-size 14px
+			line-height 20px
+			text-decoration underline
+			margin 13px 0 29px
+			
+			&:hover
+				text-decoration none
+		
+	&--title
+		display block
+		color colorDark
+		font-size 28px
+		line-height 32px
+		font-family 'Source Sans Pro', serif
+		margin 0 0 29px
+				
+	&_review
+		width 796px
+		padding 42px 48px 23px
+		margin-left -398px
+			
+		&__grid
+			font-size 0
+			margin 0 -10px
+			
+		&__item
+			display inline-block
+			width 33.33%
+			padding 0 10px
+			margin 0 0 28px
+			
+			&_wide
+				width 100%
+				
+			&--label
+				display block
+				color #939393
+				font-size 13px
+				line-height 18px
+				margin 0 0 10px
+				
+		.btn
+			margin-top 32px
+			
+	&_branch
+		width 840px
+		padding 42px 40px 35px 48px
+		margin-left -420px
+		
+		&__grid
+			font-size 0
+			font-family 'Source Sans Pro', serif
+			margin 33px -15px 0
+			
+		&__content
+			display inline-block
+			width 42.3%
+			padding 0 15px
+			
+		&-list
+			margin 0
+			
+			li
+				line-height 0
+				padding 0 0 0 28px
+				margin 0 0 13px
+				
+			&--title
+				position relative
+				display block
+				color #939393
+				font-size 15px
+				line-height 23px
+				margin 0 0 -1px
+				
+			&--address
+				position relative
+				display block
+				color #363636
+				font-size 14px
+				line-height 20px
+				font-family 'Roboto', sans-serif
+				margin 0 0 -1px
+				
+			&--phone
+				position relative
+				display block
+				color #000000
+				font-size 22px
+				line-height 26px
+				margin 2px 0 0
+				
+			&--link
+				position relative
+				display block
+				color #000000
+				font-size 18px
+				line-height 23px
+				
+				&[href^='mailto:']
+					text-decoration underline
+					
+					&:hover
+						text-decoration none
+						
+			&--icon
+				position absolute
+				display block
+				background-repeat no-repeat
+				background-position 0 0
+				background-size 100% 100%
+				
+				&_pin
+					left -25px
+					top 1px
+					width 12px
+					height 16px
+					background-image url('../img/location-pin-icon.png')
+				
+				&_user
+					left -26px
+					top 1px
+					width 13px
+					height 16px
+					background-image url('../img/user-icon.png')
+				
+				&_phone
+					left -27px
+					top 4px
+					width 14px
+					height 20px
+					background-image url('../img/phone-icon.png')
+				
+				&_email
+					left -26px
+					top 6px
+					width 16px
+					height 14px
+					background-image url('../img/header-email-icon.svg')
+					background-size 16px 16px
+					background-position 0 -1px
+			
+		&__rc
+			display inline-block
+			width 57.7%
+			padding 0 15px
+			
+			&--title
+				display block
+				color #939393
+				font-size 15px
+				line-height 23px
+				font-weight 600
+				text-transform uppercase
+				letter-spacing 1px
+				margin -7px 0 7px
+			
+		&--map
+			height 280px
+			margin 0 0 10px
+			background #fdf5e4
+
+input.standart
+textarea.standart
+	width 100%
+	color colorDark
+	font-size 13px
+	padding 11px 18px 10px
+	background #ffffff
+	border 1px solid #dddddd
+	border-radius 4px
+	
+textarea.standart
+	resize vertical
+	
+.btn
+	display block
+	color #ffffff
+	font-size 16px
+	line-height 22px
+	font-weight 600
+	font-family 'Source Sans Pro', sans-serif
+	text-transform uppercase
+	letter-spacing 1px
+	cursor pointer
+	padding 10px 30px
+	margin 0 auto 30px
+	background #ff8400
+	border-radius 4px
+	transition background-color 0.2s ease
+	
+	&:hover
+		background-color #e57700
+
 .basket
 	display table
 	width 100%

@@ -20,4 +20,99 @@
 			input(type='text', id='modal-phone')
 		label.modal__form--agreement #[input(type='checkbox', checked) ] Я согласен на обработку персональных данных
 		button.modal__form--button Отправить
-	
+.modal.modal_user(data-target='user', data-tabs-container)
+	span.modal--close
+	.modal_user__nav
+		a(href='1', data-tabs-link) Регистрация
+		a(href='2', data-tabs-link) Вход
+	.modal_user__tabs(data-tabs)
+		.modal_user__col
+			.modal_user__grid
+				.modal_user__item
+					label.modal_user__item--label Фамилия имя отчество *
+					input.standart(type='text')
+				.modal_user__item
+					label.modal_user__item--label Email *
+					input.standart(type='text')
+				.modal_user__item
+					label.modal_user__item--label Телефон *
+					input.standart(type='text')
+				.modal_user__item
+					label.modal_user__item--label Пароль *
+					input.standart(type='text')
+				.modal_user__item.modal_user__item_wide
+					span.modal_user__item--label Пол
+					.modal_user__list
+						label.modal_user__list--label #[input(type='radio', name='sex')] Мужской
+						label.modal_user__list--label #[input(type='radio', name='sex')] Женский
+				.modal_user__item.modal_user__item_wide
+					label.modal_user__item--label Дата рождения
+					.modal_user__date
+						.modal_user__date--item
+							select
+								option День
+								option 1
+						.modal_user__date--item
+							select
+								option Мес.
+								option 1
+						.modal_user__date--item
+							select
+								option Год
+								option 1
+				.modal_user__item
+					label.modal_user__item--label Название организации *
+					input.standart(type='text')
+				.modal_user__item
+					label.modal_user__item--label Телефон организации *
+					input.standart(type='text')
+			label.modal_user--agreement #[input(type='checkbox', checked)] Я согласен на обработку персональных данных
+			button.btn Зарегистрироваться
+		.modal_user__col
+			.modal_user__grid
+				.modal_user__item
+					label.modal_user__item--label Логин *
+					input.standart(type='text')
+				.modal_user__item
+					label.modal_user__item--label Пароль *
+					input.standart(type='text')
+			.modal_user__login
+				button.btn Войти
+				a.modal_user--recover(href='javascript:void(0);') Забыли пароль?
+.modal.modal_review(data-target='add-review')
+	span.modal--close
+	span.modal--title Добавить отзыв
+	.modal_review__grid
+		.modal_review__item
+			label.modal_review__item--label Имя
+			input.standart(type='text', value='Иван')
+		.modal_review__item
+			label.modal_review__item--label Организация
+			input.standart(type='text', value='Бочка')
+		.modal_review__item
+			label.modal_review__item--label Должность
+			input.standart(type='text', value='Шеф-повар')
+		.modal_review__item.modal_review__item_wide
+			label.modal_review__item--label Отзыв
+			textarea.standart(rows='15')
+	button.btn Опубликовать
+.modal.modal_branch(data-target='branch')
+	span.modal--close
+	span.modal--title ООО «Название организации»
+	.modal_branch__grid
+		.modal_branch__content
+			.modal_branch-list
+				li
+					span.modal_branch-list--address #[i.modal_branch-list--icon.modal_branch-list--icon_pin ] Россия, Московская область, #[br] Балашиха, шоссе Энтузиастов, 4
+				li
+					span.modal_branch-list--title #[i.modal_branch-list--icon.modal_branch-list--icon_user ] контактное лицо
+					span.modal_branch-list--link Васильев Сергей Анатольевич
+				li
+					span.modal_branch-list--title звонок бесплатный по России
+					a.modal_branch-list--phone(href='tel:+79128005588') #[i.modal_branch-list--icon.modal_branch-list--icon_phone ] +7 (912) 800-55-88
+				li
+					span.modal_branch-list--title электронная почта
+					a.modal_branch-list--link(href='mailto:info@texnika-profi.ru') #[i.modal_branch-list--icon.modal_branch-list--icon_email ] info@texnika-profi.ru
+		.modal_branch__rc
+			span.modal_branch__rc--title Схема проезда
+			.modal_branch--map

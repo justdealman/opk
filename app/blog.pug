@@ -5,86 +5,87 @@ html(lang='ru')
 	meta(name='viewport', content='width=device-width, user-scalable=yes')
 	link(href='./css/style.css', rel='stylesheet')
 	body
-		include modules/header.pug
-		.content
-			.breadcrumbs
-				ul
-					li
-						a(href='javascript:void(0);') Главная
-					li Блог
-			.content__row
-				span.title-h1 Блог
-				.blog
-					.blog__row
-						.blog-nav
-							.blog-nav__links
-								a.is-active(href='javascript:void(0);') Новости
-								a(href='javascript:void(0);') Советы
-								a(href='javascript:void(0);') Статьи
-								a(href='javascript:void(0);') Все материалы
-						.blog__grid(data-ratio='0.6522')
-							.blog__item
-								a.item-blog(href='javascript:void(0);')
-									.item-blog--pic.scale
-										span.item-blog--date 10 июля 2017
-										img.img-cover(src='./pic/blog-1.jpg', width='368', height='240', alt='')
-									span.item-blog--title Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R
-							.blog__item
-								a.item-blog(href='javascript:void(0);')
-									.item-blog--pic.scale
-										span.item-blog--date 7 июля 2017
-										img.img-cover(src='./pic/blog-2.jpg', width='368', height='240', alt='')
-									span.item-blog--title Миксер для молочных коктейлей !!!
-							.blog__item
-								a.item-blog(href='javascript:void(0);')
-									.item-blog--pic.scale
-										span.item-blog--date 10 июля 2017
-										img.img-cover(src='./pic/blog-3.jpg', width='368', height='240', alt='')
-									span.item-blog--title Vortmax. Максимальные возможности на вашей кухне
-							.blog__item
-								a.item-blog(href='javascript:void(0);')
-									.item-blog--pic.scale
-										span.item-blog--date 10 июля 2017
-										img.img-cover(src='./pic/blog-4.jpg', width='368', height='240', alt='')
-									span.item-blog--title Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R
-							.blog__item
-								a.item-blog(href='javascript:void(0);')
-									.item-blog--pic.scale
-										span.item-blog--date 7 июля 2017
-										img.img-cover(src='./pic/blog-5.jpg', width='368', height='240', alt='')
-									span.item-blog--title Миксер для молочных коктейлей !!!
-							.blog__item
-								a.item-blog(href='javascript:void(0);')
-									.item-blog--pic.scale
-										span.item-blog--date 10 июля 2017
-										img.img-cover(src='./pic/blog-6.jpg', width='368', height='240', alt='')
-									span.item-blog--title Vortmax. Максимальные возможности на вашей кухне
-							.blog__item
-								a.item-blog(href='javascript:void(0);')
-									.item-blog--pic.scale
-										span.item-blog--date 10 июля 2017
-										img.img-cover(src='./pic/blog-7.jpg', width='368', height='240', alt='')
-									span.item-blog--title Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R
-							.blog__item
-								a.item-blog(href='javascript:void(0);')
-									.item-blog--pic.scale
-										span.item-blog--date 7 июля 2017
-										img.img-cover(src='./pic/blog-8.jpg', width='368', height='240', alt='')
-									span.item-blog--title Миксер для молочных коктейлей !!!
-							.blog__item
-								a.item-blog(href='javascript:void(0);')
-									.item-blog--pic.scale
-										span.item-blog--date 10 июля 2017
-										img.img-cover(src='./pic/blog-9.jpg', width='368', height='240', alt='')
-									span.item-blog--title Vortmax. Максимальные возможности на вашей кухне		
-				.pagination
-					a.pagination--item(href='javascript:void(0);') 1
-					a.pagination--item.is-active(href='javascript:void(0);') 2
-					a.pagination--item(href='javascript:void(0);') 3
-					a.pagination--item(href='javascript:void(0);') 4
-					a.pagination--item(href='javascript:void(0);') 5
-					a.pagination--item(href='javascript:void(0);') 6
-					a.pagination--item.pagination--item_next(href='javascript:void(0);')
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li Блог
+				.content__row
+					span.title-h1 Блог
+					.blog
+						.blog__row
+							.blog-nav
+								.blog-nav__links
+									a.is-active(href='javascript:void(0);') Новости
+									a(href='javascript:void(0);') Советы
+									a(href='javascript:void(0);') Статьи
+									a(href='javascript:void(0);') Все материалы
+							.blog__grid(data-ratio='0.6522')
+								.blog__item
+									a.item-blog(href='javascript:void(0);')
+										.item-blog--pic.scale
+											span.item-blog--date 10 июля 2017
+											img.img-cover(src='./pic/blog-1.jpg', width='368', height='240', alt='')
+										span.item-blog--title Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R
+								.blog__item
+									a.item-blog(href='javascript:void(0);')
+										.item-blog--pic.scale
+											span.item-blog--date 7 июля 2017
+											img.img-cover(src='./pic/blog-2.jpg', width='368', height='240', alt='')
+										span.item-blog--title Миксер для молочных коктейлей !!!
+								.blog__item
+									a.item-blog(href='javascript:void(0);')
+										.item-blog--pic.scale
+											span.item-blog--date 10 июля 2017
+											img.img-cover(src='./pic/blog-3.jpg', width='368', height='240', alt='')
+										span.item-blog--title Vortmax. Максимальные возможности на вашей кухне
+								.blog__item
+									a.item-blog(href='javascript:void(0);')
+										.item-blog--pic.scale
+											span.item-blog--date 10 июля 2017
+											img.img-cover(src='./pic/blog-4.jpg', width='368', height='240', alt='')
+										span.item-blog--title Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R
+								.blog__item
+									a.item-blog(href='javascript:void(0);')
+										.item-blog--pic.scale
+											span.item-blog--date 7 июля 2017
+											img.img-cover(src='./pic/blog-5.jpg', width='368', height='240', alt='')
+										span.item-blog--title Миксер для молочных коктейлей !!!
+								.blog__item
+									a.item-blog(href='javascript:void(0);')
+										.item-blog--pic.scale
+											span.item-blog--date 10 июля 2017
+											img.img-cover(src='./pic/blog-6.jpg', width='368', height='240', alt='')
+										span.item-blog--title Vortmax. Максимальные возможности на вашей кухне
+								.blog__item
+									a.item-blog(href='javascript:void(0);')
+										.item-blog--pic.scale
+											span.item-blog--date 10 июля 2017
+											img.img-cover(src='./pic/blog-7.jpg', width='368', height='240', alt='')
+										span.item-blog--title Акция на конвекционную электрическую печь Unox XEBC-10EU-E1R
+								.blog__item
+									a.item-blog(href='javascript:void(0);')
+										.item-blog--pic.scale
+											span.item-blog--date 7 июля 2017
+											img.img-cover(src='./pic/blog-8.jpg', width='368', height='240', alt='')
+										span.item-blog--title Миксер для молочных коктейлей !!!
+								.blog__item
+									a.item-blog(href='javascript:void(0);')
+										.item-blog--pic.scale
+											span.item-blog--date 10 июля 2017
+											img.img-cover(src='./pic/blog-9.jpg', width='368', height='240', alt='')
+										span.item-blog--title Vortmax. Максимальные возможности на вашей кухне		
+					.pagination
+						a.pagination--item(href='javascript:void(0);') 1
+						a.pagination--item.is-active(href='javascript:void(0);') 2
+						a.pagination--item(href='javascript:void(0);') 3
+						a.pagination--item(href='javascript:void(0);') 4
+						a.pagination--item(href='javascript:void(0);') 5
+						a.pagination--item(href='javascript:void(0);') 6
+						a.pagination--item.pagination--item_next(href='javascript:void(0);')
 		include modules/footer.pug
 		include modules/modals.pug
 		script(src='./js/libs.js')

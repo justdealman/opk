@@ -1,60 +1,152 @@
-.panel
-	.panel__row
-		span.panel--city Ваш город: #[a.panel--city_link(href='javascript:void(0);') Барнаул]
-		.panel__nav
-			a(href='javascript:void(0);') Доставка и оплата
-			a(href='javascript:void(0);') Отзывы и портфолио
-			a(href='javascript:void(0);') О нас
-			a(href='javascript:void(0);') Новости 
-			a(href='javascript:void(0);') Контакты
-		ul.panel__user
-			li #[a(href='javascript:void(0);') Вход]
-			li #[a(href='javascript:void(0);') регистрация]
-		.panel__rc
-			a.panel--icon.panel--icon_compare(href='javascript:void(0);') #[span 54]
-			a.panel--icon.panel--icon_favorite(href='javascript:void(0);') #[span 27]
-.header
-	.header__row
-		.header__lc
-			a.header--logo(href='javascript:void(0);')
-		.header__cc
-			.header-contacts
-				.header-contacts__item
-					a.header-contacts--email(href='javascript:void(0);') info@texnika-profi.ru
-				.header-contacts__item
-					a.header-contacts--phone_big(href='tel:+78007006669') +7 (800) #[strong 700-66-69]
-					a.header-contacts--phone_small(href='tel:+74999255706') +7 (499) 925-57-06
-				.header-contacts__item
-					a.header-contacts--consultation(href='javascript:void(0);') Заказать консультацию
-			.header__search
-				input(type='text', placeholder='Поиск')
-				button.header__search--submit #[span Найти]
-		.header__rc
-			a.header__basket(href='javascript:void(0);')
-				span.header__basket--quantity 29
-				span.header__basket--price 1 564 820 руб.
-	.nav
-		a.nav__link(href='javascript:void(0);')
-			i.nav--icon.nav--icon_1
-			span.nav--text Тепловое оборудование
-		a.nav__link(href='javascript:void(0);')
-			i.nav--icon.nav--icon_2
-			span.nav--text Холодильное оборудование
-		a.nav__link(href='javascript:void(0);')
-			i.nav--icon.nav--icon_1
-			span.nav--text Технологическое оборудование
-		a.nav__link(href='javascript:void(0);')
-			i.nav--icon.nav--icon_1
-			span.nav--text Нейтральное оборудование
-		a.nav__link(href='javascript:void(0);')
-			i.nav--icon.nav--icon_3
-			span.nav--text Барное оборудование
-		a.nav__link(href='javascript:void(0);')
-			i.nav--icon.nav--icon_3
-			span.nav--text Упаковочное оборудование
-		a.nav__link(href='javascript:void(0);')
-			i.nav--icon.nav--icon_3
-			span.nav--text Клининговое оборудование
-		a.nav__link(href='javascript:void(0);')
-			i.nav--icon.nav--icon_3
-			span.nav--text Линии раздач
+.top-group
+	.panel
+		.panel__row
+			span.panel--city Ваш город: #[a.panel--city_link(href='javascript:void(0);') Барнаул]
+			.city-drop.is-opened
+				.city-drop__row.is-visible(data='1')
+					span.city-drop--title Вы находитесь в городе Москва?
+					button.btn.btn_confirm(data-city-drop-close) Да, верно
+					a.city-drop--select(href='javascript:void(0);') Нет, выбрать другой
+				.city-drop__row(data='2')
+					span.city-drop--close(data-city-drop-close)
+					span.city-drop--title Начните вводить название города
+					input.city-drop--input(type='text', value='Комсомольск-на-Амуре')
+					button.btn.btn_confirm Да, верно
+			.panel__nav
+				a(href='javascript:void(0);') Доставка и оплата
+				a(href='javascript:void(0);') Отзывы и портфолио
+				a(href='javascript:void(0);') О нас
+				a(href='javascript:void(0);') Новости 
+				a(href='javascript:void(0);') Контакты
+			.panel__mini
+				span.panel--email
+					a(href='mailto:info@texnika-profi.ru') info@texnika-profi.ru
+				span.panel--phones
+					a.has-icon(href='tel:+78007006669') +7 (800) #[strong 700-66-69]
+					a(href='tel:+74999255706') +7 (499) #[strong 925-57-06]
+				.panel__search
+					input(type='text', placeholder='Поиск')
+					input(type='submit', value='')
+			ul.panel__user
+				li #[a(href='javascript:void(0);', data-open='user', data-tab-set='2') Вход]
+				li #[a(href='javascript:void(0);', data-open='user', data-tab-set='1') регистрация]
+			.panel__rc
+				a.panel--icon.panel--icon_compare(href='javascript:void(0);') #[span 54]
+				a.panel--icon.panel--icon_favorite(href='javascript:void(0);') #[span 27]
+				a.panel--icon.panel--icon_basket(href='javascript:void(0);') #[span 29] #[strong 1 564 820 руб.]
+	.header
+		.header__row
+			.header__lc
+				a.header--logo(href='javascript:void(0);')
+			.header__cc
+				.header-contacts
+					.header-contacts__item
+						a.header-contacts--email(href='javascript:void(0);') info@texnika-profi.ru
+					.header-contacts__item
+						a.header-contacts--phone_big(href='tel:+78007006669') +7 (800) #[strong 700-66-69]
+						a.header-contacts--phone_small(href='tel:+74999255706') +7 (499) 925-57-06
+					.header-contacts__item
+						a.header-contacts--consultation(href='javascript:void(0);') Заказать консультацию
+				.header__search
+					input(type='text', placeholder='Поиск')
+					button.header__search--submit #[span Найти]
+			.header__rc
+				a.header__basket(href='javascript:void(0);')
+					span.header__basket--quantity 29
+					span.header__basket--price 1 564 820 руб.
+		.nav
+			a.nav__link(href='javascript:void(0);', data-drop='1')
+				i.nav--icon.nav--icon_1
+				span.nav--text Тепловое оборудование
+			a.nav__link(href='javascript:void(0);', data-drop='2')
+				i.nav--icon.nav--icon_2
+				span.nav--text Холодильное оборудование
+			a.nav__link(href='javascript:void(0);', data-drop='3')
+				i.nav--icon.nav--icon_1
+				span.nav--text Технологическое оборудование
+			a.nav__link(href='javascript:void(0);')
+				i.nav--icon.nav--icon_1
+				span.nav--text Нейтральное оборудование
+			a.nav__link(href='javascript:void(0);', data-drop='5')
+				i.nav--icon.nav--icon_3
+				span.nav--text Барное оборудование
+			a.nav__link(href='javascript:void(0);', data-drop='6')
+				i.nav--icon.nav--icon_3
+				span.nav--text Упаковочное оборудование
+			a.nav__link(href='javascript:void(0);', data-drop='7')
+				i.nav--icon.nav--icon_3
+				span.nav--text Клининговое оборудование
+			a.nav__link(href='javascript:void(0);', data-drop='8')
+				i.nav--icon.nav--icon_3
+				span.nav--text Линии раздач
+	.nav-drop
+		.nav-drop__inner
+			i.nav-drop--arrow
+			.nav-drop__row
+				.nav-drop__content(data-sub='1')
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Пароконвектоматы] #[sup 257]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Печи конвекционные] #[sup 48]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Печи хлебопекарные] #[sup 122]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Печи ротационные] #[sup 149]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Печи для пиццы] #[sup 54]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Печи-коптильни] #[sup 89]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Шкафы расстоечные] #[sup 45]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Шкафы жаропрочные, пекарские, подовые] #[sup 51]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Блинницы, вафельницы] #[sup 257]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Тепловые витрины, столы, полки] #[sup 48]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span СВЧ-печи] #[sup 122]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Грили, жарочные поверхности, аппараты для шаурмы, шашлычницы] #[sup 149]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Котлы пищеварочные, пароварки, электросковороды, газовые сковороды] #[sup 54]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Мармиты, тепловые витрины, электрокипятильники] #[sup 45]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Чебуречницы, пончиковые аппараты, фритюрницы] #[sup 51]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Шкафы жаропрочные, пекарские, подовые] #[sup 89]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Блинницы, вафельницы] #[sup 257]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Тепловые витрины, столы, полки] #[sup 48]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span СВЧ-печи] #[sup 122]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Грили, жарочные поверхности, аппараты для шаурмы, шашлычницы] #[sup 149]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Котлы пищеварочные, пароварки, электросковороды, газовые сковороды] #[sup 54]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Мармиты, тепловые витрины, электрокипятильники] #[sup 45]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Чебуречницы, пончиковые аппараты, фритюрницы] #[sup 51]
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Шкафы жаропрочные, пекарские, подовые] #[sup 89]
+				.nav-drop__content(data-sub='2')
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Холодильное оборудование] #[sup 257]
+				.nav-drop__content(data-sub='3')
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Технологическое оборудование] #[sup 257]
+				.nav-drop__content(data-sub='5')
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Барное оборудование] #[sup 257]
+				.nav-drop__content(data-sub='6')
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Упаковочное оборудование] #[sup 257]
+				.nav-drop__content(data-sub='7')
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Клининговое оборудование] #[sup 257]
+				.nav-drop__content(data-sub='8')
+					.nav-drop--item
+						a(href='javascript:void(0);') #[span Линии раздач] #[sup 257]
