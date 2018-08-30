@@ -419,10 +419,12 @@
 							</div>
 						</div>
 						<div class="product__rc">
-							<span class="title-h1">Шкаф пекарский универсальный жаропрочный Unox XB 895</span>
-							<div class="product__data">
-								<span class="product--code">Код: 0191</span>
-								<span class="elem--availability elem--availability_true">В наличии</span>
+							<div class="product__title">
+								<span class="title-h1">Шкаф пекарский универсальный жаропрочный Unox XB 895</span>
+								<div class="product__data">
+									<span class="product--code">Код: 0191</span>
+									<span class="elem--availability elem--availability_true">В наличии</span>
+								</div>
 							</div>
 							<div class="product-controls">
 								<div class="product__price">
@@ -437,6 +439,7 @@
 										<div class="elem-quantity--plus"></div>
 									</div>
 								</div>
+								<br>
 								<div class="product-buy">
 									<div class="product-buy__buttons">
 										<div class="product-buy--item product-buy--item_add" data-switch data-default="В корзину" data-active="В корзине">В корзину</div>
@@ -528,7 +531,7 @@
 							</a>
 						</div>
 						<div class="product-tabs__slider" data-fadetabs-slider>
-							<div class="product-tabs__content">
+							<div class="product-tabs__content" data="1">
 								<div class="product-description">
 									<div class="product-description__group">
 										<div class="product-description--title">Описание</div>
@@ -604,7 +607,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-tabs__content">
+							<div class="product-tabs__content" data="2">
 								<div class="product-characteristics">
 									<div class="product-characteristics--title">Режимы выпечки</div>
 									<ul>
@@ -630,7 +633,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="product-tabs__content">
+							<div class="product-tabs__content" data="3">
 								<div class="reviews">
 									<div class="reviews__item">
 										<div class="reviews--photo">
@@ -674,7 +677,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-tabs__content">
+							<div class="product-tabs__content" data="4">
 								<div class="product-articles">
 									<div class="product-articles__grid" data-ratio="0.6522">
 										<div class="product-articles__item">
@@ -707,7 +710,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-tabs__content">
+							<div class="product-tabs__content" data="5">
 								<div class="product-docs">
 									<div class="product-docs__list">
 										<a class="product-docs__list--item" href="javascript:void(0)">
@@ -731,7 +734,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-tabs__content">
+							<div class="product-tabs__content" data="6">
 								<div class="product-form">
 									<div class="form">
 										<div class="form__item">
@@ -781,8 +784,8 @@
 					<div class="product-set">
 						<div class="product-set--title">Выгодный комплект</div>
 						<div class="product-set__grid">
-							<div class="product-set__item">
-								<a class="product-set__item--pic" href="javascript:void(0)">
+							<div class="product-set__item" data="1">
+								<a class="product-set__item--pic scale" href="javascript:void(0)" data-pic="1">
 									<img class="img-contain" src="./pic/set-1.jpg" width="114" height="132" alt="">
 								</a>
 								<div class="product-set__content">
@@ -791,8 +794,8 @@
 									<span class="product-set__content--price">255 131 ₽</span>
 								</div>
 							</div>
-							<div class="product-set__item">
-								<a class="product-set__item--pic" href="javascript:void(0)">
+							<div class="product-set__item" data="2">
+								<a class="product-set__item--pic scale" href="javascript:void(0)" data-pic="2">
 									<img class="img-contain" src="./pic/set-2.jpg" width="131" height="131" alt="">
 								</a>
 								<div class="product-set__content">
@@ -801,8 +804,8 @@
 									<span class="product-set__content--price">57 565 ₽</span>
 								</div>
 							</div>
-							<div class="product-set__item">
-								<a class="product-set__item--pic" href="javascript:void(0)">
+							<div class="product-set__item" data="3">
+								<a class="product-set__item--pic scale" href="javascript:void(0)" data-pic="3">
 									<img class="img-contain" src="./pic/set-3.jpg" width="133" height="111" alt="">
 								</a>
 								<div class="product-set__content">
@@ -1203,7 +1206,7 @@
 			</div>
 		</div>
 		<div class="fade-bg"></div>
-		<div class="modal modal_buy" data-target="buy-one-click">
+		<div class="modal modal_buy is-opened" data-target="buy-one-click">
 			<span class="modal--close"></span>
 			<div class="modal__content">
 				<span class="modal__content--title">Купить в 1 клик</span>
@@ -1380,6 +1383,60 @@
 					<span class="modal_branch__rc--title">Схема проезда</span>
 					<div class="modal_branch--map"></div>
 				</div>
+			</div>
+		</div>
+		<div class="menu-drop">
+			<span class="menu-drop--close"></span>
+			<span class="menu-drop--logo"></span>
+			<div class="menu-drop__row">
+				<span class="menu-drop--elem">
+					<i class="menu-drop--icon menu-drop--icon_pin"></i>
+					<span>Ваш город:</span>
+					<a class="menu-drop--elem_city" href="javascript:void(0);">Барнаул</a>
+				</span>
+				<div class="menu-drop__city">
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Москва</a>
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Барнаул</a>
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Петропавловск-Камчатский</a>
+				</div>
+				<span class="menu-drop--elem">
+					<i class="menu-drop--icon menu-drop--icon_user"></i>
+					<a href="javascript:void(0);" data-open="user" data-tab-set="2">Вход</a> |
+					<a href="javascript:void(0);" data-open="user" data-tab-set="1">регистрация</a>
+				</span>
+				<div class="menu-drop__nav">
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Каталог оборудования
+						<i class="menu-drop__nav--arrow"></i>
+					</a>
+					<div class="menu-drop__sub">
+						<a class="menu-drop__nav--link" href="javascript:void(0)">Тепловое</a>
+						<a class="menu-drop__nav--link" href="javascript:void(0)">Холодильное</a>
+						<a class="menu-drop__nav--link" href="javascript:void(0)">Технологическое</a>
+						<a class="menu-drop__nav--link" href="javascript:void(0)">Нейтральное</a>
+						<a class="menu-drop__nav--link" href="javascript:void(0)">Барное</a>
+						<a class="menu-drop__nav--link" href="javascript:void(0)">Упаковочное</a>
+						<a class="menu-drop__nav--link" href="javascript:void(0)">Клининговое</a>
+						<a class="menu-drop__nav--link" href="javascript:void(0)">Линии раздач</a>
+					</div>
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Доставка и оплата </a>
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Отзывы и портфолио </a>
+					<a class="menu-drop__nav--link" href="javascript:void(0)">О нас</a>
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Филиалы и склады </a>
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Новости</a>
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Сертификаты </a>
+					<a class="menu-drop__nav--link" href="javascript:void(0)">Контакты</a>
+				</div>
+				<div class="menu-drop__group">
+					<a class="menu-drop__group--item" href="javascript:void(0)">Сравнение
+						<sub>29</sub>
+					</a>
+					<a class="menu-drop__group--item" href="javascript:void(0)">Избранное
+						<sub>55</sub>
+					</a>
+				</div>
+				<a class="menu-drop--email" href="mailto:info@texnika-profi.ru">
+					<span>info@texnika-profi.ru</span>
+				</a>
 			</div>
 		</div>
 		<script src="./js/libs.js"></script>

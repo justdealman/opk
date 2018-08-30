@@ -9,28 +9,21 @@ html(lang='ru')
 			include modules/header.pug
 			.content
 				.content__row
-					.intro(data-ratio='0.40625')
-						.intro__row.scale
-							.intro__item.intro__item_big.intro__item_slider
-								a.intro-elem(href='javascript:void(0)')
-									.intro-elem--logo-b
-										img(src='./pic/unox-logo-i.png', width='158', height='66', alt='')
+					.intro
+						.intro__lc(data-ratio='0.5952')
+							.intro__item.intro__item_big.intro__item_slider.scale
+								a.intro-elem.scale(href='javascript:void(0)')
 									.intro-elem__content-b
 										span.intro-elem--icon.intro-elem--icon_orange Лидер продаж
-										span.intro-elem__content-b--model Unox Xebc-10Eu-E1R
-										span.intro-elem__content-b--title Конвекционная хлебопекарная печь
 									.intro-elem--bg
 										img.img-cover(src='./pic/intro-1.jpg', width='840', height='500', alt='')
-								a.intro-elem(href='javascript:void(0)')
-									.intro-elem--logo-b
-										img(src='./pic/unox-logo-i.png', width='158', height='66', alt='')
+								a.intro-elem.scale(href='javascript:void(0)')
 									.intro-elem__content-b
 										span.intro-elem--icon.intro-elem--icon_orange Лидер продаж
-										span.intro-elem__content-b--model Unox Xebc-10Eu-E1R
-										span.intro-elem__content-b--title Конвекционная хлебопекарная печь
 									.intro-elem--bg
 										img.img-cover(src='./pic/intro-1.jpg', width='840', height='500', alt='')
-							.intro__item.intro__item_small.intro__item_small-1
+						.intro__rc(data-ratio='0.5714')
+							.intro__item.intro__item_small.scale
 								a.intro-elem(href='javascript:void(0)')
 									.intro-elem--logo-s
 										img(src='./pic/robotcoupe-logo-i.png', width='127', height='37', alt='')
@@ -40,7 +33,7 @@ html(lang='ru')
 										span.intro-elem__content-s--title Кухонный процессор Robot Coupe R 301 Ultra
 									.intro-elem--bg
 										img.img-cover(src='./pic/intro-2.jpg', width='420', height='240', alt='')
-							.intro__item.intro__item_small.intro__item_small-2
+							.intro__item.intro__item_small.scale
 								a.intro-elem(href='javascript:void(0)')
 									span.intro-elem--event II Международный форум шеф-поваров «Завтрак Шефа»
 									.intro-elem--bg.intro-elem--bg_green
@@ -164,7 +157,7 @@ html(lang='ru')
 											button.item-catalog--button.item-catalog--button_one-click в 1 клик
 						.same--more
 							a(href='javascript:void(0)') Все спецпредложения
-					.category.category_index
+					.category.category_index(data-tabs-container)
 						span.title-h2 Каталог
 						.category__nav
 							a.category__nav--item.is-active(href='1', data-tabs-link) Вид

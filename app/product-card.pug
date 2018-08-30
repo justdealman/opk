@@ -57,10 +57,11 @@ html(lang='ru')
 										.product-preview__slider--pic.scale
 											img.img-cover(src='./pic/preview-2.jpg', width='68', height='68', alt='')
 						.product__rc
-							span.title-h1 Шкаф пекарский универсальный жаропрочный Unox XB 895
-							.product__data
-								span.product--code Код: 0191
-								span.elem--availability.elem--availability_true В наличии
+							.product__title
+								span.title-h1 Шкаф пекарский универсальный жаропрочный Unox XB 895
+								.product__data
+									span.product--code Код: 0191
+									span.elem--availability.elem--availability_true В наличии
 							.product-controls
 								.product__price
 									.product__price--title Цена:
@@ -71,6 +72,7 @@ html(lang='ru')
 										.elem-quantity--minus
 										input.elem-quantity--input(value='2')
 										.elem-quantity--plus
+								br
 								.product-buy
 									.product-buy__buttons
 										.product-buy--item.product-buy--item_add(data-switch, data-default='В корзину', data-active='В корзине') В корзину
@@ -121,7 +123,7 @@ html(lang='ru')
 							a.product-tabs__nav--item(href='5', data-fadetabs-item) #[span Документация]
 							a.product-tabs__nav--item(href='6', data-fadetabs-item) #[span Задать вопрос]
 						.product-tabs__slider(data-fadetabs-slider)
-							.product-tabs__content
+							.product-tabs__content(data='1')
 								.product-description
 									.product-description__group
 										.product-description--title Описание
@@ -161,7 +163,7 @@ html(lang='ru')
 												img(src='./pic/unox-logo.png', width='175', height='66', alt='')
 											.product-brand__content
 												p Компания из Италии Unox вышла на рынок хлебопекарного оборудования в 1990 году. В течение 25 лет использует передовые подходы к производству техники, постоянно улучшает качество выпускаемой продукции. Как результат — многочисленные патенты на оригинальные разработки. Компания ежегодно реализует 150 тысяч печей и пароконвектоматов.
-							.product-tabs__content
+							.product-tabs__content(data='2')
 								.product-characteristics
 									.product-characteristics--title Режимы выпечки
 									ul
@@ -181,7 +183,7 @@ html(lang='ru')
 										li Дверные петли выполнены из высокопрочного самосмазывающегося технополимера (для дверей с боковым открытием)
 										li Реверсивная дверца с возможностью перевешивания даже после установки печи
 										li Блокировка произвольного открытия дверцы в позициях 60°-120°-180°
-							.product-tabs__content
+							.product-tabs__content(data='3')
 								.reviews
 									.reviews__item
 										.reviews--photo
@@ -209,7 +211,7 @@ html(lang='ru')
 										.reviews--name Вениамин Пивоваров
 										.reviews--position директор ресторана  «Пивной рай»
 										p Любимое место с прекрасным видом на город! Вот только почему у вас в таком огромном зале всегда так мало гостей? После прогулки по городу и изматывающей жары зашли к вам перекусить. Я взяла курицу по-тайски и попить чего-нибудь холодненького. Честно говоря, сильно сомневалась при выборе, т к обычно такие блюда бывают очень жирными, но только не здесь.
-							.product-tabs__content
+							.product-tabs__content(data='4')
 								.product-articles
 									.product-articles__grid(data-ratio='0.6522')
 										.product-articles__item
@@ -230,7 +232,7 @@ html(lang='ru')
 													span.item-article--date 10 июля 2017
 													img.img-cover(src='./pic/article-3.jpg', width='368', height='240', alt='')
 												.item-article--title Vortmax. Максимальные возможности на вашей кухне
-							.product-tabs__content
+							.product-tabs__content(data='5')
 								.product-docs
 									.product-docs__list
 										a.product-docs__list--item(href='javascript:void(0)')
@@ -245,7 +247,7 @@ html(lang='ru')
 											.product-docs__list--icon
 												i.icons.icons_download
 											.product-docs__list--text Лицензионное соглашение
-							.product-tabs__content
+							.product-tabs__content(data='6')
 								.product-form
 									.form
 										.form__item
@@ -271,22 +273,22 @@ html(lang='ru')
 					.product-set
 						.product-set--title Выгодный комплект
 						.product-set__grid
-							.product-set__item
-								a.product-set__item--pic(href='javascript:void(0)')
+							.product-set__item(data='1')
+								a.product-set__item--pic.scale(href='javascript:void(0)', data-pic='1')
 									img.img-contain(src='./pic/set-1.jpg', width='114' height='132', alt='')
 								.product-set__content
 									input(type='checkbox', checked)
 									a.product-set__content--title(href='javascript:void(0)') Котел пищеварочный стационарный КПЭМ-100/9Т
 									span.product-set__content--price 255 131 ₽
-							.product-set__item
-								a.product-set__item--pic(href='javascript:void(0)')
+							.product-set__item(data='2')
+								a.product-set__item--pic.scale(href='javascript:void(0)', data-pic='2')
 									img.img-contain(src='./pic/set-2.jpg', width='131' height='131', alt='')
 								.product-set__content
 									input(type='checkbox', checked)
 									a.product-set__content--title(href='javascript:void(0)') Печь хлебопекарная Восход ХПЭ-750/3 С
 									span.product-set__content--price 57 565 ₽
-							.product-set__item
-								a.product-set__item--pic(href='javascript:void(0)')
+							.product-set__item(data='3')
+								a.product-set__item--pic.scale(href='javascript:void(0)', data-pic='3')
 									img.img-contain(src='./pic/set-3.jpg', width='133' height='111', alt='')
 								.product-set__content
 									input(type='checkbox', checked)
