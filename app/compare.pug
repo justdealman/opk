@@ -1,0 +1,325 @@
+doctype html
+html(lang='ru')
+	title Оборудование профессиональной кухни
+	meta(charset='utf-8')
+	meta(name='viewport', content='width=device-width, user-scalable=yes')
+	link(href='./css/style.css', rel='stylesheet')
+	body
+		.wrapper
+			include modules/header.pug
+			.content
+				.breadcrumbs
+					ul
+						li
+							a(href='javascript:void(0);') Главная
+						li
+							a(href='javascript:void(0);') Каталог
+						li Сравнение товаров
+				.content__row
+					span.title-h1 Сравнение товаров
+					.compare
+						.compare-controls
+							.compare__nav
+								a.is-active(href='javascript:void(0);', data='1') Пароконвектоматы #[span (24)]
+								a(href='javascript:void(0);', data='2') Печи конвекционные #[span (8)]
+						.compare-group
+							.compare-lc
+								.compare__start
+									.compare-filter
+										span.compare-filter--title Параметры
+										ul.compare-filter__list
+											li
+												label #[input(type='radio', name='r-1', checked)] Все параметры
+											li
+												label #[input(type='radio', name='r-1')] Различающиеся
+										span.compare-filter--clear #[span Очистить список]
+									span.compare--label Стоимость
+								.compare__labels
+									span.compare--label Производитель
+									span.compare--label Источник питания
+									span.compare--label Номинальное напряжение
+									span.compare--label Гарантийный срок
+									span.compare--label Габаритные размеры
+									span.compare--label Тип парообразования
+									span.compare--label Вместимость
+									span.compare--label Температурный диапазон Температурный диапазон Температурный диапазон 
+									span.compare--label Мощность
+									span.compare--label Вес
+									span.compare--label Страна производства
+							.compare-slider
+								.compare-slider__item(data='1')
+									.item-catalog
+										.item-catalog__content
+											.item-catalog__icons
+												span.item-catalog__icons--elem.item-catalog__icons--elem_favorite
+												span.item-catalog__icons--elem.item-catalog__icons--elem_remove
+											span.tip-icon.tip-icon_special Акция
+											.item-catalog--pic
+												img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+											.item-catalog__info
+												span.item-catalog--code Код: 0191
+												span.elem--availability.elem--availability_true В наличии
+												a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+											.item-catalog__price 
+												span.item-catalog__price--old 1 410 900 Р
+												span.item-catalog__price--current 1 395 689 ₽
+												.item-catalog__more
+													span.item-catalog__more--button.item-catalog__more--button_compare
+													span.item-catalog__more--button.item-catalog__more--button_favorite
+											.item-catalog__controls
+												button.item-catalog--button.item-catalog--button_buy Купить
+												button.item-catalog--button.item-catalog--button_one-click в 1 клик
+									.compare-slider__labels
+										span.compare--label Unox
+										span.compare--label Электричество
+										span.compare--label 380В
+										span.compare--label 15.8 (кВт)
+										span.compare--label 610х730х660 мм
+										span.compare--label инжектор
+										span.compare--label 5 уровней GN 2/3
+										span.compare--label 327х353 мм
+										span.compare--label 3,2 кВт
+										span.compare--label 43 кг
+										span.compare--label Италия
+								.compare-slider__item(data='2')
+									.item-catalog
+										.item-catalog__content
+											.item-catalog__icons
+												span.item-catalog__icons--elem.item-catalog__icons--elem_favorite
+												span.item-catalog__icons--elem.item-catalog__icons--elem_remove
+											span.tip-icon.tip-icon_special Акция
+											.item-catalog--pic
+												img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+											.item-catalog__info
+												span.item-catalog--code Код: 0191
+												span.elem--availability.elem--availability_true В наличии
+												a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк) Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+											.item-catalog__price 
+												span.item-catalog__price--old 1 410 900 Р
+												span.item-catalog__price--current 1 395 689 ₽
+												.item-catalog__more
+													span.item-catalog__more--button.item-catalog__more--button_compare
+													span.item-catalog__more--button.item-catalog__more--button_favorite
+											.item-catalog__controls
+												button.item-catalog--button.item-catalog--button_buy Купить
+												button.item-catalog--button.item-catalog--button_one-click в 1 клик
+									.compare-slider__labels
+										span.compare--label Unox
+										span.compare--label Электричество
+										span.compare--label 380В
+										span.compare--label 15.8 (кВт)
+										span.compare--label 610х730х660 мм
+										span.compare--label инжектор
+										span.compare--label 5 уровней GN 2/3
+										span.compare--label 327х353 мм
+										span.compare--label 3,2 кВт
+										span.compare--label 43 кг
+										span.compare--label Италия
+								.compare-slider__item(data='3')
+									.item-catalog
+										.item-catalog__content
+											.item-catalog__icons
+												span.item-catalog__icons--elem.item-catalog__icons--elem_favorite
+												span.item-catalog__icons--elem.item-catalog__icons--elem_remove
+											span.tip-icon.tip-icon_special Акция
+											.item-catalog--pic
+												img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+											.item-catalog__info
+												span.item-catalog--code Код: 0191
+												span.elem--availability.elem--availability_true В наличии
+												a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+											.item-catalog__price 
+												span.item-catalog__price--old 1 410 900 Р
+												span.item-catalog__price--current 1 395 689 ₽
+												.item-catalog__more
+													span.item-catalog__more--button.item-catalog__more--button_compare
+													span.item-catalog__more--button.item-catalog__more--button_favorite
+											.item-catalog__controls
+												button.item-catalog--button.item-catalog--button_buy Купить
+												button.item-catalog--button.item-catalog--button_one-click в 1 клик
+									.compare-slider__labels
+										span.compare--label Unox
+										span.compare--label Электричество
+										span.compare--label 380В
+										span.compare--label 15.8 (кВт)
+										span.compare--label 610х730х660 мм
+										span.compare--label инжектор
+										span.compare--label 5 уровней GN 2/3
+										span.compare--label 327х353 мм
+										span.compare--label 3,2 кВт
+										span.compare--label 43 кг
+										span.compare--label Италия
+								.compare-slider__item(data='4')
+									.item-catalog
+										.item-catalog__content
+											.item-catalog__icons
+												span.item-catalog__icons--elem.item-catalog__icons--elem_favorite
+												span.item-catalog__icons--elem.item-catalog__icons--elem_remove
+											span.tip-icon.tip-icon_special Акция
+											.item-catalog--pic
+												img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+											.item-catalog__info
+												span.item-catalog--code Код: 0191
+												span.elem--availability.elem--availability_true В наличии
+												a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+											.item-catalog__price 
+												span.item-catalog__price--old 1 410 900 Р
+												span.item-catalog__price--current 1 395 689 ₽
+												.item-catalog__more
+													span.item-catalog__more--button.item-catalog__more--button_compare
+													span.item-catalog__more--button.item-catalog__more--button_favorite
+											.item-catalog__controls
+												button.item-catalog--button.item-catalog--button_buy Купить
+												button.item-catalog--button.item-catalog--button_one-click в 1 клик
+									.compare-slider__labels
+										span.compare--label Unox
+										span.compare--label Электричество
+										span.compare--label 380В
+										span.compare--label 15.8 (кВт)
+										span.compare--label 610х730х660 мм
+										span.compare--label инжектор
+										span.compare--label 5 уровней GN 2/3 5 уровней GN 2/3 5 уровней GN 2/3 5 уровней GN 2/3 5 уровней GN 2/3 5 уровней GN 2/3
+										span.compare--label 327х353 мм
+										span.compare--label 3,2 кВт
+										span.compare--label 43 кг
+										span.compare--label Италия
+								.compare-slider__item(data='5')
+									.item-catalog
+										.item-catalog__content
+											.item-catalog__icons
+												span.item-catalog__icons--elem.item-catalog__icons--elem_favorite
+												span.item-catalog__icons--elem.item-catalog__icons--elem_remove
+											span.tip-icon.tip-icon_special Акция
+											.item-catalog--pic
+												img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+											.item-catalog__info
+												span.item-catalog--code Код: 0191
+												span.elem--availability.elem--availability_true В наличии
+												a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+											.item-catalog__price 
+												span.item-catalog__price--old 1 410 900 Р
+												span.item-catalog__price--current 1 395 689 ₽
+												.item-catalog__more
+													span.item-catalog__more--button.item-catalog__more--button_compare
+													span.item-catalog__more--button.item-catalog__more--button_favorite
+											.item-catalog__controls
+												button.item-catalog--button.item-catalog--button_buy Купить
+												button.item-catalog--button.item-catalog--button_one-click в 1 клик
+									.compare-slider__labels
+										span.compare--label Unox
+										span.compare--label Электричество
+										span.compare--label 380В
+										span.compare--label 15.8 (кВт)
+										span.compare--label 610х730х660 мм
+										span.compare--label инжектор
+										span.compare--label 5 уровней GN 2/3
+										span.compare--label 327х353 мм
+										span.compare--label 3,2 кВт
+										span.compare--label 43 кг
+										span.compare--label Италия
+								.compare-slider__item(data='6')
+									.item-catalog
+										.item-catalog__content
+											.item-catalog__icons
+												span.item-catalog__icons--elem.item-catalog__icons--elem_favorite
+												span.item-catalog__icons--elem.item-catalog__icons--elem_remove
+											span.tip-icon.tip-icon_special Акция
+											.item-catalog--pic
+												img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+											.item-catalog__info
+												span.item-catalog--code Код: 0191
+												span.elem--availability.elem--availability_true В наличии
+												a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+											.item-catalog__price 
+												span.item-catalog__price--old 1 410 900 Р
+												span.item-catalog__price--current 1 395 689 ₽
+												.item-catalog__more
+													span.item-catalog__more--button.item-catalog__more--button_compare
+													span.item-catalog__more--button.item-catalog__more--button_favorite
+											.item-catalog__controls
+												button.item-catalog--button.item-catalog--button_buy Купить
+												button.item-catalog--button.item-catalog--button_one-click в 1 клик
+									.compare-slider__labels
+										span.compare--label Unox
+										span.compare--label Электричество
+										span.compare--label 380В
+										span.compare--label 15.8 (кВт)
+										span.compare--label 610х730х660 мм
+										span.compare--label инжектор
+										span.compare--label 5 уровней GN 2/3
+										span.compare--label 327х353 мм
+										span.compare--label 3,2 кВт
+										span.compare--label 43 кг
+										span.compare--label Италия
+								.compare-slider__item(data='7')
+									.item-catalog
+										.item-catalog__content
+											.item-catalog__icons
+												span.item-catalog__icons--elem.item-catalog__icons--elem_favorite
+												span.item-catalog__icons--elem.item-catalog__icons--elem_remove
+											span.tip-icon.tip-icon_special Акция
+											.item-catalog--pic
+												img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+											.item-catalog__info
+												span.item-catalog--code Код: 0191
+												span.elem--availability.elem--availability_true В наличии
+												a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+											.item-catalog__price 
+												span.item-catalog__price--old 1 410 900 Р
+												span.item-catalog__price--current 1 395 689 ₽
+												.item-catalog__more
+													span.item-catalog__more--button.item-catalog__more--button_compare
+													span.item-catalog__more--button.item-catalog__more--button_favorite
+											.item-catalog__controls
+												button.item-catalog--button.item-catalog--button_buy Купить
+												button.item-catalog--button.item-catalog--button_one-click в 1 клик
+									.compare-slider__labels
+										span.compare--label Unox
+										span.compare--label Электричество
+										span.compare--label 380В
+										span.compare--label 15.8 (кВт)
+										span.compare--label 610х730х660 мм
+										span.compare--label инжектор
+										span.compare--label 5 уровней GN 2/3
+										span.compare--label 327х353 мм
+										span.compare--label 3,2 кВт
+										span.compare--label 43 кг
+										span.compare--label Италия
+								.compare-slider__item(data='8')
+									.item-catalog
+										.item-catalog__content
+											.item-catalog__icons
+												span.item-catalog__icons--elem.item-catalog__icons--elem_favorite
+												span.item-catalog__icons--elem.item-catalog__icons--elem_remove
+											span.tip-icon.tip-icon_special Акция
+											.item-catalog--pic
+												img.img-contain(src='./pic/catalog-3.png', width='200', height='200', alt='')
+											.item-catalog__info
+												span.item-catalog--code Код: 0191
+												span.elem--availability.elem--availability_true В наличии
+												a.item-catalog--title(href='javascript:void(0);') Печь ротационная Tagliavini RTE 68 MAXI (крюк)
+											.item-catalog__price 
+												span.item-catalog__price--old 1 410 900 Р
+												span.item-catalog__price--current 1 395 689 ₽
+												.item-catalog__more
+													span.item-catalog__more--button.item-catalog__more--button_compare
+													span.item-catalog__more--button.item-catalog__more--button_favorite
+											.item-catalog__controls
+												button.item-catalog--button.item-catalog--button_buy Купить
+												button.item-catalog--button.item-catalog--button_one-click в 1 клик
+									.compare-slider__labels
+										span.compare--label Unox
+										span.compare--label Электричество
+										span.compare--label 380В
+										span.compare--label 15.8 (кВт)
+										span.compare--label 610х730х660 мм
+										span.compare--label инжектор
+										span.compare--label 5 уровней GN 2/3
+										span.compare--label 327х353 мм
+										span.compare--label 3,2 кВт
+										span.compare--label 43 кг
+										span.compare--label Италия
+		include modules/footer.pug
+		include modules/modals.pug
+		script(src='./js/libs.js')
+		script(src='./js/scripts.js')

@@ -6014,6 +6014,344 @@ textarea
 			
 			&:hover
 				background-color #e57700
+				
+.compare
+	margin 0 0 -36px
+	
+	&-controls
+		min-height 88px
+		padding 28px 25px 2px
+		margin 0 0 15px
+		background #ffffff
+		border-bottom 5px solid #75c9ea
+		
+	&--counter
+		display none
+	
+	&__nav
+		font-size 0
+		margin 0 105px 0 0
+		
+		a
+			position relative
+			display inline-block
+			font-size 15px
+			line-height 23px
+			font-family 'Source Sans Pro', sans-serif
+			white-space nowrap
+			margin 0 25px 30px
+			
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom 1px
+				width 100%
+				border-bottom 1px dotted #f47920
+			
+			span
+				color #666666
+				
+			&:hover
+				&:after
+					border-bottom-color transparent
+					
+			&.is-active
+				color #ff7a08
+				
+				span
+					color #ff7a08
+				
+				&:hover
+					&:after
+						border-bottom-color #f47920
+						
+	&-group
+		display flex
+		margin 0 0 30px
+		background #ffffff
+		
+	&-lc
+		position relative
+		z-index 1
+		width 280px
+		padding 0 0 64px
+		background #ffffff
+		border-right 1px solid #e8e8e8
+		
+		& ^[0]--label
+			font-weight 500
+			padding-left 50px
+			padding-right 40px
+		
+	&__start
+		position relative
+		height 387px
+		border-bottom 1px solid #e8e8e8
+		
+		& ^[0]--label
+			position absolute
+			left 0
+			bottom 57px
+			
+	&-filter
+		padding 31px 40px 30px 50px
+		
+		&--title
+			display block
+			font-size 25px
+			line-height 30px
+			font-family 'Source Sans Pro', sans-serif
+			padding 0
+			margin 0 0 24px
+			
+		&__list
+			margin 0 0 30px
+			
+			li
+				margin 0 0 16px
+			
+			label
+				position relative
+				display inline-block
+				font-size 14px
+				line-height 22px
+				padding-left 32px
+				
+				.radio
+					position absolute
+					left 0
+					top 0
+					
+		&--clear
+			position relative
+			display inline-block
+			font-size 14px
+			line-height 22px
+			cursor pointer
+			padding-left 32px
+			
+			&:before
+				content ''
+				position absolute
+				left 0
+				top 1px
+				width 13px
+				height 17px
+				background url('../img/panel-remove-icon.png') no-repeat 0 0
+				
+			span
+				position relative
+				
+				&:after
+					content ''
+					position absolute
+					left 0
+					bottom -1px
+					width 100%
+					border-bottom 1px dotted #f47920
+					
+				&:hover
+					&:after
+						border-bottom-color transparent
+		
+	&__labels
+		padding 15px 0 0
+		
+	&--label
+		display block
+		width 100%
+		color colorDark
+		font-size 14px
+		line-height 20px
+		padding 13px 20px 11px
+		transition background-color .2s ease
+		
+		&.is-hovered
+			background-color #f9f9f9
+		
+	&-slider
+		width calc(100% - 279px)
+		margin-left -1px
+		
+		.slick-prev,
+		.slick-next
+			position absolute
+			top -76px
+			width 37px
+			height 29px
+			cursor pointer
+			background transparent
+			
+			&:before
+				content ''
+				position absolute
+				top 5px
+				width 26px
+				height 19px
+				background-image url('../img/same-arrows.png')
+				background-repeat no-repeat
+				background-size 200% 200%
+				transition background-position .3s ease
+			
+		.slick-prev
+			right 72px
+			&:before
+				left 5px
+				background-position 0 0
+				
+			&:hover
+				&:before
+					background-position 100% 0
+				
+		.slick-next
+			right 36px
+			&:before
+				right 5px
+				background-position 100% 100%
+				
+			&:hover
+				&:before
+					background-position 0 100%
+					
+		.slick-track
+			display flex
+		
+		&__item
+			display inline-block
+			width 25%
+			font-size 12px
+			border-left 1px solid #e8e8e8
+			padding 0 0 64px
+			
+		&__labels
+			padding 15px 0 0
+			
+	.item-catalog
+		&__content
+			padding 44px 10px 90px
+			border-bottom 1px solid #dddddd
+			
+			.tip-icon
+				position absolute
+				left 13px
+				top 33px
+				width 45px
+				height 45px
+				font-size 12px
+				line-height 16px
+				padding 14px 0 15px 1px
+				
+		&--pic
+			max-width 164px
+			height 144px
+			margin 0 0 52px
+			
+		&--title
+			font-size 14px
+			line-height 21px
+			
+		&--code
+			top -25px
+			font-size 12px
+			line-height 16px
+			
+		.elem--availability
+			position absolute
+			left 98px
+			top -25px
+			font-size 12px
+			line-height 16px
+			padding 0
+			margin 0
+			border-width 0
+			
+			&:before
+				margin 2px 7px 0 0
+				
+		&__more
+			display none
+			
+		&__price
+			position absolute
+			left 0
+			bottom 69px
+			width 100%
+			white-space nowrap
+			padding 0 10px
+			margin 0
+			
+			&--old
+				font-size 15px
+				line-height 18px
+				margin 2px 9px 0 0
+				
+			&--current
+				font-size 18px
+				line-height 21px
+				
+		&__controls
+			position absolute
+			left 10px
+			bottom 20px
+			white-space nowrap
+			
+		&--button
+			width 90px
+			font-size 13px
+			line-height 16px
+			font-weight 600
+			padding 8px 5px 6px
+			margin 0 6px 0 0
+			
+			&_buy
+				&:before
+					width 14px
+					height 12px
+					margin 1px 7px 0 0
+					background-size 14px 12px
+					
+			&_one-click
+				&:before
+					width 11px
+					height 15px
+					margin 0 4px 0 0
+					background-size 11px 15px
+					
+		&__icons
+			position absolute
+			right 3px
+			top 25px
+			z-index 1
+			
+			&--elem
+				position relative
+				display block
+				width 26px
+				height 26px
+				cursor pointer
+				
+				&:before
+					content ''
+					position absolute
+					left 50%
+					top 50%
+					background-repeat no-repeat
+					background-position 0 0
+					
+				&_favorite
+					&:before
+						width 16px
+						height 16px
+						margin -8px 0 0 -8px
+						background-image url('../img/panel-favorite-icon.png')
+					
+				&_remove
+					&:before
+						width 13px
+						height 17px
+						margin -8px 0 0 -7px
+						background-image url('../img/panel-remove-icon.png')
 
 .menu-drop
 	display none
@@ -6205,6 +6543,14 @@ textarea
 		&__rc
 			width 225px
 			padding-left 20px
+			
+		&__social
+			width calc(100% + 21px)
+			margin-left -6px
+			
+			&--item
+				margin-left 6px
+				margin-right 14px
 			
 	.basket
 		&-complect
@@ -6464,6 +6810,35 @@ textarea
 
 			&:first-child
 				padding-left 30px
+				
+	.compare
+		margin-bottom -10px
+
+		&-controls
+			padding-left 15px
+			padding-right 15px
+
+		&__nav
+			margin-right 85px
+	
+			a
+				margin-left 15px
+				margin-right 15px
+				
+		&-filter
+			padding-left 30px
+			padding-right 30px
+
+		&-slider
+			.slick-prev
+			.slick-next
+				margin-right -20px
+				
+		&__start 
+		&__labels
+			.compare--label
+				padding-left 30px
+				padding-right 30px
 	
 @media (max-width 999px)
 	.wrapper
@@ -8677,6 +9052,191 @@ textarea
 	.catalog-grid
 		&.catalog-list
 			display none
+			
+	.compare
+		margin 27px 0 -10px
+		
+		&-controls
+			position relative
+			min-height 104px
+			padding 19px 15px 10px
+			margin 0 -15px 17px
+			
+			&--select
+				display block
+				width 100%
+				max-width 610px
+				font-size 15px
+				font-family 'Source Sans Pro', sans-serif
+				padding 6px 10px 7px
+				margin 0 auto
+				background #ffffff
+				border 1px solid #dddddd
+				border-radius 4px
+		
+		&--counter
+			display block
+			position absolute
+			left 0
+			bottom 12px
+			width 100%
+			font-size 15px
+			line-height 22px
+			text-align center
+			padding 0 55px
+		
+		&__nav
+			display none
+	
+		&-group
+			position relative
+			display block
+			margin 0 -15px 20px
+			
+		&-lc
+			display block
+			width auto
+			padding 26px 35px 37px
+			border-bottom 1px solid #e8e8e8
+			
+		&__start
+			height auto !important
+			border-bottom-width 0
+			
+			& ^[-1]--label
+				display none
+				
+		&-filter
+			padding 0
+			
+			&--title
+				display none
+				
+			&__list
+				margin 0 0 21px
+
+				li
+					margin 0 0 11px
+				
+		&__labels
+			position absolute
+			left 0
+			top 0
+			width 0
+			opacity 0
+			
+			&.is-visible
+				opacity 1
+			
+			& ^[-1]--label
+				position absolute
+				left 0
+				top 0
+				color #868686
+				font-size 13px
+				line-height 16px
+				font-weight normal
+				white-space nowrap
+				padding 0 10px
+			
+		&--label
+			position relative
+			padding 18px 10px 0
+			margin 0 0 22px
+			
+		&-slider
+			position static
+			width auto
+			margin 0 -1px 0 0
+			
+			.slick-prev
+			.slick-next
+				top -59px
+				
+			.slick-prev
+				right auto
+				left 10px
+				
+			.slick-next
+				right 10px
+				margin-right 0
+			
+			&__item
+				padding-bottom 20px
+				border-left-width 0
+				
+			&__labels
+				padding-top 33px
+			
+		.item-catalog
+			border-right 1px solid #e8e8e8
+			
+			&__icons
+				top 9px
+				right 50%
+				font-size 0
+				transform translateX(50%)
+				
+				&--elem
+					display inline-block
+					margin 0 1px
+					
+					&_remove
+						&:before
+							margin-top -9px
+			
+			.tip-icon
+				display none
+				
+			&__content
+				padding 40px 10px 106px
+				
+			&--pic
+				max-width 138px
+				height 128px
+				margin 0 auto 63px
+				
+			&--code
+				top -44px
+				
+			.elem--availability
+				left 0
+				top -23px
+				
+			&__price
+				bottom 67px
+				
+				&--old
+					display block
+					margin 0 0 -2px
+					
+				&--current
+					display block
+				
+			&__controls
+				left 10px !important
+				bottom 18px !important
+				
+			&--button
+				overflow hidden
+				position relative
+				width 40px
+				font-size 0
+				white-space nowrap
+				text-indent 40px
+				
+				&:before
+					position absolute
+					left 50%
+					top 50%
+					
+				&_buy
+					&:before
+						margin -7px 0 0 -7px
+					
+				&_one-click
+					&:before
+						margin -7px 0 0 -5px
 
 @media (max-width 639px)
 	.intro
